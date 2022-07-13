@@ -4,6 +4,6 @@
 
 <script>
 export default {
-  name: 'MatematykaExpressOpinie'
+  name: 'MatematykaExpressOpiniePage'
 }
 </script>

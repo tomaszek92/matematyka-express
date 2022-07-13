@@ -4,6 +4,6 @@
 
 <script>
 export default {
-  name: 'MatematykaExpressDlaczegoWarto'
+  name: 'MatematykaExpressDlaczegoWartoPage'
 }
 </script>

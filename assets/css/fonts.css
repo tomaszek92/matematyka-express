@@ -3,3 +3,9 @@
   font-weight: 400;
   src: url("~assets/fonts/BeVietnamPro-Regular.ttf");
 }
+
+@font-face {
+  font-family: 'BeVietnamPro';
+  font-weight: 800;
+  src: url("~assets/fonts/BeVietnamPro-ExtraBold.ttf");
+}

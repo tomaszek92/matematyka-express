@@ -4,6 +4,6 @@
 
 <script>
 export default {
-  name: "MatematykaExpressKorepetycje"
+  name: "MatematykaExpressKorepetycjePage"
 }
 </script>
