@@ -4,14 +4,11 @@
       <img class="h-14" src="logo.png" alt="logo">
     </div>
     <div class="block lg:hidden">
-      <button
-        class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
-        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title>
-          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
-        </svg>
-      </button>
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 cursor-pointer lg:hidden block text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" @click="onMenuToggle()">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
     </div>
-    <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+    <div ref="links" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto sm:hidden">
       <div class="lg:flex lg:justify-around lg:flex-grow">
         <matematyka-express-header-link text="Dlaczego warto" url="/dlaczego-warto"/>
         <matematyka-express-header-link text="Kursy" url="kursy"/>
@@ -42,8 +39,13 @@
 import MatematykaExpressHeaderLink from "~/components/header-link";
 
 export default {
-  name: "MatematykaExpressHeader",
+  name: 'MatematykaExpressHeader',
   components: {MatematykaExpressHeaderLink},
+  methods: {
+    onMenuToggle() {
+      this.$refs.links.classList.toggle('sm:hidden');
+    }
+  }
 }
 </script>
 

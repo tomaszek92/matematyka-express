@@ -1,5 +1,5 @@
 <template>
-  <nuxt-link :to="url" class="block mt-4 lg:inline-block lg:mt-0 font-extrabold text-white text-xl mr-4">
+  <nuxt-link :to="url" class="block mt-4 lg:inline-block lg:mt-0 font-extrabold text-white text-xl">
     {{ text }}
   </nuxt-link>
 </template>
