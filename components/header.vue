@@ -1,14 +1,16 @@
 <template>
   <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
     <div class="flex items-center flex-shrink-0 mr-6">
-      <img class="h-14" src="logo.png" alt="logo">
+      <nuxt-link to="/">
+        <img class="h-14 cursor-pointer" src="logo.png" alt="logo">
+      </nuxt-link>
     </div>
     <div class="block lg:hidden">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 cursor-pointer lg:hidden block text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" @click="onMenuToggle()">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
       </svg>
     </div>
-    <div ref="links" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto sm:hidden">
+    <div ref="links" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto hidden">
       <div class="lg:flex lg:justify-around lg:flex-grow">
         <matematyka-express-header-link text="Dlaczego warto" url="/dlaczego-warto"/>
         <matematyka-express-header-link text="Kursy" url="kursy"/>
@@ -18,10 +20,10 @@
         <matematyka-express-header-link text="Gdzie uczę" url="gdzie-ucze"/>
         <matematyka-express-header-link text="Kontakt" url="kontakt"/>
       </div>
-      <div class="flex mt-4 lg:mt-0">
+      <div class="flex mt-4 lg:mt-0 lg:ml-6">
         <div class="mr-4">
           <a href="https://www.instagram.com/matematyka_express/" target="_blank">
-            <img class="h-8" src="instagram_log.png" alt="instagram logo">
+            <img class="h-8" src="instagram_logo.png" alt="instagram logo">
           </a>
         </div>
         <div>
@@ -43,7 +45,7 @@ export default {
   components: {MatematykaExpressHeaderLink},
   methods: {
     onMenuToggle() {
-      this.$refs.links.classList.toggle('sm:hidden');
+      this.$refs.links.classList.toggle('hidden');
     }
   }
 }
