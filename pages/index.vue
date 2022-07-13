@@ -1,5 +1,7 @@
 <template>
-  <matematyka-express-header></matematyka-express-header>
+  <div class="font-BeVietnamPro">
+    <matematyka-express-header></matematyka-express-header>
+  </div>
 </template>
 
 <script>

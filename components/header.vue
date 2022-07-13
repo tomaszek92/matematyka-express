@@ -1,7 +1,7 @@
 <template>
   <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
     <div class="flex items-center flex-shrink-0 mr-6">
-      <img class="h-12" src="logo.png">
+      <img class="h-14" src="logo.png" alt="logo">
     </div>
     <div class="block lg:hidden">
       <button
@@ -24,12 +24,12 @@
       <div class="flex mt-4 lg:mt-0">
         <div class="mr-4">
           <a href="https://www.instagram.com/matematyka_express/" target="_blank">
-            <img class="h-10" src="instagram_log.png">
+            <img class="h-8" src="instagram_log.png" alt="instagram logo">
           </a>
         </div>
         <div>
           <a href="https://www.facebook.com/Matematyka-Express-108904580797830/" target="_blank">
-            <img class="h-10" src="facebook_logo.png"/>
+            <img class="h-8" src="facebook_logo.png" alt="facebook logo"/>
           </a>
         </div>
       </div>
