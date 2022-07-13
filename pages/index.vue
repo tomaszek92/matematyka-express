@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper grid grid-cols-1 lg:grid-cols-2 gap-4">
     <div class="self-center justify-self-center lg:ml-8">
-      <div class="title font-extrabold text-5xl mt-6 lg:mt-0 md:text-7xl xl:text-9xl">
+      <div class="title font-extrabold text-6xl md:text-7xl xl:text-9xl">
         <span>Skuteczne<br>korepetycje<br>i kursy</span>
       </div>
       <div class="flex justify-center">
