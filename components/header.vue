@@ -2,7 +2,7 @@
   <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
     <div class="flex items-center flex-shrink-0 mr-6">
       <nuxt-link to="/">
-        <img class="h-14 cursor-pointer" src="logo.png" alt="logo">
+        <img class="h-14 cursor-pointer" src="/logo.png" alt="logo">
       </nuxt-link>
     </div>
     <div class="block lg:hidden">
@@ -13,22 +13,22 @@
     <div ref="links" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto hidden">
       <div class="lg:flex lg:justify-around lg:flex-grow">
         <matematyka-express-header-link text="Dlaczego warto" url="/dlaczego-warto"/>
-        <matematyka-express-header-link text="Kursy" url="kursy"/>
-        <matematyka-express-header-link text="Korepetycje" url="korepetycje"/>
-        <matematyka-express-header-link text="Opinie" url="opinie"/>
-        <matematyka-express-header-link text="O mnie" url="o-mnie"/>
-        <matematyka-express-header-link text="Gdzie uczę" url="gdzie-ucze"/>
-        <matematyka-express-header-link text="Kontakt" url="kontakt"/>
+        <matematyka-express-header-dropdown text="Kursy"/>
+        <matematyka-express-header-link text="Korepetycje" url="/korepetycje"/>
+        <matematyka-express-header-link text="Opinie" url="/opinie"/>
+        <matematyka-express-header-link text="O mnie" url="/o-mnie"/>
+        <matematyka-express-header-link text="Gdzie uczę" url="/gdzie-ucze"/>
+        <matematyka-express-header-link text="Kontakt" url="/kontakt"/>
       </div>
       <div class="flex mt-4 lg:mt-0 lg:ml-6">
         <div class="mr-4">
           <a href="https://www.instagram.com/matematyka_express/" target="_blank">
-            <img class="h-8" src="instagram_logo.png" alt="instagram logo">
+            <img class="h-8" src="/instagram_logo.png" alt="instagram logo">
           </a>
         </div>
         <div>
           <a href="https://www.facebook.com/Matematyka-Express-108904580797830/" target="_blank">
-            <img class="h-8" src="facebook_logo.png" alt="facebook logo"/>
+            <img class="h-8" src="/facebook_logo.png" alt="facebook logo"/>
           </a>
         </div>
       </div>
@@ -39,10 +39,11 @@
 
 <script>
 import MatematykaExpressHeaderLink from "~/components/header-link";
+import MatematykaExpressHeaderDropdown from "~/components/header-dropdown";
 
 export default {
   name: 'MatematykaExpressHeader',
-  components: {MatematykaExpressHeaderLink},
+  components: {MatematykaExpressHeaderDropdown, MatematykaExpressHeaderLink},
   methods: {
     onMenuToggle() {
       this.$refs.links.classList.toggle('hidden');
