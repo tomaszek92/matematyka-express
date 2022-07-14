@@ -7,9 +7,8 @@
     price-img-src="/img/kursy/egzamin_osmoklasisty_price.png">
     <template #title>
       <span>
-        Kurs EGZAMIN ósmoklasisty przeznaczony jest dla osób,<br/>
-        które chcą sobie przypomnieć<br/>
-        i&nbsp;usystematyzować zagadnienia z&nbsp;klas 4-5-6-7-8.
+        Kurs EGZAMIN ósmoklasisty przeznaczony jest dla osób, które&nbsp;chcą sobie przypomnieć i&nbsp;usystematyzować
+        zagadnienia z&nbsp;klas 4-5-6-7-8.
       </span>
     </template>
     <template #subtitle>
