@@ -21,6 +21,19 @@
         </div>
       </div>
     </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 items-center">
+      <div>
+        <div>
+          <img :src="scheduleImgSrc" :alt="scheduleImgSrc"/>
+        </div>
+        <div>
+          <kursy-course-details-schedule :schedule="schedule"/>
+        </div>
+      </div>
+      <div>
+        <img :src="priceImgSrc" :alt="priceImgSrc"/>
+      </div>
+    </div>
   </div>
 </template>
 

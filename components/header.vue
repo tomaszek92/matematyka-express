@@ -1,5 +1,5 @@
 <template>
-  <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
+  <nav class="flex items-center justify-between flex-wrap p-6">
     <div class="flex items-center flex-shrink-0 mr-6">
       <nuxt-link to="/">
         <img class="h-14 cursor-pointer" src="/logo.png" alt="logo">
