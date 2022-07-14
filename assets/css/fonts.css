@@ -12,6 +12,12 @@
 
 @font-face {
   font-family: 'BeVietnamPro';
+  font-weight: 500;
+  src: url("~assets/fonts/BeVietnamPro-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: 'BeVietnamPro';
   font-weight: 800;
   src: url("~assets/fonts/BeVietnamPro-ExtraBold.ttf");
 }
