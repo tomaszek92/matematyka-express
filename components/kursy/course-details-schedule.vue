@@ -41,7 +41,7 @@ export default {
 
 <style scoped>
 div.grid {
-  grid-template-columns: 100px 1fr 130px;
+  grid-template-columns: 110px 1fr 150px;
 }
 
 div.grid > div {

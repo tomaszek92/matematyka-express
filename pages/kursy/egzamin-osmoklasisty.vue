@@ -3,7 +3,6 @@
     main-img-src="/img/kursy/egzamin_osmoklasisty_main.png"
     :effects="effects"
     :schedule="schedule"
-    schedule-img-src="/img/kursy/egzamin_osmoklasisty_schedule.png"
     price-img-src="/img/kursy/egzamin_osmoklasisty_price.png">
     <template #title>
       <span>

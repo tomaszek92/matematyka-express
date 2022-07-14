@@ -1,7 +1,7 @@
 <template>
-  <div class="flex items-center ml-10 mb-4">
+  <div class="flex items-center ml-6 mb-4">
     <div>
-      <img class="h-8 mr-2" src="/img/kursy/effect.png" alt="effect"/>
+      <img class="h-8 mr-4" src="/img/kursy/effect.png" alt="effect"/>
     </div>
     <div>
       {{ text }}
@@ -21,6 +21,3 @@ export default {
 }
 </script>
 
-<style scoped>
-
-</style>

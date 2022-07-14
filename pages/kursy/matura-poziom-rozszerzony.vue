@@ -3,7 +3,6 @@
     main-img-src="/img/kursy/matura_rozszerzona_main.png"
     :effects="effects"
     :schedule="schedule"
-    schedule-img-src="/img/kursy/matura_rozszerzona_schedule.png"
     price-img-src="/img/kursy/matura_rozszerzona_price.png">
     <template #title>
       <span>

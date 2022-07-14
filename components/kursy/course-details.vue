@@ -6,13 +6,13 @@
     <div class="color text-center text-xl mb-6 font-semibold">
       <slot name="subtitle"/>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 items-center">
+    <div class="grid grid-cols-1 md:grid-cols-2 items-center justify-items-center">
       <div>
         <img :src="mainImgSrc" :alt="mainImgSrc"/>
       </div>
       <div>
         <div>
-          <div class="text-xl mb-4">
+          <div class="text-xl text-center lg:text-left mb-4 mt-4 lg:mt-0">
             Jakich efektów możesz oczekiwać po ukończeniu kursu?
           </div>
           <template v-for="effect in effects">
@@ -21,14 +21,9 @@
         </div>
       </div>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 items-center">
-      <div>
-        <div>
-          <img :src="scheduleImgSrc" :alt="scheduleImgSrc"/>
-        </div>
-        <div>
-          <kursy-course-details-schedule :schedule="schedule"/>
-        </div>
+    <div class="grid grid-cols-1 lg:grid-cols-2 items-center justify-items-center mb-10">
+      <div class="mb-4 lg:mb-0">
+        <kursy-course-details-schedule :schedule="schedule"/>
       </div>
       <div>
         <img :src="priceImgSrc" :alt="priceImgSrc"/>
@@ -47,10 +42,6 @@ export default {
     },
     effects: {
       type: Array,
-      required: true
-    },
-    scheduleImgSrc: {
-      type: String,
       required: true
     },
     schedule: {
