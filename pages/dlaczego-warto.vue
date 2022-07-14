@@ -9,7 +9,7 @@
       <div class="self-center justify-self-center">
         <img class="h-24 lg:h-36 xl:h-56" src="img/dlaczego-warto/main.png" alt="main"/>
       </div>
-      <div class="self-center justify-self-center text-black text-center font-medium">
+      <div class="self-center justify-self-center text-black text-center">
         Jeśli szukasz kursu lub korepetycji, które skutecznie przygotują Cię do egzaminu ósmych klas, matury lub po
         prostu kogoś, kto pomoże Ci w bieżącej nauce, to dobrze trafiłeś :)
       </div>

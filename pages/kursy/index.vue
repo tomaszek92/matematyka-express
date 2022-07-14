@@ -9,7 +9,7 @@
       weekday="Poniedziałek"
       hours-count="56"
       subtitle="ósmoklasisty"
-      url=""/>
+      url="/kursy/egzamin-osmoklasisty"/>
     <kursy-course
       title="matura"
       font-color="#8A0D49"
@@ -19,7 +19,7 @@
       weekday="Środa"
       hours-count="56"
       subtitle="podstawowy"
-      url=""/>
+      url="/kursy/matura-poziom-podstawowy"/>
     <kursy-course
       title="matura"
       font-color="#121153"
@@ -29,7 +29,7 @@
       weekday="Czwartek"
       hours-count="84"
       subtitle="rozszerzony"
-      url=""/>
+      url="/kursy/matura-poziom-rozszerzony"/>
   </div>
 </template>
 

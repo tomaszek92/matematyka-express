@@ -3,7 +3,7 @@
     <div class="mb-4">
       <img :src="imgSrc" :alt="imgSrc"/>
     </div>
-    <div class="text-center font-medium">
+    <div class="text-center">
       <slot></slot>
     </div>
   </div>

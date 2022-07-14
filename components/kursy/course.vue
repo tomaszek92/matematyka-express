@@ -1,20 +1,22 @@
 <template>
-  <div class="course text-center p-2" :style="{'background': backgroundColor}">
-    <div class="text-white my-4">
-      <div class="text-3xl uppercase font-extrabold mb-2">
-        {{ title }}
+  <nuxt-link :to="url">
+    <div class="course text-center p-2" :style="{'background': backgroundColor}">
+      <div class="text-white my-4">
+        <div class="text-3xl uppercase font-extrabold mb-2">
+          {{ title }}
+        </div>
+        <div class="text-2xl font-semibold">
+          {{ subtitle }}
+        </div>
       </div>
-      <div class="text-2xl font-semibold">
-        {{ subtitle }}
+      <div class="content pb-2" :style="{'color': fontColor}">
+        <kursy-course-value :value="hoursCount" text="Liczba godzin zajęć"/>
+        <kursy-course-value :value="weekday" text="Dzień zajęć"/>
+        <kursy-course-value :value="hours" text="Godziny"/>
+        <kursy-course-value :value="start" text="Rozpoczęcie"/>
       </div>
     </div>
-    <div class="content pb-2" :style="{'color': fontColor}">
-      <kursy-course-value :value="hoursCount" text="Liczba godzin zajęć"/>
-      <kursy-course-value :value="weekday" text="Dzień zajęć"/>
-      <kursy-course-value :value="hours" text="Godziny"/>
-      <kursy-course-value :value="start" text="Rozpoczęcie"/>
-    </div>
-  </div>
+  </nuxt-link>
 </template>
 
 <script>
@@ -64,6 +66,8 @@ export default {
 <style scoped>
 .course {
   border-radius: 24px;
+  -webkit-box-shadow: 0 11px 28px 0 rgba(0,0,0,0.31);
+  box-shadow: 0 11px 28px 0 rgba(0,0,0,0.31);
 }
 
 .content {
