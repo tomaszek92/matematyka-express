@@ -1,9 +1,9 @@
 <template>
   <div class="flex flex-col items-center">
-    <div>
+    <div class="mb-4">
       <img :src="imgSrc" :alt="imgSrc"/>
     </div>
-    <div class="text-center">
+    <div class="text-center font-medium">
       <slot></slot>
     </div>
   </div>
