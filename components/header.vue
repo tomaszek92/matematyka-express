@@ -13,7 +13,7 @@
     <div ref="links" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto hidden">
       <div class="lg:flex lg:justify-around lg:flex-grow">
         <matematyka-express-header-link text="Dlaczego warto" url="/dlaczego-warto"/>
-        <matematyka-express-header-dropdown text="Kursy"/>
+        <matematyka-express-header-dropdown text="Kursy" :links="coursedNestedLinks"/>
         <matematyka-express-header-link text="Korepetycje" url="/korepetycje"/>
         <matematyka-express-header-link text="Opinie" url="/opinie"/>
         <matematyka-express-header-link text="O mnie" url="/o-mnie"/>
@@ -44,6 +44,23 @@ import MatematykaExpressHeaderDropdown from "~/components/header-dropdown";
 export default {
   name: 'MatematykaExpressHeader',
   components: {MatematykaExpressHeaderDropdown, MatematykaExpressHeaderLink},
+  data() {
+    return  {
+      coursedNestedLinks: [{
+        to: '/kursy',
+        text: 'Charakterystyka'
+      }, {
+        to: '/kursy/egzamin-osmoklasisty',
+        text: 'Egzamin ósmoklasisty'
+      }, {
+        to: '/kursy/matura-poziom-podstawowy',
+        text: 'Matura poziom podstawowy'
+      }, {
+        to: '/kursy/matura-poziom-rozszerzony',
+        text: 'Matura poziom rozszerzony'
+      }]
+    }
+  },
   methods: {
     onMenuToggle() {
       this.$refs.links.classList.toggle('hidden');
