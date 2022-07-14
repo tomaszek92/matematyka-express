@@ -16,15 +16,16 @@
 
 <script>
 export default {
-  name: 'IndexPage',
+  name: 'MatematykaExpressIndexPage'
 }
 </script>
 
 <style scoped>
-.wrapper {
-  height: calc(100vh - 6.5rem);
+@media (min-width: 1024px) {
+  .wrapper {
+    height: calc(100vh - 6.5rem);
+  }
 }
-
 .title {
   background: linear-gradient(90.08deg, #360C71 0.11%, #8444DF 69.58%);
   -webkit-background-clip: text;

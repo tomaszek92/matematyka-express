@@ -9,6 +9,6 @@ import MatematykaExpressHeader from "~/components/header";
 
 export default {
   name: 'MatematykaExpressDefaultLayout',
-  components: {MatematykaExpressHeader}
+  components: {MatematykaExpressHeader},
 }
 </script>
