@@ -1,5 +1,5 @@
 <template>
-  <div class="title font-extrabold text-6xl mt-12 md:mt-8 lg:mt-0 md:text-7xl 2xl:text-9xl text-center lg:text-left">
+  <div class="title font-extrabold text-6xl mt-8 lg:mt-0 md:text-7xl xl:text-8xl text-center lg:text-left">
     <slot></slot>
   </div>
 </template>
