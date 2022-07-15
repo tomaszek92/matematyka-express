@@ -7,7 +7,7 @@
     <template #title>
       <span>
         Kurs EGZAMIN ósmoklasisty przeznaczony jest dla osób, które&nbsp;chcą sobie przypomnieć i&nbsp;usystematyzować
-        zagadnienia z&nbsp;klas 4-5-6-7-8.
+        zagadnienia z&nbsp;klas 4&nbsp;-&nbsp;8.
       </span>
     </template>
     <template #subtitle>

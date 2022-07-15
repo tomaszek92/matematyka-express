@@ -1,7 +1,7 @@
 <template>
   <div class="font-BeVietnamPro">
     <matematyka-express-header></matematyka-express-header>
-    <div class="container mx-auto px-8">
+    <div class="container mx-auto px-4 md:px-8">
       <nuxt></nuxt>
     </div>
   </div>
