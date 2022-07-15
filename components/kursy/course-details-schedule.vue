@@ -5,8 +5,8 @@
     <div>Cena za<br>miesiąc zajęć</div>
     <template v-for="item in schedule">
       <div :key="item.month"><span class="month">{{ item.month }}</span></div>
-      <div :key="item.month">{{ item.dates | dates }}</div>
-      <div :key="item.month"><span class="price">{{ item.price }} zł</span> <span class="promo-price">{{ item.promoPrice }} zł</span></div>
+      <div :key="item.dates">{{ item.dates | dates }}</div>
+      <div :key="item.price"><span class="price">{{ item.price }} zł</span> <span class="promo-price">{{ item.promoPrice }} zł</span></div>
     </template>
     <div></div>
     <div class="text-right"><span class="total">Razem</span></div>
