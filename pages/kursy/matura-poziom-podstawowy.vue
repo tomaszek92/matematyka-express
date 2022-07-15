@@ -12,7 +12,7 @@
       </span>
     </template>
     <template #subtitle>
-      Jedna zajęcia trwają 2 godziny.
+      Jedne zajęcia trwają 2 godziny.
     </template>
   </kursy-course-details>
 </template>

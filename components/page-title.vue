@@ -10,10 +10,3 @@ export default {
 }
 </script>
 
-<style scoped>
-.title {
-  background: linear-gradient(90.08deg, #360C71 0.11%, #8444DF 69.58%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-</style>
