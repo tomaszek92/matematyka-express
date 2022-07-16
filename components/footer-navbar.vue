@@ -13,25 +13,35 @@
         Dane kontaktowe
       </div>
       <div class="grid grid-rows-4 gap-2">
-        <div class="flex items-center">
-          <img class="h-4 mr-2" src="/img/o-mnie/map.png" alt="telefon"/>
-          <a href="https://goo.gl/maps/vE3sBfgzyVXKzjFj8" target="_blank">ul. Patriotów 303, Warszawa</a>
+        <div>
+          <a class="flex items-center" href="https://goo.gl/maps/vE3sBfgzyVXKzjFj8" target="_blank">
+            <img class="h-4 mr-2" src="/img/o-mnie/map.png" alt="telefon"/>
+            <span>ul. Patriotów 303, Warszawa</span>
+          </a>
         </div>
-        <div class="flex items-center">
-          <img class="h-4 mr-2" src="/img/o-mnie/telephone.png" alt="telefon"/>
-          <a href="tel:+4866206360">+48 662 063 460</a>
+        <div>
+          <a class="flex items-center" href="tel:+4866206360">
+            <img class="h-4 mr-2" src="/img/o-mnie/telephone.png" alt="telefon"/>
+            <span>+48 662 063 460</span>
+          </a>
         </div>
-        <div class="flex items-center">
-          <img class="h-4 mr-2" src="/img/o-mnie/mail.png" alt="e-mail"/>
-          <a href="mailto:kursymatematykaexpress@gmail.com">kursymatematykaexpress@gmail.com</a>
+        <div>
+          <a class="flex items-center" href="mailto:kursymatematykaexpress@gmail.com">
+            <img class="h-4 mr-2" src="/img/o-mnie/mail.png" alt="e-mail"/>
+            <span>kursymatematykaexpress@gmail.com</span>
+          </a>
         </div>
-        <div class="flex items-center">
-          <img class="h-4 mr-2" src="/facebook_logo.png" alt="facebook"/>
-          <a href="https://www.facebook.com/Matematyka-Express-108904580797830/" target="_blank">Facebook</a>
+        <div>
+          <a class="flex items-center" href="https://www.facebook.com/Matematyka-Express-108904580797830/" target="_blank">
+            <img class="h-4 mr-2" src="/facebook_logo.png" alt="facebook"/>
+            <span>Facebook</span>
+          </a>
         </div>
-        <div class="flex items-center">
-          <img class="h-4 mr-2" src="/instagram_logo.png" alt="instagram"/>
-          <a href="https://www.instagram.com/matematyka_express/" target="_blank">Instagram</a>
+        <div>
+          <a class="flex items-center" href="https://www.instagram.com/matematyka_express/" target="_blank">
+            <img class="h-4 mr-2" src="/instagram_logo.png" alt="instagram"/>
+            <span>Instagram</span>
+          </a>
         </div>
       </div>
     </div>
