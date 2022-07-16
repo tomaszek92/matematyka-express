@@ -1,8 +1,8 @@
 <template>
-  <div class="wrapper grid grid-cols-1 gap-4">
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+  <div class="wrapper grid grid-cols-1 gap-8">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
       <div class="self-center justify-self-center">
-        <div class="title font-extrabold text-6xl xl:text-8xl mt-8 lg:mt-0 text-center">
+        <div class="title font-extrabold text-6xl xl:text-8xl text-center">
           <span>Dlaczego<br>warto?</span>
           <slot></slot>
         </div>

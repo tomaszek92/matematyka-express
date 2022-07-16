@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'MatematykaExpressHeaderLink',
+  name: 'MatematykaExpressNavbarLink',
   props: {
     url: {
       type: String,

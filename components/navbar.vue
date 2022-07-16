@@ -12,13 +12,13 @@
     </div>
     <div ref="links" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto hidden">
       <div class="lg:flex lg:justify-around lg:flex-grow">
-        <matematyka-express-header-link text="Dlaczego warto" url="/dlaczego-warto"/>
-        <matematyka-express-header-link text="Kursy" url="/kursy"/>
-        <matematyka-express-header-link text="Korepetycje" url="/korepetycje"/>
-        <matematyka-express-header-link text="Opinie" url="/opinie"/>
-        <matematyka-express-header-link text="O mnie" url="/o-mnie"/>
-        <matematyka-express-header-link text="Gdzie uczę" url="/gdzie-ucze"/>
-        <matematyka-express-header-link text="Kontakt" url="/kontakt"/>
+        <navbar-link text="Dlaczego warto" url="/dlaczego-warto"/>
+        <navbar-link text="Kursy" url="/kursy"/>
+        <navbar-link text="Korepetycje" url="/korepetycje"/>
+        <navbar-link text="Opinie" url="/opinie"/>
+        <navbar-link text="O mnie" url="/o-mnie"/>
+        <navbar-link text="Gdzie uczę" url="/gdzie-ucze"/>
+        <navbar-link text="Kontakt" url="/kontakt"/>
       </div>
       <div class="flex mt-4 lg:mt-0 lg:ml-6">
         <div class="mr-4">
@@ -38,11 +38,8 @@
 </template>
 
 <script>
-import MatematykaExpressHeaderLink from "~/components/header-link";
-
 export default {
-  name: 'MatematykaExpressHeader',
-  components: {MatematykaExpressHeaderLink},
+  name: 'MatematykaExpressNavbar',
   methods: {
     onMenuToggle() {
       this.$refs.links.classList.toggle('hidden');

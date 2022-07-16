@@ -1,16 +1,20 @@
 <template>
   <div class="font-BeVietnamPro">
-    <matematyka-express-header></matematyka-express-header>
-    <div class="container mx-auto px-4 md:px-8">
-      <nuxt></nuxt>
-    </div>
+    <header>
+      <navbar/>
+    </header>
+    <main>
+      <div class="container mx-auto p-4 md:p-8">
+        <nuxt></nuxt>
+      </div>
+    </main>
+    <footer>
+
+    </footer>
   </div>
 </template>
 <script>
-import MatematykaExpressHeader from "~/components/header";
-
 export default {
   name: 'MatematykaExpressDefaultLayout',
-  components: {MatematykaExpressHeader},
 }
 </script>

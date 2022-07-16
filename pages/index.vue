@@ -22,6 +22,6 @@ export default {
 
 <style scoped>
 .wrapper {
-  height: calc(100vh - 6.5rem);
+  height: calc(100vh - 10.5rem);
 }
 </style>
