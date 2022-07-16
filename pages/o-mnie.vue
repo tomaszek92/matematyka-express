@@ -1,7 +1,7 @@
 <template>
   <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 items-center">
-    <div>
-      <img src="/img/o-mnie/avatar.png" alt="avatar"/>
+    <div class="justify-self-center">
+      <img class="shadow-xl rounded-xl" src="/img/o-mnie/avatar.png" alt="avatar"/>
     </div>
     <div class="col-span-2 text-justify">
       Dzień dobry,<br/>

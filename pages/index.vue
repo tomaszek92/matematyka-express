@@ -21,7 +21,9 @@ export default {
 </script>
 
 <style scoped>
-.wrapper {
-  height: calc(100vh - 15rem);
+@media (min-width: 1024px) {
+  .wrapper {
+    height: calc(100vh - 15rem);
+  }
 }
 </style>
