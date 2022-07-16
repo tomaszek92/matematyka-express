@@ -1,5 +1,5 @@
 <template>
-  <nuxt-link :to="url" class="block mt-4 lg:inline-block lg:mt-0 font-extrabold text-white text-xl">
+  <nuxt-link :to="url" class="navbar-link block mt-4 lg:inline-block lg:mt-0 font-extrabold text-white text-xl">
     {{ text }}
   </nuxt-link>
 </template>
@@ -19,3 +19,10 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.navbar-link:hover {
+  transform: scale(120%);
+  transition: 0.3s;
+}
+</style>

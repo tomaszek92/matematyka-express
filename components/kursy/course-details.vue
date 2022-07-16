@@ -25,8 +25,15 @@
       <div class="mb-4 lg:mb-0">
         <kursy-course-details-schedule :schedule="schedule"/>
       </div>
-      <div>
-        <img :src="priceImgSrc" :alt="priceImgSrc"/>
+      <div class="flex flex-col items-center">
+        <div class="mb-8">
+          <img :src="priceImgSrc" :alt="priceImgSrc"/>
+        </div>
+        <div>
+          <nuxt-link to="/kontakt" class="btn-zapisz-sie text-white text-xl font-extrabold px-8 py-4 rounded-xl">
+            ZAPISZ SIĘ
+          </nuxt-link>
+        </div>
       </div>
     </div>
   </div>
@@ -59,5 +66,14 @@ export default {
 <style scoped>
 .color {
   color: #360C71;
+}
+
+.btn-zapisz-sie {
+  background-color: #5B2AA0;
+  transition: 0.3s;
+}
+
+.btn-zapisz-sie:hover {
+  background-color: #360C71;
 }
 </style>

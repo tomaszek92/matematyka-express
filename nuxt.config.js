@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'matematyka-express',
+    title: 'Matematyka Express - skuteczne korepetycje i kursy z matematyki',
     htmlAttrs: {
       lang: 'en',
     },
