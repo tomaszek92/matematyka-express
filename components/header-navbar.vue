@@ -1,5 +1,5 @@
 <template>
-  <nav class="flex items-center justify-between flex-wrap p-6">
+  <nav class="flex items-center justify-between flex-wrap p-6 gradient-background">
     <div class="flex items-center flex-shrink-0 mr-6">
       <nuxt-link to="/">
         <img class="h-14 cursor-pointer" src="/logo.png" alt="logo">
@@ -12,13 +12,13 @@
     </div>
     <div ref="links" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto hidden">
       <div class="lg:flex lg:justify-around lg:flex-grow">
-        <navbar-link text="Dlaczego warto" url="/dlaczego-warto"/>
-        <navbar-link text="Kursy" url="/kursy"/>
-        <navbar-link text="Korepetycje" url="/korepetycje"/>
-        <navbar-link text="Opinie" url="/opinie"/>
-        <navbar-link text="O mnie" url="/o-mnie"/>
-        <navbar-link text="Gdzie uczę" url="/gdzie-ucze"/>
-        <navbar-link text="Kontakt" url="/kontakt"/>
+        <header-navbar-link text="Dlaczego warto" url="/dlaczego-warto"/>
+        <header-navbar-link text="Kursy" url="/kursy"/>
+        <header-navbar-link text="Korepetycje" url="/korepetycje"/>
+        <header-navbar-link text="Opinie" url="/opinie"/>
+        <header-navbar-link text="O mnie" url="/o-mnie"/>
+        <header-navbar-link text="Gdzie uczę" url="/gdzie-ucze"/>
+        <header-navbar-link text="Kontakt" url="/kontakt"/>
       </div>
       <div class="flex mt-4 lg:mt-0 lg:ml-6">
         <div class="mr-4">
@@ -33,13 +33,12 @@
         </div>
       </div>
     </div>
-
   </nav>
 </template>
 
 <script>
 export default {
-  name: 'MatematykaExpressNavbar',
+  name: 'MatematykaExpressHeaderNavbar',
   methods: {
     onMenuToggle() {
       this.$refs.links.classList.toggle('hidden');
@@ -47,9 +46,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-nav {
-  background: linear-gradient(270deg, #A06CEA 0%, #6431AB 58.85%, #360C71 100%);
-}
-</style>

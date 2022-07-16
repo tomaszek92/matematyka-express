@@ -72,11 +72,3 @@ export default {
   name: 'MatematykaExpressDlaczegoWartoPage'
 }
 </script>
-
-<style scoped>
-@media (min-width: 1024px) {
-  .wrapper {
-    min-height: calc(100vh - 6.5rem);
-  }
-}
-</style>
