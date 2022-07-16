@@ -1,9 +1,9 @@
 <template>
   <div class="wrapper grid grid-cols-1 lg:grid-cols-2 gap-8">
     <div class="self-center justify-self-center">
-      <page-title>
+      <div class="title font-extrabold text-6xl mt-8 lg:mt-0 md:text-7xl xl:text-8xl text-center lg:text-left">
         <span>Skuteczne<br>korepetycje<br>i kursy</span>
-      </page-title>
+      </div>
       <div class="flex justify-center">
         <img class="h-32 lg:h-36 xl:h-52 mt-8 lg:mt-0" src="img/index/main_2.png" alt="z matematyki"/>
       </div>

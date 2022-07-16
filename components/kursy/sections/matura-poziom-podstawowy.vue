@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import {effects, schedule} from './matura-poziom-podstawowy-data';
+import {effects, schedule} from '@/data/matura-poziom-podstawowy-data';
 
 export default {
   name: "MatematykaExpressMaturaPoziomPodstawowy",

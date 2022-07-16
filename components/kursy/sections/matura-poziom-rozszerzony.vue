@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import { effects, schedule } from './matura-poziom-rozszerzony-data';
+import { effects, schedule } from '@/data/matura-poziom-rozszerzony-data';
 
 export default {
   name: "MatematykaExpressMaturaPoziomRozszerzony",

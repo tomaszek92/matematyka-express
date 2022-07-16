@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import { effects, schedule } from './egzamin-osmoklasisty-data';
+import { effects, schedule } from '@/data/egzamin-osmoklasisty-data';
 
 export default {
   name: "MatematykaExpressEgzaminOsmoklasisty",

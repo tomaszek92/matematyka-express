@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="color text-center text-2xl my-6 font-extrabold">
+    <div class="color text-center text-2xl mb-6 font-extrabold">
       <slot name="title"/>
     </div>
     <div class="color text-center text-xl mb-6 font-semibold">
@@ -21,7 +21,7 @@
         </div>
       </div>
     </div>
-    <div class="grid grid-cols-1 lg:grid-cols-2 items-center justify-items-center mb-10">
+    <div class="grid grid-cols-1 lg:grid-cols-2 items-center justify-items-center">
       <div class="mb-4 lg:mb-0">
         <kursy-course-details-schedule :schedule="schedule"/>
       </div>

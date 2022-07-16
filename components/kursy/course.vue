@@ -1,6 +1,6 @@
 <template>
-  <nuxt-link :to="url">
-    <div class="course text-center p-2" :style="{'background': backgroundColor}">
+  <nuxt-link :to="{ path: '/kursy', hash: url }">
+    <div class="course text-center p-2 shadow-xl" :style="{'background': backgroundColor}">
       <div class="text-white my-4">
         <div class="text-3xl uppercase font-extrabold mb-2">
           {{ title }}
@@ -66,8 +66,6 @@ export default {
 <style scoped>
 .course {
   border-radius: 24px;
-  -webkit-box-shadow: 0 11px 28px 0 rgba(0,0,0,0.31);
-  box-shadow: 0 11px 28px 0 rgba(0,0,0,0.31);
 }
 
 .content {
