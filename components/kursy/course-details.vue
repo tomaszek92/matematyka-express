@@ -30,7 +30,7 @@
           <img :src="priceImgSrc" :alt="priceImgSrc"/>
         </div>
         <div>
-          <nuxt-link to="/kontakt" class="btn-zapisz-sie text-white text-xl font-extrabold px-8 py-4 rounded-xl">
+          <nuxt-link to="/kontakt" class="btn-zapisz-sie block text-white text-xl font-extrabold px-8 py-4 rounded-xl">
             ZAPISZ SIĘ
           </nuxt-link>
         </div>
@@ -75,5 +75,6 @@ export default {
 
 .btn-zapisz-sie:hover {
   background-color: #360C71;
+  transform: scale(110%);
 }
 </style>
