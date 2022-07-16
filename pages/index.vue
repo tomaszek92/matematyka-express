@@ -23,7 +23,7 @@ export default {
 <style scoped>
 @media (min-width: 1024px) {
   .wrapper {
-    height: calc(100vh - 15rem);
+    height: calc(100vh - 10rem);
   }
 }
 </style>

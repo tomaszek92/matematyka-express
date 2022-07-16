@@ -3,7 +3,7 @@
     <div class="flex col-1 pt-1">
       <nuxt-link to="/" class="flex lg:block items-center">
         <img class="h-14 cursor-pointer" src="/logo.png" alt="logo">
-        <div class="ml-4 lg:ml-0 lg:mt-4">
+        <div class="ml-4 lg:ml-0 lg:mt-4 pr-8">
           Skuteczne korepetycje i&nbsp;kursy z&nbsp;matematyki
         </div>
       </nuxt-link>
@@ -86,18 +86,11 @@ export default {
 }
 
 @media (min-width: 1024px) {
-  .col-1 {
-    flex-basis: 20%;
-    margin-bottom: 0;
-  }
-
-  .col-2 {
-    flex-basis: 40%;
-    margin-bottom: 0;
-  }
-
+  .col-1,
+  .col-2,
   .col-3 {
-    flex-basis: 40%;
+    flex-basis: 33%;
+    margin-bottom: 0;
   }
 }
 </style>
