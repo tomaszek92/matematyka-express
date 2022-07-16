@@ -17,7 +17,6 @@
         <header-navbar-link text="Korepetycje" url="/korepetycje"/>
         <header-navbar-link text="Opinie" url="/opinie"/>
         <header-navbar-link text="O mnie" url="/o-mnie"/>
-        <header-navbar-link text="Gdzie uczę" url="/gdzie-ucze"/>
         <header-navbar-link text="Kontakt" url="/kontakt"/>
       </div>
       <div class="flex mt-4 lg:mt-0 lg:ml-6">
