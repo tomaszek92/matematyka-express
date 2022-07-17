@@ -19,6 +19,11 @@ export default {
 
 <style scoped>
 main {
-  min-height: calc(100vh - 21.75rem);
+  min-height: calc(100vh - 37.25rem);
+}
+@media (min-width: 1024px) {
+  main {
+    min-height: calc(100vh - 21.75rem);
+  }
 }
 </style>

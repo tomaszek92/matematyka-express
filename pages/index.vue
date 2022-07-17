@@ -5,11 +5,11 @@
         <span>Skuteczne<br>korepetycje<br>i kursy</span>
       </div>
       <div class="flex justify-center">
-        <img class="h-32 lg:h-36 xl:h-52 mt-8 lg:mt-0" src="img/index/main_2.png" alt="z matematyki"/>
+        <img class="h-32 lg:h-36 xl:h-48 mt-8 lg:mt-0" src="img/index/main_2.png" alt="z matematyki"/>
       </div>
     </div>
     <div class="self-center justify-self-center">
-      <img class="max-h-80 md:max-h-96" src="img/index/main.png" alt="index"/>
+      <img class="max-h-80 lg:max-h-96" src="img/index/main.png" alt="index"/>
     </div>
   </div>
 </template>
@@ -21,9 +21,16 @@ export default {
 </script>
 
 <style scoped>
-@media (min-width: 1024px) {
+@media (max-width: 768px) {
   .wrapper {
-    height: calc(100vh - 10rem);
+    height: calc(100vh - 8.25rem);
+  }
+}
+
+
+@media (min-width: 768px) and (min-height: 768px) {
+  .wrapper {
+    height: calc(100vh - 10.5rem);
   }
 }
 </style>
