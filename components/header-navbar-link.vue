@@ -27,4 +27,8 @@ export default {
     transition: 0.3s;
   }
 }
+
+a.nuxt-link-active {
+  text-decoration: underline;
+}
 </style>
