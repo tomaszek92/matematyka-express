@@ -38,9 +38,9 @@
           </a>
         </div>
         <div>
-          <a class="flex items-center" href="mailto:kursymatematykaexpress@gmail.com">
+          <a class="flex items-center" href="mailto:kontakt@matematyka-express.edu.pl">
             <img class="h-4 mr-2" src="/img/o-mnie/mail.png" alt="e-mail"/>
-            <span>kursymatematykaexpress@gmail.com</span>
+            <span>kontakt@matematyka-express.edu.pl</span>
           </a>
         </div>
       </div>

@@ -69,8 +69,10 @@ export default {
   transition: 0.3s
 }
 
-.course:hover {
-  transform: scale(110%);
+@media (hover: hover) and (pointer: fine) {
+  .course:hover {
+    transform: scale(110%);
+  }
 }
 
 .content {

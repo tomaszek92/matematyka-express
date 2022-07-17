@@ -73,8 +73,10 @@ export default {
   transition: 0.3s;
 }
 
-.btn-zapisz-sie:hover {
-  background-color: #360C71;
-  transform: scale(110%);
+@media (hover: hover) and (pointer: fine) {
+  .btn-zapisz-sie:hover {
+    background-color: #360C71;
+    transform: scale(110%);
+  }
 }
 </style>
