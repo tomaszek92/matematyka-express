@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="grid grid-cols-1 gap-8">
+    <div class="grid grid-cols-1 gap-16">
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
         <div class="self-center justify-self-center">
           <div class="title font-extrabold text-6xl xl:text-8xl text-center">
@@ -67,7 +67,7 @@
         </dlaczego-warto-reason>
       </div>
     </div>
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-16">
       <dlaczego-warto-lesson-form>
         <template #header>
           <iframe
