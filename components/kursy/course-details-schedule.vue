@@ -4,9 +4,15 @@
     <div>Data zajęć</div>
     <div>Cena za<br>miesiąc zajęć</div>
     <template v-for="item in schedule">
-      <div :key="item.month"><span class="month">{{ item.month }}</span></div>
-      <div :key="item.dates">{{ item.dates | dates }}</div>
-      <div :key="item.price"><span class="price">{{ item.price }} zł</span> <span class="promo-price">{{ item.promoPrice }} zł</span></div>
+      <div :key="name + item.month">
+        <span class="month">{{ item.month }}</span>
+      </div>
+      <div :key="name + item.dates.toString()">
+        {{ item.dates | dates }}
+      </div>
+      <div :key="name + item.month + item.price">
+        <span class="price">{{ item.price }} zł</span> <span class="promo-price">{{ item.promoPrice }} zł</span>
+      </div>
     </template>
     <div></div>
     <div class="text-right"><span class="total">Razem</span></div>
@@ -23,6 +29,10 @@ export default {
     }
   },
   props: {
+    name: {
+      type: String,
+      required: true,
+    },
     schedule: {
       type: Array,
       required: true

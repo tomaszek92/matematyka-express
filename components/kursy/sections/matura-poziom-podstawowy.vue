@@ -1,5 +1,6 @@
 <template>
   <kursy-course-details
+    name="matura-poziom-podstawowy"
     main-img-src="/img/kursy/matura_podstawowa_main.png"
     :effects="effects"
     :schedule="schedule"

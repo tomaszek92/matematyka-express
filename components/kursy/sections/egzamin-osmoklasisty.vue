@@ -1,5 +1,6 @@
 <template>
   <kursy-course-details
+    name="egzamin-osmoklasisty"
     main-img-src="/img/kursy/egzamin_osmoklasisty_main.png"
     :effects="effects"
     :schedule="schedule"

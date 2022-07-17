@@ -23,7 +23,7 @@
     </div>
     <div class="grid grid-cols-1 lg:grid-cols-2 items-center justify-items-center">
       <div class="mb-4 lg:mb-0">
-        <kursy-course-details-schedule :schedule="schedule"/>
+        <kursy-course-details-schedule :name="name" :schedule="schedule"/>
       </div>
       <div class="flex flex-col items-center">
         <div class="mb-8">
@@ -43,6 +43,10 @@
 export default {
   name: "MatematykaExpressCourseDetails",
   props: {
+    name: {
+      type: String,
+      required: true
+    },
     mainImgSrc: {
       type: String,
       required: true

@@ -1,5 +1,6 @@
 <template>
   <kursy-course-details
+    name="matura-poziom-rozszerzony"
     main-img-src="/img/kursy/matura_rozszerzona_main.png"
     :effects="effects"
     :schedule="schedule"
