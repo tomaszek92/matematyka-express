@@ -1,31 +1,15 @@
 <template>
   <div>
-    <!-- Slideshow container -->
     <div class="slideshow-container">
-
-      <!-- Full-width images with number and caption text -->
-      <div class="slide fade">
-        <img src="/img/opinie/1.png" style="width:100%">
+      <div v-for="n in 23" :key="n" class="slide fade">
+        <img :src="`/img/opinie/${n}.png`" class="w-100" loading="lazy"/>
       </div>
-
-      <div class="slide fade">
-        <img src="/img/opinie/2.png" style="width:100%">
-      </div>
-
-      <div class="slide fade">
-        <img src="/img/opinie/3.png" style="width:100%">
-      </div>
-
-      <!-- Next and previous buttons -->
       <a class="prev" @click="plusSlides(-1)">&#10094;</a>
       <a class="next" @click="plusSlides(1)">&#10095;</a>
     </div>
 
-    <!-- The dots/circles -->
-    <div style="text-align:center">
-      <span class="dot" @click="currentSlide(1)"></span>
-      <span class="dot" @click="currentSlide(2)"></span>
-      <span class="dot" @click="currentSlide(3)"></span>
+    <div class="text-center">
+      <span v-for="n in 23" :key="n" class="dot" @click="currentSlide(n)"></span>
     </div>
   </div>
 </template>
@@ -72,7 +56,6 @@ export default {
 </script>
 
 <style scoped>
-/* Slideshow container */
 .slideshow-container {
   width: 300px;
   position: relative;
@@ -114,7 +97,7 @@ export default {
   cursor: pointer;
   height: 1rem;
   width: 1rem;
-  margin: 0 2px;
+  margin: 0 0.25rem;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
