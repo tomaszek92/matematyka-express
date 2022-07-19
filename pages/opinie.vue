@@ -1,15 +1,15 @@
 <template>
   <div>
     <div class="slideshow-container">
-      <div v-for="n in 23" :key="n" class="slide fade">
-        <img :src="`/img/opinie/${n}.png`" class="w-100" loading="lazy"/>
+      <div v-for="n in 23" :key="n" :ref="`slide-${n}`" class="slide fade">
+        <img :src="`/img/opinie/${n}.png`" class="w-100" :loading="n === 1 ? 'eager' : 'lazy'"/>
       </div>
       <a class="prev left-0 md:-left-4" @click="plusSlides(-1)">&#10094;</a>
       <a class="next right-0 md:-right-4" @click="plusSlides(1)">&#10095;</a>
     </div>
 
     <div class="text-center">
-      <span v-for="n in 23" :key="n" class="dot" @click="currentSlide(n)"></span>
+      <span v-for="n in 23" :key="n" :ref="`dot-${n}`" class="dot" @click="currentSlide(n)"></span>
     </div>
   </div>
 </template>
@@ -34,8 +34,8 @@ export default {
     },
     showSlides(n) {
       let i;
-      const slides = document.getElementsByClassName("slide");
-      const dots = document.getElementsByClassName("dot");
+      const slides = this.getRefs('slide');
+      const dots = this.getRefs('dot');
       if (n > slides.length) {
         this.slideIndex = 1
       }
@@ -50,6 +50,11 @@ export default {
       }
       slides[this.slideIndex - 1].style.display = "block";
       dots[this.slideIndex - 1].className += " active";
+    },
+    getRefs(pattern) {
+      return Object.keys(this.$refs)
+        .filter(name => name.startsWith(pattern))
+        .map(name => this.$refs[name][0]);
     }
   }
 }
