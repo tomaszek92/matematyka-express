@@ -4,8 +4,8 @@
       <div v-for="n in 23" :key="n" class="slide fade">
         <img :src="`/img/opinie/${n}.png`" class="w-100" loading="lazy"/>
       </div>
-      <a class="prev" @click="plusSlides(-1)">&#10094;</a>
-      <a class="next" @click="plusSlides(1)">&#10095;</a>
+      <a class="prev left-0 md:-left-4" @click="plusSlides(-1)">&#10094;</a>
+      <a class="next right-0 md:-right-4" @click="plusSlides(1)">&#10095;</a>
     </div>
 
     <div class="text-center">
@@ -57,9 +57,33 @@ export default {
 
 <style scoped>
 .slideshow-container {
-  width: 300px;
   position: relative;
   margin: auto;
+}
+
+@media (orientation: portrait) {
+  .slideshow-container {
+    max-width: 300px;
+  }
+}
+
+@media (orientation: landscape) {
+  .slideshow-container {
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 768px) and (orientation: portrait) {
+  .slideshow-container {
+    max-width: 400px;
+  }
+}
+
+
+@media (min-width: 768px) and (orientation: landscape) {
+  .slideshow-container {
+    max-width: 500px;
+  }
 }
 
 .slide {
@@ -78,14 +102,6 @@ export default {
   transition: 0.3s;
   user-select: none;
   color: #360C71;
-}
-
-.prev {
-  left: -1rem;
-}
-
-.next {
-  right: -1rem;
 }
 
 .prev:hover,
