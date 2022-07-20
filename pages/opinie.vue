@@ -17,14 +17,14 @@
     </div>
     <div class="text-center">
       <div class="slideshow-container">
-        <div v-for="n in 23" :key="n" :ref="`slide-${n}`" class="slide fade">
+        <div v-for="n in count" :key="n" :ref="`slide-${n}`" class="slide fade">
           <img :src="`/img/opinie/${n}.png`" class="w-100" :loading="n === 1 ? 'eager' : 'lazy'"/>
         </div>
         <a class="prev left-0 md:-left-4" @click="plusSlides(-1)">&#10094;</a>
         <a class="next right-0 md:-right-4" @click="plusSlides(1)">&#10095;</a>
       </div>
       <div class="text-center">
-        <span v-for="n in 23" :key="n" :ref="`dot-${n}`" class="dot" @click="currentSlide(n)"></span>
+        <span v-for="n in count" :key="n" :ref="`dot-${n}`" class="dot" @click="currentSlide(n)"></span>
       </div>
     </div>
   </div>
@@ -35,7 +35,8 @@ export default {
   name: 'MatematykaExpressOpiniePage',
   data() {
     return {
-      slideIndex: 1
+      slideIndex: 1,
+      count: 22
     }
   },
   mounted() {
