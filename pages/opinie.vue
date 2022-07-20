@@ -1,19 +1,20 @@
 <template>
-  <div class="grid grid-cols-1 md:grid-cols-2 md:gap-12">
-    <div class="grid grid-cols-1 gap-6 justify-items-center">
-      <div class="title text-center font-extrabold text-6xl xl:text-8xl">Opinie</div>
-      <div class="text-center">
+  <two-column img-src="/img/opinie/opinie_index.png" :gap="12">
+    <template #title>
+      <span class="text-6xl xl:text-8xl">
+        Opinie
+      </span>
+    </template>
+    <template #subtitle>
+      <span>
         Wielokrotnie dostaję od moich uczniów i&nbsp;ich <strong>rodziców wiadomości, w&nbsp;których informują mnie
         o&nbsp;rezultatach naszej wspólnej pracy.</strong> Takie wiadomości zawsze mnie cieszą i&nbsp;powodują,
         że&nbsp;widzę ogromny sens swojej pracy. :)<br/>
         <br/>
         <strong>Zapraszam Cię do zapoznania się z częścią z nich.</strong>
-      </div>
-      <div>
-        <img src="/img/opinie/opinie_index.png" alt="opinie"/>
-      </div>
-    </div>
-    <div>
+      </span>
+    </template>
+    <template #description>
       <div class="slideshow-container">
         <div v-for="n in 23" :key="n" :ref="`slide-${n}`" class="slide fade">
           <img :src="`/img/opinie/${n}.png`" class="w-100" :loading="n === 1 ? 'eager' : 'lazy'"/>
@@ -21,12 +22,11 @@
         <a class="prev left-0 md:-left-4" @click="plusSlides(-1)">&#10094;</a>
         <a class="next right-0 md:-right-4" @click="plusSlides(1)">&#10095;</a>
       </div>
-
       <div class="text-center">
         <span v-for="n in 23" :key="n" :ref="`dot-${n}`" class="dot" @click="currentSlide(n)"></span>
       </div>
-    </div>
-  </div>
+    </template>
+  </two-column>
 </template>
 
 <script>

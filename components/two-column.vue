@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+  <div :class="`grid grid-cols-1 md:grid-cols-2 gap-${gap}`">
     <div class="grid grid-cols-1 gap-6 justify-items-center">
       <div class="title text-center font-extrabold">
         <slot name="title"/>
@@ -24,6 +24,10 @@ export default {
     imgSrc: {
       type: String,
       required: true
+    },
+    gap: {
+      type: Number,
+      default: 6
     }
   }
 }
