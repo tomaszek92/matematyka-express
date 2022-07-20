@@ -1,15 +1,30 @@
 <template>
-  <div>
-    <div class="slideshow-container">
-      <div v-for="n in 23" :key="n" :ref="`slide-${n}`" class="slide fade">
-        <img :src="`/img/opinie/${n}.png`" class="w-100" :loading="n === 1 ? 'eager' : 'lazy'"/>
+  <div class="grid grid-cols-1 md:grid-cols-2 md:gap-12">
+    <div class="grid grid-cols-1 gap-6 justify-items-center">
+      <div class="title text-center font-extrabold text-6xl xl:text-8xl">Opinie</div>
+      <div class="text-center">
+        Wielokrotnie dostaję od moich uczniów i&nbsp;ich <strong>rodziców wiadomości, w&nbsp;których informują mnie
+        o&nbsp;rezultatach naszej wspólnej pracy.</strong> Takie wiadomości zawsze mnie cieszą i&nbsp;powodują,
+        że&nbsp;widzę ogromny sens swojej pracy. :)<br/>
+        <br/>
+        <strong>Zapraszam Cię do zapoznania się z częścią z nich.</strong>
       </div>
-      <a class="prev left-0 md:-left-4" @click="plusSlides(-1)">&#10094;</a>
-      <a class="next right-0 md:-right-4" @click="plusSlides(1)">&#10095;</a>
+      <div>
+        <img src="/img/opinie/opinie_index.png" alt="opinie"/>
+      </div>
     </div>
+    <div>
+      <div class="slideshow-container">
+        <div v-for="n in 23" :key="n" :ref="`slide-${n}`" class="slide fade">
+          <img :src="`/img/opinie/${n}.png`" class="w-100" :loading="n === 1 ? 'eager' : 'lazy'"/>
+        </div>
+        <a class="prev left-0 md:-left-4" @click="plusSlides(-1)">&#10094;</a>
+        <a class="next right-0 md:-right-4" @click="plusSlides(1)">&#10095;</a>
+      </div>
 
-    <div class="text-center">
-      <span v-for="n in 23" :key="n" :ref="`dot-${n}`" class="dot" @click="currentSlide(n)"></span>
+      <div class="text-center">
+        <span v-for="n in 23" :key="n" :ref="`dot-${n}`" class="dot" @click="currentSlide(n)"></span>
+      </div>
     </div>
   </div>
 </template>
@@ -64,31 +79,7 @@ export default {
 .slideshow-container {
   position: relative;
   margin: auto;
-}
-
-@media (orientation: portrait) {
-  .slideshow-container {
-    max-width: 300px;
-  }
-}
-
-@media (orientation: landscape) {
-  .slideshow-container {
-    max-width: 400px;
-  }
-}
-
-@media (min-width: 768px) and (orientation: portrait) {
-  .slideshow-container {
-    max-width: 400px;
-  }
-}
-
-
-@media (min-width: 768px) and (orientation: landscape) {
-  .slideshow-container {
-    max-width: 500px;
-  }
+  max-width: 28rem;
 }
 
 .slide {
