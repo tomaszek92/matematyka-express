@@ -8,7 +8,7 @@
         <slot name="subtitle"/>
       </div>
       <div>
-        <img :src="imgSrc" :alt="imgSrc"/>
+        <img class="max-h-80" :src="imgSrc" :alt="imgSrc"/>
       </div>
     </div>
     <div class="text-center">

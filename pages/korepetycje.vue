@@ -2,7 +2,7 @@
   <div>
     <two-column img-src="/img/korepetycje/korepetycje_index_1.png">
       <template #title>
-        <span class="text-5xl xl:text-8xl">
+        <span class="text-5xl xl:text-7xl">
           Korepetycje
         </span>
       </template>
