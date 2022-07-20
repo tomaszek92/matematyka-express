@@ -26,7 +26,7 @@
       </template>
     </two-column>
 
-    <div class="mb-8"></div>
+    <div class="mb-8 md:mb-0"></div>
 
     <two-column img-src="/img/korepetycje/korepetycje_index_2.png">
       <template #title>
@@ -39,7 +39,7 @@
         daje od siebie. :)
       </template>
       <template #description>
-        <div class="mb-1">
+        <div class="mb-3">
           <strong>Od swoich uczniów wymagam:</strong>
         </div>
         <ul>
@@ -80,6 +80,6 @@ export default {
 li {
   list-style-position: inside;
   list-style-type: disclosure-closed;
-  padding: 0.25rem 0;
+  padding: 0.75rem 0;
 }
 </style>

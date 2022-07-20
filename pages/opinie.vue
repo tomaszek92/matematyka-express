@@ -1,5 +1,5 @@
 <template>
-  <two-column img-src="/img/opinie/opinie_index.png" :gap="12">
+  <two-column img-src="/img/opinie/opinie_index.png" :gap="16">
     <template #title>
       <span class="text-6xl xl:text-8xl">
         Opinie

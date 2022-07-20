@@ -1,6 +1,6 @@
 <template>
   <div :class="`grid grid-cols-1 md:grid-cols-2 gap-${gap}`">
-    <div class="grid grid-cols-1 gap-6 justify-items-center">
+    <div class="grid grid-cols-1 gap-6 justify-items-center content-start">
       <div class="title text-center font-extrabold">
         <slot name="title"/>
       </div>
