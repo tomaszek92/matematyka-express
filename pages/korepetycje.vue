@@ -26,7 +26,7 @@
       </template>
     </two-column>
 
-    <div class="mb-8 md:mb-0"></div>
+    <div class="mb-4 md:mb-6"></div>
 
     <two-column img-src="/img/korepetycje/korepetycje_index_2.png">
       <template #title>
@@ -58,15 +58,18 @@
           </li>
         </ul>
         <br/>
-        <span>
-          <strong>WAŻNE!</strong> Jeśli czegoś nie wiesz, napotkałeś na jakiś problem przy rozwiązywaniu zadania podczas
-          pracy domowej, nie musisz czeka do kolejnych zajęć. Możesz napisać mi SMS, wysłać mi wiadomość na Facebook'u
-          lub po prostu zadzwonić, a ja zawsze chętnie Ci pomogę. <br/>
-          <br/>
-          <strong>PAMIĘTAJ. TY i JA działamy w jednym teamie. :)</strong>
-        </span>
       </template>
     </two-column>
+
+    <div class="md:mb-4"></div>
+
+    <div class="text-center">
+      <strong>WAŻNE!</strong> Jeśli czegoś nie wiesz, napotkałeś na jakiś problem przy rozwiązywaniu zadania podczas
+      pracy domowej, nie musisz czeka do kolejnych zajęć. Możesz napisać mi SMS, wysłać mi wiadomość na Facebook'u
+      lub po prostu zadzwonić, a ja zawsze chętnie Ci pomogę. <br/>
+      <br/>
+      <strong>PAMIĘTAJ. TY i JA działamy w jednym teamie. :)</strong>
+    </div>
   </div>
 </template>
 

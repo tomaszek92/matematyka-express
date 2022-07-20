@@ -1,18 +1,20 @@
 <template>
-  <div :class="`grid grid-cols-1 md:grid-cols-2 gap-${gap} md:gap-${mdGap}`">
-    <div class="grid grid-cols-1 gap-6 justify-items-center content-start">
-      <div class="title text-center font-extrabold">
-        <slot name="title"/>
+  <div>
+    <div class="title text-center font-extrabold mb-4 md:mb-6">
+      <slot name="title"/>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+      <div class="grid grid-cols-1 gap-6 justify-items-center content-start">
+        <div class="text-center">
+          <slot name="subtitle"/>
+        </div>
+        <div>
+          <img class="max-h-80" :src="imgSrc" :alt="imgSrc"/>
+        </div>
       </div>
       <div class="text-center">
-        <slot name="subtitle"/>
+        <slot name="description"/>
       </div>
-      <div>
-        <img class="max-h-80" :src="imgSrc" :alt="imgSrc"/>
-      </div>
-    </div>
-    <div class="text-center">
-      <slot name="description"/>
     </div>
   </div>
 </template>
@@ -24,14 +26,6 @@ export default {
     imgSrc: {
       type: String,
       required: true
-    },
-    gap: {
-      type: Number,
-      default: 4
-    },
-    mdGap: {
-      type: Number,
-      default: 6
     }
   }
 }

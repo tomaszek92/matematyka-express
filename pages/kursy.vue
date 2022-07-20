@@ -12,7 +12,7 @@
     <hr/>
     <div id="zapisz-sie" class="grid grid-cols-1 md:grid-cols-2 gap-4">
       <div>
-        <div class="title text-center text-3xl font-extrabold mb-4">
+        <div class="title text-center text-4xl font-extrabold mb-4">
           Lokalizacja
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 justify-items-center">
@@ -39,7 +39,7 @@
         </div>
       </div>
       <div>
-        <div class="title text-center text-3xl font-extrabold mb-4">
+        <div class="title text-center text-4xl font-extrabold mb-4">
           Płatności
         </div>
         <div class="text-center">
@@ -65,7 +65,7 @@
     <hr/>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 justify-items-center items-center">
       <div>
-        <div class="title text-center text-3xl font-extrabold mb-4">
+        <div class="title text-center text-4xl font-extrabold mb-4">
           Zapisy
         </div>
         <div class="text-center mb-4 md:mb-8">
