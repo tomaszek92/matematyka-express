@@ -5,7 +5,7 @@
         <img class="h-14 cursor-pointer" src="/logo.png" alt="logo">
       </nuxt-link>
     </div>
-    <div class="block lg:hidden">
+    <div v-click-outside="vcoConfig" class="block lg:hidden">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 cursor-pointer lg:hidden block text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" @click="onMenuToggle()">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
       </svg>
@@ -40,10 +40,16 @@ import {ON_LINK_CLICK} from "@/events";
 
 export default {
   name: 'MatematykaExpressHeaderNavbar',
+  data() {
+    return {
+      vcoConfig: {
+        handler: this.onClickOutside,
+        middleware: this.canPropagateEvent,
+      }
+    }
+  },
   created() {
-    this.$nuxt.$on(ON_LINK_CLICK, () => {
-      this.onMenuToggle();
-    });
+    this.$nuxt.$on(ON_LINK_CLICK, this.onMenuToggle);
   },
   mounted() {
     window.addEventListener('resize', this.onResize);
@@ -57,6 +63,12 @@ export default {
     },
     onResize() {
       this.$refs.links.classList.add('hidden');
+    },
+    onClickOutside(e) {
+      this.$refs.links.classList.add('hidden');
+    },
+    canPropagateEvent(e) {
+      return !e.target.classList.contains('navbar-link')
     }
   }
 }

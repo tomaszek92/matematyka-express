@@ -24,7 +24,9 @@ export default {
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: [
+    '~/plugins/v-click-outside.js'
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -46,7 +48,6 @@ export default {
   router: {
     scrollBehavior(to) {
       if (to.hash) {
-        console.log(to, document.querySelector(to.hash).offsetTop)
         return window.scrollTo({
           top: document.querySelector(to.hash).offsetTop - 104,
           behavior: 'smooth'
