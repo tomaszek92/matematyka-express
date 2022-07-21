@@ -28,7 +28,14 @@ export default {
 </script>
 
 <style scoped>
-@media (hover: hover) and (pointer: fine) {
+@media (hover: hover) and (pointer: fine) and (max-width: 1023px) {
+  .navbar-link:hover {
+    font-size: 1.5rem;
+    transition: 0.3s;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) and (min-width: 1024px) {
   .navbar-link:hover {
     transform: scale(120%);
     transition: 0.3s;
