@@ -46,8 +46,9 @@ export default {
   router: {
     scrollBehavior(to) {
       if (to.hash) {
+        console.log(to, document.querySelector(to.hash).offsetTop)
         return window.scrollTo({
-          top: document.querySelector(to.hash).offsetTop,
+          top: document.querySelector(to.hash).offsetTop - 104,
           behavior: 'smooth'
         })
       }
