@@ -36,11 +36,27 @@
 </template>
 
 <script>
+import {ON_LINK_CLICK} from "@/events";
+
 export default {
   name: 'MatematykaExpressHeaderNavbar',
+  created() {
+    this.$nuxt.$on(ON_LINK_CLICK, () => {
+      this.onMenuToggle();
+    });
+  },
+  mounted() {
+    window.addEventListener('resize', this.onResize);
+  },
+  destroyed() {
+    window.removeEventListener('resize', this.onResize);
+  },
   methods: {
     onMenuToggle() {
       this.$refs.links.classList.toggle('hidden');
+    },
+    onResize() {
+      this.$refs.links.classList.add('hidden');
     }
   }
 }
