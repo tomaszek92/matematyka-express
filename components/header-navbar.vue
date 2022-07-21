@@ -10,7 +10,7 @@
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
       </svg>
     </div>
-    <div ref="links" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto hidden">
+    <div ref="links" class="links w-full block flex-grow lg:flex lg:items-center lg:w-auto hidden">
       <div class="lg:flex lg:justify-around lg:flex-grow">
         <header-navbar-link text="Dlaczego warto" url="/dlaczego-warto"/>
         <header-navbar-link text="Kursy" url="/kursy"/>
@@ -73,3 +73,17 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+@media (max-width: 1023px) {
+  .links {
+    height: 312px;
+    transition: height 1s;
+  }
+  .links.hidden {
+    height: 0;
+    display: block;
+    overflow: hidden;
+  }
+}
+</style>
