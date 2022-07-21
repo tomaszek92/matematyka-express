@@ -21,16 +21,13 @@ export default {
 </script>
 
 <style scoped>
-@media (max-width: 768px) {
-  .wrapper {
-    min-height: calc(100vh - 8.25rem);
-  }
+.wrapper {
+  min-height: calc(100vh - 8.25rem);
 }
 
-
-@media (min-width: 768px) and (min-height: 768px) {
+@media (min-width: 768px) {
   .wrapper {
-    height: calc(100vh - 10.5rem);
+    min-height: calc(100vh - 10.5rem);
   }
 }
 </style>
