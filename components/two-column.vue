@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="title text-center font-extrabold mb-4 md:mb-6">
+    <div class="text-center font-extrabold mb-4 md:mb-6">
       <slot name="title"/>
     </div>
     <div :class="`grid grid-cols-1 md:grid-cols-${mdCols} lg:grid-cols-${lgCols} gap-4 md:gap-6`">

@@ -1,7 +1,7 @@
 <template>
   <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 justify-items-center items-center">
-    <div class="title font-extrabold text-6xl xl:text-8xl">
-      Kursy
+    <div class="font-extrabold text-6xl xl:text-8xl">
+      <span class="title">Kursy</span>
     </div>
     <div>
       <img src="/img/kursy/kursy_index.png" alt="kursy"/>

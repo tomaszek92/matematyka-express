@@ -2,7 +2,7 @@
   <div>
     <two-column img-src="/img/korepetycje/korepetycje_index_1.png">
       <template #title>
-        <span class="text-5xl xl:text-7xl">
+        <span class="title text-5xl xl:text-7xl">
           Korepetycje
         </span>
       </template>
@@ -30,7 +30,7 @@
 
     <two-column img-src="/img/korepetycje/korepetycje_index_2.png">
       <template #title>
-        <span class="text-3xl xl:text-5xl">
+        <span class="title text-3xl xl:text-5xl">
           Jak wygląda współpraca ze&nbsp;mną?
         </span>
       </template>
@@ -76,7 +76,7 @@
     <div>
       <two-column img-src="/img/korepetycje/korepetycje_index_3.png" :md-cols="1">
         <template #title>
-          <span class="text-3xl xl:text-5xl">
+          <span class="title text-3xl xl:text-5xl">
             Terminy lekcji oraz cena
           </span>
         </template>

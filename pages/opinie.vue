@@ -1,8 +1,8 @@
 <template>
   <div class="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-16">
     <div class="grid grid-cols-1 gap-6 justify-items-center content-start">
-      <div class="title text-center font-extrabold text-6xl xl:text-8xl">
-        Opinie
+      <div class="text-center font-extrabold text-6xl xl:text-8xl">
+        <span class="title">Opinie</span>
       </div>
       <div class="text-center">
         Wielokrotnie dostaję od moich uczniów i&nbsp;ich <strong>rodziców wiadomości, w&nbsp;których informują mnie
