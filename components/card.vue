@@ -1,17 +1,17 @@
 <template>
   <div>
-    <div class="rounded-xl shadow-xl bg-white text-center p-8">
+    <div class="rounded-xl shadow-xl bg-white text-center p-8 pt-12">
       <div v-show="isBadgeVisible" class="badge text-white xl:text-lg font-extrabold h-16 rounded-xl flex items-center justify-center">
         <slot name="badge"/>
       </div>
       <div v-show="isHeaderVisible" class="mb-4">
         <slot name="header"/>
       </div>
-      <div class="price color-me font-extrabold text-4xl mb-2">
+      <div class="price color-me font-extrabold text-5xl mb-2">
         {{ price }} zł
       </div>
-      <div class="promo-price font-extrabold text-4xl mb-4">
-        {{ promoPrice }} zł*
+      <div class="promo-price font-extrabold text-5xl mb-4">
+        {{ promoPrice }} zł<span style="vertical-align: super; font-size: 24px;">&#42;</span>
       </div>
       <div v-show="isPriceDescriptionVisible">
         <slot name="price-description"/>
@@ -27,10 +27,18 @@
       <div class="saving font-extrabold text-2xl">
         Oszczędzasz {{ saving | percent }}
       </div>
+      <div v-if="btnOpt" class="flex justify-center">
+        <nuxt-link :to="btnOpt.to" class="button block text-white uppercase font-extrabold px-8 py-3 rounded-xl mt-6">
+          {{ btnOpt.text }}
+        </nuxt-link>
+      </div>
     </div>
 
-    <div v-show="isAsteriskVisible">
+    <div v-show="isAsteriskVisible" class="color-asterisk mt-2 text-center text-sm">
       <slot name="asterisk"/>
+    </div>
+    <div v-show="isCaptionVisible" class="mt-2 text-center text-sm">
+      <slot name="caption"/>
     </div>
   </div>
 
@@ -63,6 +71,10 @@ export default {
     peopleCount: {
       type: String,
       required: true
+    },
+    btnOpt: {
+      type: Object,
+      default: undefined
     }
   },
   computed: {
@@ -77,6 +89,9 @@ export default {
     },
     isAsteriskVisible() {
       return this.isSlotVisible('asterisk');
+    },
+    isCaptionVisible() {
+      return this.isSlotVisible('caption');
     },
     saving() {
       return (this.price - this.promoPrice) / this.price;
@@ -96,7 +111,7 @@ export default {
   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
 
   position: relative;
-  top: -64px;
+  top: -72px;
   margin-bottom: -64px;
 }
 
@@ -120,5 +135,10 @@ export default {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+}
+
+.button {
+  background: linear-gradient(270deg, #ED428B -4.56%, #8A1848 115.09%);
+  max-width: 200px;
 }
 </style>

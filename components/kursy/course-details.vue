@@ -21,19 +21,27 @@
         </div>
       </div>
     </div>
-    <div class="grid grid-cols-1 lg:grid-cols-2 items-center justify-items-center">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-0 items-center justify-items-center">
       <div class="mb-4 lg:mb-0">
         <kursy-course-details-schedule :name="name" :schedule="schedule"/>
       </div>
-      <div class="flex flex-col items-center">
-        <div class="mb-8">
-          <img :src="priceImgSrc" :alt="priceImgSrc"/>
-        </div>
-        <div>
-          <nuxt-link to="#zapisz-sie" class="button block text-white text-xl font-extrabold px-8 py-4 rounded-xl">
-            ZAPISZ SIĘ
-          </nuxt-link>
-        </div>
+      <div class="lg:ml-16 lg:mt-12">
+        <card
+          people-count="4-5 osób"
+          :duration-in-min="durationInMin"
+          :promo-price="promoPrice"
+          :price="price"
+          :btn-opt="{ to: '#zapisz-sie', text: 'zapisz się' }">
+          <template #badge>
+            Cena za jedne zajęcia
+          </template>
+          <template #asterisk>
+            &#42;Cena promocyjna obowiązuje przy zapisie na zajęcia do 29.08.2022 r.
+          </template>
+          <template #caption>
+            Przed zapisaniem się na zajęcia zapoznaj się z regulaminem kursów.
+          </template>
+        </card>
       </div>
     </div>
   </div>
@@ -59,8 +67,16 @@ export default {
       type: Array,
       required: true
     },
-    priceImgSrc: {
-      type: String,
+    price: {
+      type: Number,
+      required: true
+    },
+    promoPrice: {
+      type: Number,
+      required: true
+    },
+    durationInMin: {
+      type: Number,
       required: true
     }
   }

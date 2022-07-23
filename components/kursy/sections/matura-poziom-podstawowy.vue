@@ -4,7 +4,9 @@
     main-img-src="/img/kursy/matura_podstawowa_main.png"
     :effects="effects"
     :schedule="schedule"
-    price-img-src="/img/kursy/matura_podstawowa_price.png">
+    :price="99"
+    :promo-price="79"
+    :duration-in-min="120">
     <template #title>
       <span>
         Kurs MATURA poziom podstawowy przeznaczony jest dla osób,

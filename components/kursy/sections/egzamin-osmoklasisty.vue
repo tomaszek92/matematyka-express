@@ -4,7 +4,9 @@
     main-img-src="/img/kursy/egzamin_osmoklasisty_main.png"
     :effects="effects"
     :schedule="schedule"
-    price-img-src="/img/kursy/egzamin_osmoklasisty_price.png">
+    :duration-in-min="90"
+    :price="79"
+    :promo-price="59">
     <template #title>
       <span>
         Kurs EGZAMIN ósmoklasisty przeznaczony jest dla osób, które&nbsp;chcą sobie przypomnieć i&nbsp;usystematyzować
@@ -18,7 +20,7 @@
 </template>
 
 <script>
-import { effects, schedule } from '@/data/egzamin-osmoklasisty-data';
+import {effects, schedule} from '@/data/egzamin-osmoklasisty-data';
 
 export default {
   name: "MatematykaExpressEgzaminOsmoklasisty",

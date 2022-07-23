@@ -4,7 +4,9 @@
     main-img-src="/img/kursy/matura_rozszerzona_main.png"
     :effects="effects"
     :schedule="schedule"
-    price-img-src="/img/kursy/matura_rozszerzona_price.png">
+    :price="149"
+    :promo-price="119"
+    :duration-in-min="180">
     <template #title>
       <span>
         Kurs MATURA poziom rozszerzony to intensywna powtórka materiału jest dla osób, które&nbsp;chcą przygotować się
