@@ -1,22 +1,44 @@
 <template>
-  <nuxt-link :to="{ path: '/kursy', hash: url }">
-    <div class="course text-center p-2 shadow-xl hover:shadow-2xl" :style="{'background': backgroundColor}">
-      <div class="text-white my-4">
-        <div class="text-3xl uppercase font-extrabold mb-2">
-          {{ title }}
-        </div>
-        <div class="text-2xl font-semibold">
-          {{ subtitle }}
-        </div>
-      </div>
-      <div class="content pb-2" :style="{'color': fontColor}">
-        <kursy-course-value :value="hoursCount" text="Liczba godzin zajęć"/>
-        <kursy-course-value :value="weekday" text="Dzień zajęć"/>
-        <kursy-course-value :value="hours" text="Godziny"/>
-        <kursy-course-value :value="start" text="Rozpoczęcie"/>
-      </div>
+  <div class="rounded-xl shadow-xl bg-white text-center p-8 pt-12">
+    <div
+      class="badge text-white font-extrabold h-16 rounded-xl flex flex-col items-center justify-center"
+      :style="{ 'background': background }">
+      <div class="uppercase text-xl">{{ title }}</div>
+      <div>{{ subtitle }}</div>
     </div>
-  </nuxt-link>
+    <div class="font-extrabold text-5xl mb-2">
+      <span :style="titleStyle">{{ hoursCount }}h</span>
+    </div>
+    <div class="font-extrabold text-lg mb-1">
+      {{ weekday }}
+    </div>
+    <div class="mb-1">
+      {{ hours }}
+    </div>
+    <div class="font-extrabold text-lg mb-1">
+      Rozpoczęcie
+    </div>
+    <div class="mb-1">
+      {{ start }}
+    </div>
+    <div class="mb-1 flex items-center justify-center mb-1">
+      <img src="/img/shared/duration.png" alt="czas trwania" class="mr-2 h-4"/>
+      <span>{{ durationInMin }} min</span>
+    </div>
+    <div class="mb-2 flex items-center justify-center mb-1">
+      <img src="/img/shared/people_count.png" alt="czas trwania" class="mr-2 h-4"/>
+      <span>4-5 osób</span>
+    </div>
+
+    <div class="flex justify-center">
+      <nuxt-link
+        :to="{ hash: url }"
+        class="button block text-white uppercase font-extrabold px-8 py-3 rounded-xl mt-4"
+        :style="{ 'background': background }">
+        więcej
+      </nuxt-link>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -36,7 +58,7 @@ export default {
       required: true
     },
     hoursCount: {
-      type: String,
+      type: Number,
       required: true
     },
     weekday: {
@@ -51,32 +73,32 @@ export default {
       type: String,
       required: true
     },
-    backgroundColor: {
-      type: String,
+    durationInMin: {
+      type: Number,
       required: true
     },
-    fontColor: {
+    background: {
       type: String,
       required: true
+    }
+  },
+  computed: {
+    titleStyle() {
+      return {
+        'background': this.background,
+        '-webkit-background-clip': 'text',
+        '-webkit-text-fill-color': 'transparent'
+      }
     }
   }
 }
 </script>
 
 <style scoped>
-.course {
-  border-radius: 24px;
-  transition: 0.3s
-}
-
-@media (hover: hover) and (pointer: fine) {
-  .course:hover {
-    transform: scale(110%);
-  }
-}
-
-.content {
-  background: linear-gradient(180deg, #FFFFFF 0%, #E1E0E0 100%);
-  border-radius: 0 0 24px 24px;
+.badge {
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+  position: relative;
+  top: -72px;
+  margin-bottom: -64px;
 }
 </style>

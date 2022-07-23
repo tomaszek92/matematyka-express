@@ -8,7 +8,7 @@
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 items-center justify-items-center">
       <div>
-        <img :src="mainImgSrc" :alt="mainImgSrc"/>
+        <img class="max-h-80" :src="mainImgSrc" :alt="mainImgSrc"/>
       </div>
       <div>
         <div>

@@ -10,10 +10,10 @@
       wyjazd. Pomysł powstał za namową koleżanki, która&nbsp;była zachwycona, kiedy po nauce ze mną, dostała pierwszą
       4&nbsp;z&nbsp;matematyki w&nbsp;liceum. Korepetycjami zajmowałam się też w&nbsp;trakcie studiów, bo&nbsp;było to
       doskonałe zajęcie, które umożliwiało mi łączenie pracy ze studiami dziennymi. Studia skończyłam,
-      a&nbsp;korepetycje zawsze pozostawały w&nbsp;moim sercu i&nbsp;ciężko było mi się z&nbsp;nimi rozstać, tym
+      a&nbsp;korepetycje zawsze pozostawały w&nbsp;moim sercu i&nbsp;ciężko było mi się z&nbsp;nimi rozstać. Tym
       bardziej, że przez te kilka lat nawiązałam stałą współpracę z&nbsp;moimi uczniami, którzy pozostawali ze mną
-      z&nbsp;roku na rok i&nbsp;byli zadowoleni z&nbsp;efektów naszej wspólnej pracy. Przez te sześć lat pomagałam wielu
-      osobom, a&nbsp;nasza współpraca zawsze kończyła się sukcesem. Polecali mnie dalej, więc później zaczynam uczyć
+      z&nbsp;roku na rok i byli zadowoleni z&nbsp;efektów naszej wspólnej pracy. Przez sześć lat pomagałam wielu
+      osobom, a&nbsp;nasza współpraca zawsze kończyła się sukcesem. Polecali mnie dalej, więc później zaczynałam uczyć
       również ich rodzeństwo i&nbsp;znajomych.
       <br/><br/>
       Jestem absolwentką SGH. Ukończyłam studia licencjackie na kierunku Globalny Biznes, Finanse i&nbsp;Zarządzanie

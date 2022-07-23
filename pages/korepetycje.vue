@@ -114,10 +114,10 @@
               </template>
             </card>
           </div>
-          <div class="color-asterisk my-2">
+          <div class="color-asterisk my-2 text-sm">
             &#42;Cena promocyjna obowiązuje przy zapisie na zajęcia do 29.08.2022 r.
           </div>
-          <div>
+          <div class="text-sm">
             Przed zapisaniem się na zajęcia zapoznaj się z regulaminem korepetycji.
           </div>
         </template>
