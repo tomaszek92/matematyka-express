@@ -14,7 +14,7 @@
         <div class="self-center text-center text-xl">
           Jeśli szukasz kursu lub korepetycji, które&nbsp;skutecznie przygotują Cię do&nbsp;egzaminu ósmych klas,
           matury&nbsp;lub&nbsp;po prostu kogoś, kto&nbsp;pomoże Ci&nbsp;w&nbsp;bieżącej nauce, to&nbsp;dobrze trafiłeś
-          :)
+          &#128578;
         </div>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-6">
@@ -108,7 +108,7 @@
           Jeśli wolisz zajęcia w formie online, również mam taką możliwość. Łączymy się przez Skype, Messengera
           lub&nbsp;Face Time i&nbsp;pracujemy na tablicy współdzielonej w&nbsp;wersji online, tak abyśmy oboje mogli
           pisać. Tablica nie znika i&nbsp;po zajęciach zawsze masz możliwość, aby&nbsp;do niej wrócić i&nbsp;zobaczyć,
-          jak&nbsp;wykonywaliśmy dane zadanie. :)
+          jak&nbsp;wykonywaliśmy dane zadanie &#128578;
         </template>
       </dlaczego-warto-lesson-form>
     </div>

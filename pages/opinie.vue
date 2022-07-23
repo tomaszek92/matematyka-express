@@ -7,7 +7,7 @@
       <div class="text-center">
         Wielokrotnie dostaję od moich uczniów i&nbsp;ich <strong>rodziców wiadomości, w&nbsp;których informują mnie
         o&nbsp;rezultatach naszej wspólnej pracy.</strong> Takie wiadomości zawsze mnie cieszą i&nbsp;powodują,
-        że&nbsp;widzę ogromny sens swojej pracy. :)<br/>
+        że&nbsp;widzę ogromny sens swojej pracy &#128578;<br/>
         <br/>
         <strong>Zapraszam Cię do zapoznania się z częścią z nich.</strong>
       </div>

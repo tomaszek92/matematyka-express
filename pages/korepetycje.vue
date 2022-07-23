@@ -8,7 +8,7 @@
       </template>
       <template #subtitle>
         Jeśli szukasz kogoś, kto skutecznie przygotuje Cię do&nbsp;egzaminu ósmych klas, matury
-        lub&nbsp;po&nbsp;prostu pomoże w&nbsp;bieżącej nauce, to&nbsp;dobrze trafiłeś. :)
+        lub&nbsp;po&nbsp;prostu pomoże w&nbsp;bieżącej nauce, to&nbsp;dobrze trafiłeś &#128578;
       </template>
       <template #description>
         Korepetycjami zajmuję się już <strong>od ponad sześciu lat</strong>. Przez te sześć lat pomagałam wielu osobom,
@@ -20,7 +20,7 @@
         <br/>
         Do nauki do matury mam opracowane materiały, które w&nbsp;szybki sposób pozwolą nam powtórzyć wszystkie
         potrzebne zagadnienia. <strong>Wiem też jakie są tak zwane pewniaki</strong>, które na pewno na maturze się
-        pojawią. :)<br/>
+        pojawią &#128578;<br/>
         <br/>
         Zajęcia prowadzę zarówno w formie <strong>stacjonarnej</strong>, jak i&nbsp;<strong>online</strong>.
       </template>
@@ -36,7 +36,7 @@
       </template>
       <template #subtitle>
         Zanim podejmiesz współpracę ze mną, warto abyś dowiedział się, czego wymagam od swoich uczniów i&nbsp;co sama
-        daje od siebie. :)
+        daje od siebie &#128578;
       </template>
       <template #description>
         <div class="mb-3">
@@ -68,7 +68,7 @@
       pracy domowej, nie musisz czeka do kolejnych zajęć. Możesz napisać mi SMS, wysłać mi wiadomość na Facebook'u
       lub po prostu zadzwonić, a ja zawsze chętnie Ci pomogę. <br/>
       <br/>
-      <strong>PAMIĘTAJ. TY i JA działamy w jednym teamie. :)</strong>
+      <strong>PAMIĘTAJ. TY i JA działamy w jednym teamie &#128578;</strong>
     </div>
 
     <div class="mb-4 md:mb-6 xl:mb-8"></div>
