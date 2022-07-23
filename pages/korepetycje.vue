@@ -26,7 +26,7 @@
       </template>
     </two-column>
 
-    <div class="mb-4 md:mb-6"></div>
+    <div class="mb-4 md:mb-6 xl:mb-8"></div>
 
     <two-column img-src="/img/korepetycje/korepetycje_index_2.png">
       <template #title>
@@ -61,7 +61,7 @@
       </template>
     </two-column>
 
-    <div class="md:mb-4"></div>
+    <div class="mb-4 md:mb-6 xl:mb-8"></div>
 
     <div class="text-center">
       <strong>WAŻNE!</strong> Jeśli czegoś nie wiesz, napotkałeś na jakiś problem przy rozwiązywaniu zadania podczas
@@ -69,6 +69,59 @@
       lub po prostu zadzwonić, a ja zawsze chętnie Ci pomogę. <br/>
       <br/>
       <strong>PAMIĘTAJ. TY i JA działamy w jednym teamie. :)</strong>
+    </div>
+
+    <div class="mb-4 md:mb-6 xl:mb-8"></div>
+
+    <div>
+      <two-column img-src="/img/korepetycje/korepetycje_index_3.png" :md-cols="1">
+        <template #title>
+          <span class="text-3xl xl:text-5xl">
+            Terminy lekcji oraz cena
+          </span>
+        </template>
+        <template #subtitle>
+          <span>
+            Zajęcia indywidualne prowadzę <strong>od&nbsp;poniedziałku do&nbsp;soboty.</strong> Termin zajęć ustalany
+            jest <strong>indywidualnie</strong> po&nbsp;kontakcie telefonicznym.
+          </span>
+        </template>
+        <template #description>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-4">
+            <card :promo-price="110" :price="120" :duration-in-min="60" people-count="1 osoba">
+              <template #header>
+                <div class="text-xl color-me font-extrabold">1 lekcja</div>
+                <div class="uppercase">tygodniowo</div>
+              </template>
+              <template #price-description>
+                <div class="mb-2 color-me">
+                  ZA LEKCJĘ
+                </div>
+              </template>
+            </card>
+            <card :promo-price="100" :price="120" :duration-in-min="60" people-count="1 osoba">
+              <template #badge>
+                Najczęściej wybierane
+              </template>
+              <template #header>
+                <div class="text-xl color-me font-extrabold">2 lekcje</div>
+                <div class="uppercase">tygodniowo</div>
+              </template>
+              <template #price-description>
+                <div class="mb-2 color-me">
+                  ZA LEKCJĘ
+                </div>
+              </template>
+            </card>
+          </div>
+          <div class="color-asterisk my-2">
+            *Cena promocyjna obowiązuje przy zapisie na zajęcia do 29.08.2022 r.
+          </div>
+          <div>
+            Przed zapisaniem się na zajęcia zapoznaj się z regulaminem korepetycji.
+          </div>
+        </template>
+      </two-column>
     </div>
   </div>
 </template>

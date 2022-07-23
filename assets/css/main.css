@@ -33,3 +33,11 @@ body {
 .gradient-background {
   background: linear-gradient(270deg, #A06CEA 0%, #6431AB 58.85%, #360C71 100%);
 }
+
+.color-me {
+  color: #360C71;
+}
+
+.color-asterisk {
+  color: #8A1848;
+}

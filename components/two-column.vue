@@ -3,7 +3,7 @@
     <div class="title text-center font-extrabold mb-4 md:mb-6">
       <slot name="title"/>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+    <div :class="`grid grid-cols-1 md:grid-cols-${mdCols} lg:grid-cols-${lgCols} gap-4 md:gap-6`">
       <div class="grid grid-cols-1 gap-6 justify-items-center content-start">
         <div class="text-center">
           <slot name="subtitle"/>
@@ -26,6 +26,14 @@ export default {
     imgSrc: {
       type: String,
       required: true
+    },
+    mdCols: {
+      type: Number,
+      default: 2
+    },
+    lgCols: {
+      type: Number,
+      default: 2
     }
   }
 }
