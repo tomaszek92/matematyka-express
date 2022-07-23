@@ -39,7 +39,10 @@
             &#42;Cena promocyjna obowiązuje przy zapisie na zajęcia do 29.08.2022 r.
           </template>
           <template #caption>
-            Przed zapisaniem się na zajęcia zapoznaj się z regulaminem kursów.
+            Przed zapisaniem się na zajęcia zapoznaj się z
+            <a href="/statues/Regulamin kursów- Matematyka Express.pdf" target="_blank" class="underline">
+              regulaminem kursów
+            </a>.
           </template>
         </card>
       </div>

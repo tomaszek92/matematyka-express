@@ -118,7 +118,10 @@
             &#42;Cena promocyjna obowiązuje przy zapisie na zajęcia do 29.08.2022 r.
           </div>
           <div class="text-sm">
-            Przed zapisaniem się na zajęcia zapoznaj się z regulaminem korepetycji.
+            Przed zapisaniem się na zajęcia zapoznaj się z
+            <a href="/statues/Regulamin korepetycji- Matematyka Express.pdf" target="_blank" class="underline">
+              regulaminem korepetycji
+            </a>.
           </div>
         </template>
       </two-column>

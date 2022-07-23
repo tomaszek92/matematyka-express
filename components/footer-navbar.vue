@@ -51,13 +51,19 @@
       </div>
       <div class="grid grid-rows-3 gap-2">
         <div>
-          Polityka prywatności
+          <a href="/statues/Polityka prywatności- Matematyka Express.pdf" target="_blank">
+            Polityka prywatności
+          </a>
         </div>
         <div>
-          Regulamin kursów
+          <a href="/statues/Regulamin kursów- Matematyka Express.pdf" target="_blank">
+            Regulamin kursów
+          </a>
         </div>
         <div>
-          Regulamin korepetycji
+          <a href="/statues/Regulamin korepetycji- Matematyka Express.pdf" target="_blank">
+           Regulamin korepetycji
+          </a>
         </div>
       </div>
     </div>
