@@ -50,7 +50,8 @@
               class="underline"
             >
               regulaminem kursów
-            </a>.
+            </a>
+            .
           </template>
         </card>
       </div>

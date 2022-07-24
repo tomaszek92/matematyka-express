@@ -144,7 +144,8 @@
               class="underline"
             >
               regulaminem korepetycji
-            </a>.
+            </a>
+            .
           </div>
         </template>
       </two-column>

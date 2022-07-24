@@ -23,7 +23,7 @@
           <span>
             Ponad <strong>6 lat<br />doświadczenia</strong>
             <br />
-            w nauczaniu matematyki
+            w&nbsp;nauczaniu matematyki
           </span>
         </dlaczego-warto-reason>
         <dlaczego-warto-reason img-src="/img/dlaczego-warto/male_grupy.png">
