@@ -8,7 +8,8 @@
       :hours-count="48"
       :duration-in-min="90"
       subtitle="ósmoklasisty"
-      url="#egzamin-osmoklasisty"/>
+      url="#egzamin-osmoklasisty"
+    />
     <kursy-course
       title="matura"
       start="28.09.2022"
@@ -17,7 +18,8 @@
       :hours-count="56"
       :duration-in-min="120"
       subtitle="podstawowa"
-      url="#matura-poziom-podstawowy"/>
+      url="#matura-poziom-podstawowy"
+    />
     <kursy-course
       title="matura"
       start="29.09.2022"
@@ -26,12 +28,13 @@
       :hours-count="84"
       :duration-in-min="180"
       subtitle="rozszerzona"
-      url="#matura-poziom-rozszerzony"/>
+      url="#matura-poziom-rozszerzony"
+    />
   </div>
 </template>
 
 <script>
 export default {
-  name: "MatematykaExpressKursyTypes"
+  name: 'MatematykaExpressKursyTypes',
 }
 </script>

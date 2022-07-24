@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col items-center">
     <div class="mb-4">
-      <img class="max-h-24" :src="imgSrc" :alt="imgSrc"/>
+      <img class="max-h-24" :src="imgSrc" :alt="imgSrc" />
     </div>
     <div class="text-center">
       <slot></slot>
@@ -15,8 +15,8 @@ export default {
   props: {
     imgSrc: {
       type: String,
-      required: true
+      required: true,
     },
-  }
+  },
 }
 </script>

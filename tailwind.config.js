@@ -1,7 +1,7 @@
 module.exports = {
   theme: {
     fontFamily: {
-      'BeVietnamPro': ['BeVietnamPro', 'sans-serif']
-    }
+      BeVietnamPro: ['BeVietnamPro', 'sans-serif'],
+    },
   },
 }
