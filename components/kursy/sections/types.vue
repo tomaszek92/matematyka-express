@@ -25,7 +25,7 @@
       start="29.09.2022"
       hours="17:30-20:30"
       weekday="Czwartki"
-      :hours-count="84"
+      :hours-count="81"
       :duration-in-min="180"
       subtitle="rozszerzona"
       url="#matura-poziom-rozszerzony"
