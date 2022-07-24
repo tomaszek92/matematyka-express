@@ -57,5 +57,9 @@ export default {
       }
       return window.scrollTo({ top: 0, behavior: 'smooth' })
     }
+  },
+
+  sitemap: {
+    hostname: 'https://matematyka-express.edu.pl'
   }
 }
