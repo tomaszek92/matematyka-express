@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col items-center">
     <div class="mb-2">
-      <img :src="imgSrc" :alt="imgSrc"/>
+      <img :src="imgSrc" :alt="imgSrc" />
     </div>
     <div class="text-center">
       <slot></slot>
@@ -11,16 +11,12 @@
 
 <script>
 export default {
-  name: "MatematykaExpressCourseFeature",
+  name: 'MatematykaExpressCourseFeature',
   props: {
     imgSrc: {
       type: String,
-      required: true
-    }
-  }
+      required: true,
+    },
+  },
 }
 </script>
-
-<style scoped>
-
-</style>

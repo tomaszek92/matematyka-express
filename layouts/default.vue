@@ -1,14 +1,14 @@
 <template>
   <div class="font-BeVietnamPro">
     <header>
-      <header-navbar/>
+      <header-navbar />
     </header>
     <main>
       <div class="container mx-auto p-4 md:p-8">
         <nuxt></nuxt>
       </div>
     </main>
-    <footer-navbar/>
+    <footer-navbar />
   </div>
 </template>
 <script>
