@@ -13,31 +13,31 @@ body {
 }
 
 .button {
-  background-color: #5B2AA0;
+  background-color: #5b2aa0;
   transition: 0.3s;
 }
 
 @media (hover: hover) and (pointer: fine) {
   .button:hover {
-    background-color: #360C71;
+    background-color: #360c71;
     transform: scale(110%);
   }
 }
 
 .title {
-  background: linear-gradient(90.08deg, #360C71 0.11%, #8444DF 69.58%);
+  background: linear-gradient(90.08deg, #360c71 0.11%, #8444df 69.58%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .gradient-background {
-  background: linear-gradient(270deg, #A06CEA 0%, #6431AB 58.85%, #360C71 100%);
+  background: linear-gradient(270deg, #a06cea 0%, #6431ab 58.85%, #360c71 100%);
 }
 
 .color-me {
-  color: #360C71;
+  color: #360c71;
 }
 
 .color-asterisk {
-  color: #8A1848;
+  color: #8a1848;
 }

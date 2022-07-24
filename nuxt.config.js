@@ -18,15 +18,10 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-    '@/assets/css/fonts.css',
-    '@/assets/css/main.css'
-  ],
+  css: ['@/assets/css/fonts.css', '@/assets/css/main.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-    '~/plugins/v-click-outside.js'
-  ],
+  plugins: ['~/plugins/v-click-outside.js'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -40,9 +35,7 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-    '@nuxtjs/sitemap'
-  ],
+  modules: ['@nuxtjs/sitemap'],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
@@ -52,14 +45,14 @@ export default {
       if (to.hash) {
         return window.scrollTo({
           top: document.querySelector(to.hash).offsetTop - 104,
-          behavior: 'smooth'
+          behavior: 'smooth',
         })
       }
       return window.scrollTo({ top: 0, behavior: 'smooth' })
-    }
+    },
   },
 
   sitemap: {
-    hostname: 'https://matematyka-express.edu.pl'
-  }
+    hostname: 'https://matematyka-express.edu.pl',
+  },
 }
