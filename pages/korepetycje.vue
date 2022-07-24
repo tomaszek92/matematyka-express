@@ -103,8 +103,8 @@
         <template #description>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-4">
             <card
-              :promo-price="110"
-              :price="120"
+              :promo-price="120"
+              :price="130"
               :duration-in-min="60"
               people-count="1 osoba"
             >
@@ -117,7 +117,7 @@
               </template>
             </card>
             <card
-              :promo-price="100"
+              :promo-price="110"
               :price="120"
               :duration-in-min="60"
               people-count="1 osoba"

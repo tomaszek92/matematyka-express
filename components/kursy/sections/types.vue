@@ -5,7 +5,7 @@
       start="26.09.2022"
       hours="17:30-19:30"
       weekday="Poniedziałki"
-      :hours-count="48"
+      :hours-count="42"
       :duration-in-min="90"
       subtitle="ósmoklasisty"
       url="#egzamin-osmoklasisty"
