@@ -5,12 +5,12 @@
     :effects="effects"
     :schedule="schedule"
     :duration-in-min="90"
-    :price="79"
+    :price="74"
     :promo-price="59"
   >
     <template #title>
       <span>
-        Kurs EGZAMIN ósmoklasisty przeznaczony jest dla osób, które&nbsp;chcą
+        Kurs EGZAMIN ÓSMOKLASISTY przeznaczony jest dla osób, które&nbsp;chcą
         sobie przypomnieć i&nbsp;usystematyzować zagadnienia z&nbsp;klas
         4&nbsp;-&nbsp;8.
       </span>

@@ -23,8 +23,8 @@
         <br />
         Do nauki do matury mam opracowane materiały, które w&nbsp;szybki sposób
         pozwolą nam powtórzyć wszystkie potrzebne zagadnienia.
-        <strong>Wiem też jakie są tak zwane pewniaki</strong>, które na pewno na
-        maturze się pojawią &#128578;<br />
+        <strong>Wiem też, jakie są tak zwane pewniaki</strong>, które na pewno
+        na maturze się pojawią &#128578;<br />
         <br />
         Zajęcia prowadzę zarówno w formie <strong>stacjonarnej</strong>, jak
         i&nbsp;<strong>online</strong>.
@@ -73,8 +73,8 @@
 
     <div class="text-center">
       <strong>WAŻNE!</strong> Jeśli czegoś nie wiesz, napotkałeś na jakiś
-      problem przy rozwiązywaniu zadania podczas pracy domowej, nie musisz czeka
-      do kolejnych zajęć. Możesz napisać mi SMS, wysłać mi wiadomość na
+      problem przy rozwiązywaniu zadania podczas pracy domowej, nie musisz
+      czekać do kolejnych zajęć. Możesz napisać mi SMS, wysłać mi wiadomość na
       Facebook'u lub po prostu zadzwonić, a ja zawsze chętnie Ci pomogę. <br />
       <br />
       <strong>PAMIĘTAJ. TY i JA działamy w jednym teamie &#128578;</strong>

@@ -111,11 +111,11 @@
         <template #title> Online </template>
         <template #content>
           Jeśli wolisz zajęcia w formie online, również mam taką możliwość.
-          Łączymy się przez Skype, Messengera lub&nbsp;Face Time
-          i&nbsp;pracujemy na tablicy współdzielonej w&nbsp;wersji online, tak
-          abyśmy oboje mogli pisać. Tablica nie znika i&nbsp;po zajęciach zawsze
-          masz możliwość, aby&nbsp;do niej wrócić i&nbsp;zobaczyć,
-          jak&nbsp;wykonywaliśmy dane zadanie &#128578;
+          Łączymy się przez Skype'a, Messengera lub&nbsp;Face Time'a. Pracujemy
+          na tablicy współdzielonej w&nbsp;wersji online, tak abyśmy oboje mogli
+          pisać. Tablica nie znika i&nbsp;po zajęciach zawsze masz możliwość,
+          aby&nbsp;do niej wrócić i&nbsp;zobaczyć, jak&nbsp;wykonywaliśmy dane
+          zadanie &#128578;
         </template>
       </dlaczego-warto-lesson-form>
     </div>

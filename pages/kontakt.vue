@@ -11,7 +11,7 @@
       ul. Patriotów 303<br />
       04-767 Warszawa<br />
       Lokal nad Cafe Peron<br />
-      piętro 2.<br />
+      Piętro II<br />
       <a class="" href="tel:+4866206360">
         <span>+48 662 063 460</span>
       </a>

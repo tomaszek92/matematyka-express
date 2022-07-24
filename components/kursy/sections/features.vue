@@ -11,7 +11,7 @@
     <div>
       <kursy-course-feature img-src="/img/kursy/lokalizacja.png">
         Zajęcia grupowe prowadzone są w&nbsp;formie stacjonarnej przy ulicy
-        Patriotów 303, Warszawa Wawer
+        Patriotów 303, Warszawa Wawer.
       </kursy-course-feature>
     </div>
     <div>
@@ -33,7 +33,7 @@
     <div>
       <kursy-course-feature img-src="/img/kursy/konwersacja.png">
         Dla każdej z grup stworzona jest oddzielna konwersacja grupowa na
-        messengerze, dzięki temu na&nbsp;bieżąco można konsultować swoje
+        Messengerze, dzięki temu na&nbsp;bieżąco można konsultować swoje
         rozwiązania podczas samodzielnej pracy w&nbsp;domu.
       </kursy-course-feature>
     </div>
@@ -46,7 +46,7 @@
     <div>
       <kursy-course-feature img-src="/img/kursy/trial.png">
         Podczas trwania kursu przeprowadzam dwa próbne
-        egzamin&nbsp;/&nbsp;matury.
+        egzaminy&nbsp;/&nbsp;matury.
       </kursy-course-feature>
     </div>
     <div>

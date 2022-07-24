@@ -10,7 +10,7 @@
   >
     <template #title>
       <span>
-        Kurs MATURA poziom podstawowy przeznaczony jest dla osób,
+        Kurs MATURA POZIOM PODSTAWOWY przeznaczony jest dla osób,
         które&nbsp;chcą przygotować się do egzaminu maturalnego. Potrzebują
         odświeżenia wiedzy zdobytej w&nbsp;poprzednich latach i&nbsp;nadrobienia
         ewentualnych braków.

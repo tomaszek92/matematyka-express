@@ -2,7 +2,7 @@ export const effects = [
   'solidnie powtórzysz materiał potrzebny do napisania matury rozszerzonej',
   'nauczę Cię, jak skutecznie analizować zadania i je rozwiązywać',
   'poznasz pewniaki maturalne z poziomu rozszerzonego',
-  'dowiesz się, jak zdobyć dodatkowe punkty, nawet, gdy nie wiesz, jak w całości rozwiązać zadanie',
+  'dowiesz się, jak zdobyć dodatkowe punkty, nawet gdy nie wiesz, jak w całości rozwiązać zadanie',
   'dowiesz się, jakie wzory, warto znać, a nie ma ich w kartach wzorów',
 ]
 

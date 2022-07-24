@@ -43,12 +43,12 @@
           <div class="mb-4 md:mt-8">Istnieją trzy możliwości opłaty kursu</div>
           <div class="mb-4">
             <strong>Opłata jednorazowa</strong><br />
-            Cały kurs opłacony przed rozpoczęcziem kursu
+            Cały kurs opłacony przed rozpoczęciem kursu
           </div>
           <div class="mb-4">
             <strong>Opłata w 2 ratach</strong><br />
-            1 rata- za miesiące (wrzesień- grudzień)-płatne przed rozpoczęcziem
-            kursu 2 rata- za miesiące (styczeń-maj/kwiecień)-platne do
+            1 rata- za miesiące (wrzesień- grudzień)-płatne przed rozpoczęciem
+            kursu 2 rata- za miesiące (styczeń-maj/kwiecień)-płatne do
             31.12.2022r.
           </div>
           <div>
@@ -66,14 +66,14 @@
       <div>
         <div class="title text-center text-4xl font-extrabold mb-4">Zapisy</div>
         <div class="text-center mb-4 md:mb-8">
-          Licza dostępnych miejsc na kursie, jest ograniczona, ponieważ zajcia
-          prowadzone się w&nbsp;małych, 4-5cio osobowych grupach. Jeśli chcesz
+          Liczba dostępnych miejsc na kursie, jest ograniczona, ponieważ zajęcia
+          prowadzone są w&nbsp;małych, 4-5cio osobowych grupach. Jeśli chcesz
           wziąć udział w kursie, zadzwoń.
         </div>
         <div>
           <a
             class="button flex items-center justify-center text-white text-xl font-extrabold px-8 py-4 rounded-xl max-w-md mx-auto"
-            href="tel:+4866206360"
+            href="tel:+48662063460"
           >
             <img
               class="h-4 mr-2"

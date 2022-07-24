@@ -10,8 +10,8 @@
   >
     <template #title>
       <span>
-        Kurs MATURA poziom rozszerzony to intensywna powtórka materiału jest dla
-        osób, które&nbsp;chcą przygotować się do&nbsp;egzaminu maturalnego.
+        Kurs MATURA POZIOM ROZSZERZONY to intensywna powtórka materiału. Jest
+        dla osób, które&nbsp;chcą przygotować się do&nbsp;egzaminu maturalnego.
         Potrzebują odświeżenia wiedzy zdobytej w&nbsp;poprzednich latach
         i&nbsp;nadrobienia ewentualnych braków.
       </span>
