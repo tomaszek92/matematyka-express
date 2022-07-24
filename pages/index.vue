@@ -8,7 +8,7 @@
       </div>
       <div class="flex justify-center">
         <img
-          class="h-32 lg:h-36 xl:h-48 mt-8 lg:mt-0"
+          class="h-32 lg:h-40 xl:h-48 mt-4 md:mt-8 lg:mt-0"
           src="/img/index/main_2.png"
           alt="z matematyki"
         />
