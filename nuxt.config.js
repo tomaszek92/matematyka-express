@@ -6,7 +6,7 @@ export default {
   head: {
     title: 'Matematyka Express - skuteczne korepetycje i kursy z matematyki',
     htmlAttrs: {
-      lang: 'en',
+      lang: 'pl-PL',
     },
     meta: [
       { charset: 'utf-8' },
