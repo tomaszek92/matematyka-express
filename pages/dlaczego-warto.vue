@@ -9,7 +9,7 @@
           </div>
         </div>
         <div class="self-center justify-self-center">
-          <img class="h-36" src="img/dlaczego-warto/main.png" alt="main"/>
+          <img class="h-36" src="/img/dlaczego-warto/main.png" alt="main"/>
         </div>
         <div class="self-center text-center text-xl">
           Jeśli szukasz kursu lub korepetycji, które&nbsp;skutecznie przygotują Cię do&nbsp;egzaminu ósmych klas,
@@ -18,14 +18,14 @@
         </div>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-6">
-        <dlaczego-warto-reason img-src="img/dlaczego-warto/doswiadczenie.png">
+        <dlaczego-warto-reason img-src="/img/dlaczego-warto/doswiadczenie.png">
         <span>
           Ponad <strong>6 lat<br>
           doświadczenia</strong><br>
           w nauczaniu matematyki
         </span>
         </dlaczego-warto-reason>
-        <dlaczego-warto-reason img-src="img/dlaczego-warto/male_grupy.png">
+        <dlaczego-warto-reason img-src="/img/dlaczego-warto/male_grupy.png">
         <span>
           Kursy prowadzone<br>
           w <strong>małych</strong><br>
@@ -33,7 +33,7 @@
           4-5 osobowych
         </span>
         </dlaczego-warto-reason>
-        <dlaczego-warto-reason img-src="img/dlaczego-warto/lokalizacja.png">
+        <dlaczego-warto-reason img-src="/img/dlaczego-warto/lokalizacja.png">
         <span>
           <strong>Doskonała</strong><br>
           <strong>lokalizacja</strong><br>
@@ -41,7 +41,7 @@
           stacjonarnych
         </span>
         </dlaczego-warto-reason>
-        <dlaczego-warto-reason img-src="img/dlaczego-warto/online.png">
+        <dlaczego-warto-reason img-src="/img/dlaczego-warto/online.png">
         <span>
           Możliwość<br>
           wyboru zajęć<br>
@@ -49,7 +49,7 @@
           <strong>online</strong>
         </span>
         </dlaczego-warto-reason>
-        <dlaczego-warto-reason img-src="img/dlaczego-warto/atmosfera.png">
+        <dlaczego-warto-reason img-src="/img/dlaczego-warto/atmosfera.png">
         <span>
           <strong>Przyjazna</strong><br>
           i <strong>bezstresowa</strong><br>
@@ -57,7 +57,7 @@
           podczas zajęć
         </span>
         </dlaczego-warto-reason>
-        <dlaczego-warto-reason img-src="img/dlaczego-warto/konsultacje.png">
+        <dlaczego-warto-reason img-src="/img/dlaczego-warto/konsultacje.png">
         <span>
           Możliwość<br>
           <strong>bezpłatnych</strong><br>
