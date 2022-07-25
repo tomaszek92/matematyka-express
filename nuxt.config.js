@@ -21,11 +21,7 @@ export default {
   css: ['@/assets/css/fonts.css', '@/assets/css/main.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-    '~/plugins/v-click-outside.js',
-    '~/plugins/filters.js',
-    '~/plugins/vue-gtag.js',
-  ],
+  plugins: ['~/plugins/v-click-outside.js', '~/plugins/filters.js'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
