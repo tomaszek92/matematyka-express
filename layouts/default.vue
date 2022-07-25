@@ -26,5 +26,12 @@ header {
 
 main {
   padding-top: 6.5rem;
+  min-height: 100vh;
+}
+
+@media (min-width: 1024px) {
+  main {
+    min-height: calc(100vh - 15.25rem);
+  }
 }
 </style>
