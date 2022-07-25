@@ -22,13 +22,13 @@
           </a>
         </div>
         <div>
-          <a class="flex items-center" href="tel:+48662063460">
+          <a class="flex items-center" :href="`tel:${telephone}`">
             <img
               class="h-4 mr-2"
               src="/img/o-mnie/telephone.png"
               alt="telefon"
             />
-            <span>+48 662 063 460</span>
+            <span>{{ telephone | telephone }}</span>
           </a>
         </div>
         <div>
@@ -52,12 +52,9 @@
           </a>
         </div>
         <div>
-          <a
-            class="flex items-center"
-            href="mailto:kontakt@matematyka-express.edu.pl"
-          >
+          <a class="flex items-center" :href="`mailto:${email}`">
             <img class="h-4 mr-2" src="/img/o-mnie/mail.png" alt="e-mail" />
-            <span>kontakt@matematyka-express.edu.pl</span>
+            <span>{{ email }}</span>
           </a>
         </div>
       </div>
@@ -95,8 +92,16 @@
 </template>
 
 <script>
+import { EMAIL, TELEPHONE } from '@/data/general'
+
 export default {
   name: 'MatematykaExpressFooterNav',
+  data() {
+    return {
+      email: EMAIL,
+      telephone: TELEPHONE,
+    }
+  },
 }
 </script>
 

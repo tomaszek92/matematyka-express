@@ -12,12 +12,12 @@
       04-767 Warszawa<br />
       Lokal nad Cafe Peron<br />
       Piętro II<br />
-      <a class="" href="tel:+48662063460">
-        <span>+48 662 063 460</span>
+      <a class="" :href="`tel:${telephone}`">
+        <span>{{ telephone | telephone }}</span>
       </a>
       <br />
-      <a class="" href="mailto:kontakt@matematyka-express.edu.pl">
-        <span>kontakt@matematyka-express.edu.pl</span>
+      <a class="" :href="`mailto:${email}`">
+        <span>{{ email }}</span>
       </a>
     </div>
     <div class="mt-8">
@@ -36,8 +36,16 @@
 </template>
 
 <script>
+import { EMAIL, TELEPHONE } from '@/data/general'
+
 export default {
   name: 'MatematykaExpressKontaktPage',
+  data() {
+    return {
+      email: EMAIL,
+      telephone: TELEPHONE,
+    }
+  },
 }
 </script>
 

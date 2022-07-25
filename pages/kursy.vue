@@ -73,14 +73,14 @@
         <div>
           <a
             class="button flex items-center justify-center text-white text-xl font-extrabold px-8 py-4 rounded-xl max-w-md mx-auto"
-            href="tel:+48662063460"
+            :href="`tel:${telephone}`"
           >
             <img
               class="h-4 mr-2"
               src="/img/o-mnie/telephone.png"
               alt="telefon"
             />
-            <span>+48 662 063 460</span>
+            <span>{{ telephone | telephone }}</span>
           </a>
         </div>
       </div>
@@ -92,8 +92,15 @@
 </template>
 
 <script>
+import { TELEPHONE } from '@/data/general'
+
 export default {
   name: 'MatematykaExpressKursyPage',
+  data() {
+    return {
+      telephone: TELEPHONE,
+    }
+  },
 }
 </script>
 
