@@ -22,7 +22,7 @@
           </a>
         </div>
         <div>
-          <a class="flex items-center" href="tel:+4866206360">
+          <a class="flex items-center" href="tel:+48662063460">
             <img
               class="h-4 mr-2"
               src="/img/o-mnie/telephone.png"

@@ -12,7 +12,7 @@
       04-767 Warszawa<br />
       Lokal nad Cafe Peron<br />
       Piętro II<br />
-      <a class="" href="tel:+4866206360">
+      <a class="" href="tel:+48662063460">
         <span>+48 662 063 460</span>
       </a>
       <br />
