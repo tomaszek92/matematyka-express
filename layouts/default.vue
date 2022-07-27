@@ -6,6 +6,7 @@
     <main>
       <div class="container mx-auto p-4 md:p-8">
         <nuxt></nuxt>
+        <cookies-consent />
       </div>
     </main>
     <footer-navbar />
