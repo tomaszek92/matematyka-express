@@ -33,21 +33,17 @@ export default {
   name: 'MatematykaExpressCookiesConsent',
   data() {
     return {
-      areCookiesAccepted: false,
+      areCookiesAccepted: true,
     }
   },
-  created() {
-    if (process.client) {
-      const areCookiesAccepted = localStorage.getItem(KEY_ARE_COOKIES_ACCEPTED)
-      this.areCookiesAccepted = !!areCookiesAccepted
-    }
+  mounted() {
+    const areCookiesAccepted = localStorage.getItem(KEY_ARE_COOKIES_ACCEPTED)
+    this.areCookiesAccepted = !!areCookiesAccepted
   },
   methods: {
     onAccept() {
       this.areCookiesAccepted = true
-      if (process.client) {
-        localStorage.setItem(KEY_ARE_COOKIES_ACCEPTED, true.toString())
-      }
+      localStorage.setItem(KEY_ARE_COOKIES_ACCEPTED, true.toString())
     },
   },
 }
