@@ -19,6 +19,8 @@
       <a class="" :href="`mailto:${email}`">
         <span>{{ email }}</span>
       </a>
+      <br />
+      33 1160 2202 0000 0002 6713 6076
     </div>
     <div class="mt-8">
       <iframe

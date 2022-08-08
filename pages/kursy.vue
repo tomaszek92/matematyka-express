@@ -51,10 +51,14 @@
             kursu 2 rata- za miesiące (styczeń-maj/kwiecień)-płatne do
             31.12.2022r.
           </div>
-          <div>
+          <div class="mb-4">
             <strong>Opłata miesięczna (w 8/9 ratach)</strong><br />
             Każdy miesiąc opłacony z góry do ostatniego dnia miesiąca
             poprzedniego
+          </div>
+          <div>
+            <strong>Numer konta</strong><br />
+            33 1160 2202 0000 0002 6713 6076
           </div>
         </div>
       </div>
