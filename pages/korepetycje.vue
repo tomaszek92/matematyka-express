@@ -154,8 +154,15 @@
 </template>
 
 <script>
+import { getTitle } from '@/data/general'
+
 export default {
   name: 'MatematykaExpressKorepetycjePage',
+  head() {
+    return {
+      title: getTitle('Korepetycje'),
+    }
+  },
 }
 </script>
 

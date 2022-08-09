@@ -1,10 +1,12 @@
+import { TITLE } from './data/general'
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Matematyka Express - skuteczne korepetycje i kursy z matematyki',
+    title: TITLE,
     htmlAttrs: {
       lang: 'pl-PL',
     },
@@ -13,6 +15,11 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
+      {
+        name: 'description',
+        content:
+          'Korepetycje, kursy maturalne oraz ósmoklasisty z matematyki w Warszawie.',
+      },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },

@@ -96,13 +96,18 @@
 </template>
 
 <script>
-import { TELEPHONE } from '@/data/general'
+import { getTitle, TELEPHONE } from '@/data/general'
 
 export default {
   name: 'MatematykaExpressKursyPage',
   data() {
     return {
       telephone: TELEPHONE,
+    }
+  },
+  head() {
+    return {
+      title: getTitle('Kursy'),
     }
   },
 }

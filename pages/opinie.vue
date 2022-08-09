@@ -26,6 +26,7 @@
             :src="`/img/opinie/${n}.png`"
             class="w-100"
             :loading="n === 1 ? 'eager' : 'lazy'"
+            alt="opinia"
           />
         </div>
         <a class="prev left-0 md:-left-4" @click="plusSlides(-1)">&#10094;</a>
@@ -45,12 +46,19 @@
 </template>
 
 <script>
+import { getTitle } from '@/data/general'
+
 export default {
   name: 'MatematykaExpressOpiniePage',
   data() {
     return {
       slideIndex: 1,
       count: 22,
+    }
+  },
+  head() {
+    return {
+      title: getTitle('Opinie'),
     }
   },
   mounted() {

@@ -38,7 +38,7 @@
 </template>
 
 <script>
-import { EMAIL, TELEPHONE } from '@/data/general'
+import { EMAIL, getTitle, TELEPHONE } from '@/data/general'
 
 export default {
   name: 'MatematykaExpressKontaktPage',
@@ -46,6 +46,11 @@ export default {
     return {
       email: EMAIL,
       telephone: TELEPHONE,
+    }
+  },
+  head() {
+    return {
+      title: getTitle('Kontakt'),
     }
   },
 }

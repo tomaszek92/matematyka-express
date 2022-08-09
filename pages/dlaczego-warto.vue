@@ -123,7 +123,14 @@
 </template>
 
 <script>
+import { getTitle } from '@/data/general'
+
 export default {
   name: 'MatematykaExpressDlaczegoWartoPage',
+  head() {
+    return {
+      title: getTitle('Dlaczego warto'),
+    }
+  },
 }
 </script>
