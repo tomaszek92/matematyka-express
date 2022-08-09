@@ -46,7 +46,7 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['@nuxtjs/sitemap'],
+  modules: [],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
@@ -61,9 +61,5 @@ export default {
       }
       return window.scrollTo({ top: 0, behavior: 'smooth' })
     },
-  },
-
-  sitemap: {
-    hostname: 'https://matematyka-express.edu.pl',
   },
 }
