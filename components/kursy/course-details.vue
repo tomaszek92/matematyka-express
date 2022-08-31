@@ -40,7 +40,7 @@
           <template #badge> Cena za jedne zajęcia </template>
           <template #asterisk>
             &#42;Cena promocyjna obowiązuje przy zapisie na zajęcia do
-            29.08.2022 r.
+            04.09.2022 r.
           </template>
           <template #caption>
             Przed zapisaniem się na zajęcia zapoznaj się z
