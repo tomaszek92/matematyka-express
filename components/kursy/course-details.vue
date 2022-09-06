@@ -38,10 +38,6 @@
           :btn-opt="{ to: '#zapisz-sie', text: 'zapisz się' }"
         >
           <template #badge> Cena za jedne zajęcia </template>
-          <template #asterisk>
-            &#42;Cena promocyjna obowiązuje przy zapisie na zajęcia do
-            04.09.2022 r.
-          </template>
           <template #caption>
             Przed zapisaniem się na zajęcia zapoznaj się z
             <a

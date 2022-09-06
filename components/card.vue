@@ -7,13 +7,22 @@
       >
         <slot name="badge" />
       </div>
-      <div v-show="isHeaderVisible" class="mb-4">
+      <div v-show="isHeaderVisible" class="my-2">
         <slot name="header" />
       </div>
-      <div class="price color-me font-extrabold text-5xl mb-2">
+      <div
+        class="color-me font-extrabold text-5xl mb-2"
+        :class="{
+          'price-line-through': isPromoPriceVisible,
+          'mt-2': !isPromoPriceVisible,
+        }"
+      >
         {{ price }} zł
       </div>
-      <div class="promo-price font-extrabold text-5xl mb-4">
+      <div
+        v-show="isPromoPriceVisible"
+        class="promo-price font-extrabold text-5xl mb-4"
+      >
         {{ promoPrice }} zł<span style="vertical-align: super; font-size: 24px"
           >&#42;</span
         >
@@ -33,13 +42,14 @@
         />
         <span>{{ peopleCount }}</span>
       </div>
-      <div class="saving font-extrabold text-2xl">
+      <div v-show="isPromoPriceVisible" class="saving font-extrabold text-2xl">
         Oszczędzasz {{ saving | percent }}
       </div>
       <div v-if="btnOpt" class="flex justify-center">
         <nuxt-link
           :to="btnOpt.to"
-          class="button block text-white uppercase font-extrabold px-8 py-3 rounded-xl mt-6"
+          class="button block text-white uppercase font-extrabold px-8 py-3 rounded-xl"
+          :class="{ 'mt-6': isPromoPriceVisible }"
         >
           {{ btnOpt.text }}
         </nuxt-link>
@@ -91,6 +101,11 @@ export default {
       default: undefined,
     },
   },
+  data() {
+    return {
+      isPromoPriceVisible: false,
+    }
+  },
   computed: {
     isBadgeVisible() {
       return this.isSlotVisible('badge')
@@ -129,7 +144,7 @@ export default {
   margin-bottom: -64px;
 }
 
-.price {
+.price-line-through {
   text-decoration-line: line-through;
   text-decoration-color: #ed428b;
   text-decoration-thickness: 4px;
