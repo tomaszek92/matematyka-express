@@ -132,7 +132,7 @@
               </template>
             </card>
           </div>
-          <div class="text-sm">
+          <div class="text-sm mt-2">
             Przed zapisaniem się na zajęcia zapoznaj się z
             <a
               href="/statues/Regulamin korepetycji- Matematyka Express.pdf"
