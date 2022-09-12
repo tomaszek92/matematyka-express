@@ -11,15 +11,26 @@
         {{ item.dates | dates }}
       </div>
       <div :key="name + item.month + item.price">
-        <span class="price">{{ item.price }} zł</span>
-        <span class="promo-price">{{ item.promoPrice }} zł</span>
+        <span
+          class="price"
+          :class="{ 'price-line-through': isPromoPriceVisible }"
+          >{{ item.price }} zł</span
+        >
+        <span v-show="isPromoPriceVisible" class="promo-price"
+          >{{ item.promoPrice }} zł</span
+        >
       </div>
     </template>
     <div></div>
     <div class="text-right"><span class="total">Razem</span></div>
     <div>
       <span class="price">{{ price }} zł</span>
-      <span class="promo-price">{{ promoPrice }} zł</span>
+      <span
+        v-show="isPromoPriceVisible"
+        class="promo-price"
+        :class="{ 'price-line-through': isPromoPriceVisible }"
+        >{{ promoPrice }} zł</span
+      >
     </div>
   </div>
 </template>
@@ -41,6 +52,11 @@ export default {
       type: Array,
       required: true,
     },
+  },
+  data() {
+    return {
+      isPromoPriceVisible: false,
+    }
   },
   computed: {
     price() {
@@ -91,7 +107,7 @@ div.grid span.price {
   font-weight: 500;
 }
 
-div.grid span.price {
+div.grid span.price-line-through {
   text-decoration-line: line-through;
   text-decoration-color: #ef2a2a;
   text-decoration-thickness: 3px;
