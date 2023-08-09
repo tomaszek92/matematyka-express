@@ -27,14 +27,22 @@
       class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-0 items-center justify-items-center"
     >
       <div class="mb-4 lg:mb-0">
-        <kursy-course-details-schedule :name="name" :schedule="schedule" />
+        <kursy-course-details-price
+          class="mb-8"
+          :duration-in-hours="allLessonsDurationInHours"
+          :price="allLessonsPrice"
+        />
+        <kursy-course-details-schedule
+          :name="name"
+          :schedule-stationary="scheduleStationary"
+          :schedule-online="scheduleOnline"
+        />
       </div>
       <div class="lg:ml-16 lg:mt-12">
         <card
           people-count="4-5 osób"
-          :duration-in-min="durationInMin"
-          :promo-price="promoPrice"
-          :price="price"
+          :duration-in-min="singleLessonDurationInMin"
+          :price="singleLessonPrice"
           :btn-opt="{ to: '#zapisz-sie', text: 'zapisz się' }"
         >
           <template #badge> Cena za jedne zajęcia </template>
@@ -50,6 +58,21 @@
             .
           </template>
         </card>
+        <div>
+          <div
+            class="mt-4 font-extrabold text-2xl text-center"
+            style="color: #e92323"
+          >
+            PROMOCJA!!!
+            <br />
+            Zapisz się ze znajomym
+            <br />
+            i&nbsp;otrzymajcie -10% na cały kurs!*
+          </div>
+          <div class="mt-2 text-sm text-center" style="color: #e92323">
+            *Cena promocyjna obowiązuje przy zapisie na zajęcia do 03.09.2023 r.
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -71,19 +94,27 @@ export default {
       type: Array,
       required: true,
     },
-    schedule: {
+    scheduleStationary: {
       type: Array,
       required: true,
     },
-    price: {
+    scheduleOnline: {
+      type: Array,
+      required: true,
+    },
+    singleLessonPrice: {
       type: Number,
       required: true,
     },
-    promoPrice: {
+    singleLessonDurationInMin: {
       type: Number,
       required: true,
     },
-    durationInMin: {
+    allLessonsPrice: {
+      type: Number,
+      required: true,
+    },
+    allLessonsDurationInHours: {
       type: Number,
       required: true,
     },

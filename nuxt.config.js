@@ -28,7 +28,11 @@ export default {
   css: ['@/assets/css/fonts.css', '@/assets/css/main.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ['~/plugins/v-click-outside.js', '~/plugins/filters.js'],
+  plugins: [
+    '~/plugins/v-click-outside.js',
+    '~/plugins/filters.js',
+    { src: '~/plugins/calendar.js', mode: 'client' },
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,

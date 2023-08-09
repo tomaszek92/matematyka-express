@@ -3,10 +3,12 @@
     name="egzamin-osmoklasisty"
     main-img-src="/img/kursy/egzamin_osmoklasisty_main.png"
     :effects="effects"
-    :schedule="schedule"
-    :duration-in-min="90"
-    :price="74"
-    :promo-price="59"
+    :schedule-stationary="schedule.stationary"
+    :schedule-online="schedule.online"
+    :single-lesson-duration-in-min="90"
+    :single-lesson-price="75"
+    :all-lessons-duration-in-hours="46.5"
+    :all-lessons-price="2325"
   >
     <template #title>
       <span>

@@ -86,7 +86,7 @@ export default {
     },
     promoPrice: {
       type: Number,
-      required: true,
+      default: 0,
     },
     durationInMin: {
       type: Number,
