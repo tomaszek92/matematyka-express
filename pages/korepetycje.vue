@@ -10,8 +10,8 @@
         nauce, to&nbsp;dobrze trafiłeś &#128578;
       </template>
       <template #description>
-        Korepetycjami zajmuję się już <strong>od ponad sześciu lat</strong>.
-        Przez te sześć lat pomagałam wielu osobom, a&nbsp;nasza współpraca
+        Korepetycjami zajmuję się już <strong>od ponad siedmiu lat</strong>.
+        Przez te siedem lat pomagałam wielu osobom, a&nbsp;nasza współpraca
         zawsze kończyła&nbsp;się sukcesem. Uczniowie wracają do mnie
         w&nbsp;kolejnym roku szkolnym, a&nbsp;także zaczynam uczyć również ich
         rodzeństwo i&nbsp;znajomych.<br />
@@ -106,6 +106,7 @@
               :promo-price="130"
               :price="140"
               :duration-in-min="60"
+              :is-promo-price-visible="true"
               people-count="1 osoba"
             >
               <template #header>
@@ -120,6 +121,7 @@
               :promo-price="120"
               :price="130"
               :duration-in-min="60"
+              :is-promo-price-visible="true"
               people-count="1 osoba"
             >
               <template #badge>Najczęściej wybierane</template>
@@ -131,6 +133,9 @@
                 <div class="mb-2 color-me">ZA LEKCJĘ</div>
               </template>
             </card>
+          </div>
+          <div class="text-sm mt-2 color-asterisk">
+            *Cena promocyjna obowiązuje przy zapisie na zajęcia do 3.09.2023 r.
           </div>
           <div class="text-sm mt-2">
             Przed zapisaniem się na zajęcia zapoznaj się z

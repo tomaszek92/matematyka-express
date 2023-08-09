@@ -14,11 +14,11 @@
         <div>
           <a
             class="flex items-center"
-            href="https://goo.gl/maps/vE3sBfgzyVXKzjFj8"
+            href="https://goo.gl/maps/kUW2nDvZwcuRqN9i7"
             target="_blank"
           >
             <img class="h-4 mr-2" src="/img/o-mnie/map.png" alt="telefon" />
-            <span>ul. Patriotów 303, Warszawa</span>
+            <span>ul. Wilcza 56/6, Warszawa</span>
           </a>
         </div>
         <div>

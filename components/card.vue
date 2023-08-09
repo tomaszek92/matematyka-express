@@ -100,11 +100,10 @@ export default {
       type: Object,
       default: undefined,
     },
-  },
-  data() {
-    return {
-      isPromoPriceVisible: false,
-    }
+    isPromoPriceVisible: {
+      type: Boolean,
+      default: false,
+    },
   },
   computed: {
     isBadgeVisible() {
@@ -137,7 +136,7 @@ export default {
 <style scoped>
 .badge {
   background: linear-gradient(270deg, #ed428b -4.56%, #8a1848 115.09%);
-  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.25);
 
   position: relative;
   top: -72px;

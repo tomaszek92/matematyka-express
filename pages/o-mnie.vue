@@ -21,7 +21,7 @@
       mi się z&nbsp;nimi rozstać. Tym bardziej, że przez te kilka lat nawiązałam
       stałą współpracę z&nbsp;moimi uczniami, którzy pozostawali ze mną
       z&nbsp;roku na rok i&nbsp;byli zadowoleni z&nbsp;efektów naszej wspólnej
-      pracy. Przez sześć lat pomagałam wielu osobom, a&nbsp;nasza współpraca
+      pracy. Przez siedem lat pomagałam wielu osobom, a&nbsp;nasza współpraca
       zawsze kończyła się sukcesem. Polecali mnie dalej, więc później zaczynałam
       uczyć również ich rodzeństwo i&nbsp;znajomych.
       <br /><br />
