@@ -7,7 +7,7 @@
       :max-page="{ month: 5, year: 2024 }"
     >
     </v-calendar>
-    <div class="grid justify-center text-sm">
+    <div class="grid justify-center text-sm mt-1">
       <div class="flex">
         <div
           class="legend-square mr-1 my-auto"

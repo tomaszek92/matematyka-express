@@ -3,11 +3,11 @@
     class="rounded-xl shadow-xl bg-white text-center p-6 gap-4 grid grid-cols-2"
   >
     <div>
-      <span class="font-bold text-xl">Cena kursu</span>
+      <span class="font-bold text-2xl">Cena kursu</span>
       <br />
-      ({{ durationInHours }} h zajęć)
+      <span class="text-xl">({{ durationInHours }} h zajęć)</span>
     </div>
-    <div class="flex items-center justify-center price text-2xl font-extrabold">
+    <div class="flex items-center justify-center price text-4xl font-extrabold">
       {{ price }} zł
     </div>
   </div>
