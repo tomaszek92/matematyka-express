@@ -3,12 +3,7 @@
     name="matura-poziom-podstawowy"
     main-img-src="/img/kursy/matura_podstawowa_main.png"
     :effects="effects"
-    :schedule-stationary="schedule.stationary"
-    :schedule-online="schedule.online"
-    :single-lesson-duration-in-min="120"
-    :single-lesson-price="100"
-    :all-lessons-duration-in-hours="56"
-    :all-lessons-price="2800"
+    :schedule="schedule"
   >
     <template #title>
       <span>

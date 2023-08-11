@@ -14,7 +14,7 @@
     </div>
     <div class="flex items-center justify-center" :class="textColorClass">
       <img src="/img/shared/duration.png" alt="czas trwania" class="mr-2 h-4" />
-      <span>{{ durationInMin }} min</span>
+      <span>{{ singleLessonDurationInMin }} min</span>
     </div>
     <div class="flex items-center justify-center mb-2" :class="textColorClass">
       <img
@@ -95,7 +95,7 @@ export default {
       type: Number,
       required: true,
     },
-    durationInMin: {
+    singleLessonDurationInMin: {
       type: String,
       required: true,
     },

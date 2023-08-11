@@ -3,12 +3,7 @@
     name="matura-poziom-rozszerzony"
     main-img-src="/img/kursy/matura_rozszerzona_main.png"
     :effects="effects"
-    :schedule-stationary="schedule.stationary"
-    :schedule-online="schedule.online"
-    :single-lesson-duration-in-min="90"
-    :single-lesson-price="75"
-    :all-lessons-duration-in-hours="56"
-    :all-lessons-price="4350"
+    :schedule="schedule"
   >
     <template #title>
       <span>

@@ -68,6 +68,10 @@ const dates = [
 ]
 
 export const schedule = {
+  singleLessonDurationInMinutes: '2 x 90',
+  singleLessonPrice: 75,
+  allLessonsDurationInHours: 87,
+  allLessonsPrice: 4350,
   stationary: { hours: '16:00-17:30', dates },
   online: { hours: '19:00-20:30', dates },
 }

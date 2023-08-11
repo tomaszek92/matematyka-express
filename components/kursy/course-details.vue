@@ -29,20 +29,20 @@
       <div class="mb-4 lg:mb-0">
         <kursy-course-details-price
           class="mb-8"
-          :duration-in-hours="allLessonsDurationInHours"
-          :price="allLessonsPrice"
+          :duration-in-hours="schedule.allLessonsDurationInHours"
+          :price="schedule.allLessonsPrice"
         />
         <kursy-course-details-schedule
           :name="name"
-          :schedule-stationary="scheduleStationary"
-          :schedule-online="scheduleOnline"
+          :schedule-stationary="schedule.stationary"
+          :schedule-online="schedule.online"
         />
       </div>
       <div class="lg:ml-16 lg:mt-12">
         <card
           people-count="4-5 osób"
-          :duration-in-min="singleLessonDurationInMin"
-          :price="singleLessonPrice"
+          :duration-in-min="schedule.singleLessonDurationInMinutes"
+          :price="schedule.singleLessonPrice"
           :btn-opt="{ to: '#zapisz-sie', text: 'zapisz się' }"
         >
           <template #badge> Cena za jedne zajęcia </template>
@@ -94,28 +94,8 @@ export default {
       type: Array,
       required: true,
     },
-    scheduleStationary: {
+    schedule: {
       type: Object,
-      required: true,
-    },
-    scheduleOnline: {
-      type: Object,
-      required: true,
-    },
-    singleLessonPrice: {
-      type: Number,
-      required: true,
-    },
-    singleLessonDurationInMin: {
-      type: Number,
-      required: true,
-    },
-    allLessonsPrice: {
-      type: Number,
-      required: true,
-    },
-    allLessonsDurationInHours: {
-      type: Number,
       required: true,
     },
   },

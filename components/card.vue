@@ -89,7 +89,7 @@ export default {
       default: 0,
     },
     durationInMin: {
-      type: Number,
+      type: String,
       required: true,
     },
     peopleCount: {

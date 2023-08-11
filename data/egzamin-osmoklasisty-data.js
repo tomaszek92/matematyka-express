@@ -7,6 +7,10 @@ export const effects = [
 ]
 
 export const schedule = {
+  singleLessonDurationInMinutes: '90',
+  singleLessonPrice: 75,
+  allLessonsDurationInHours: 46.5,
+  allLessonsPrice: 2325,
   stationary: {
     hours: '16:00-17:30',
     dates: [
