@@ -42,7 +42,7 @@
       duration-in-min="2 x 90"
       :stationary="{
         daysOfWeek: 'Poniedziałki i&nbsp;środy',
-        hours: '10:00-17:30',
+        hours: '16:00-17:30',
         startDate: new Date(2023, 8, 18),
       }"
       :online="{

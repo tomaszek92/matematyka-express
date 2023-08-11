@@ -35,11 +35,11 @@ export default {
       required: true,
     },
     scheduleStationary: {
-      type: Array,
+      type: Object,
       required: true,
     },
     scheduleOnline: {
-      type: Array,
+      type: Object,
       required: true,
     },
   },
@@ -49,17 +49,17 @@ export default {
         {
           key: 'stationary',
           dot: 'red',
-          dates: this.scheduleStationary,
+          dates: this.scheduleStationary.dates,
           popover: {
-            label: 'Zajęcia stacjonarne 16:00-17:30',
+            label: `Zajęcia stacjonarne ${this.scheduleStationary.hours}`,
           },
         },
         {
           key: 'online',
           dot: 'blue',
-          dates: this.scheduleOnline,
+          dates: this.scheduleOnline.dates,
           popover: {
-            label: 'Zajęcia online 10:00-11:30',
+            label: `Zajęcia online ${this.scheduleOnline.hours}`,
           },
         },
       ]

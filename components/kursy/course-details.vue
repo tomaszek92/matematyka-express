@@ -95,11 +95,11 @@ export default {
       required: true,
     },
     scheduleStationary: {
-      type: Array,
+      type: Object,
       required: true,
     },
     scheduleOnline: {
-      type: Array,
+      type: Object,
       required: true,
     },
     singleLessonPrice: {

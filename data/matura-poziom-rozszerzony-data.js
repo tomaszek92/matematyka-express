@@ -68,6 +68,6 @@ const dates = [
 ]
 
 export const schedule = {
-  stationary: dates,
-  online: dates,
+  stationary: { hours: '16:00-17:30', dates },
+  online: { hours: '19:00-20:30', dates },
 }
