@@ -11,14 +11,14 @@
       <div class="flex">
         <div
           class="legend-square mr-1 my-auto"
-          style="background-color: red"
+          style="background-color: #805ad5"
         ></div>
         zajęcia stacjonarne
       </div>
       <div class="flex">
         <div
           class="legend-square mr-1 my-auto"
-          style="background-color: blue"
+          style="background-color: #d53f8c"
         ></div>
         zajęcia online
       </div>
@@ -48,7 +48,7 @@ export default {
       return [
         {
           key: 'stationary',
-          dot: 'red',
+          bar: 'purple',
           dates: this.scheduleStationary.dates,
           popover: {
             label: `Zajęcia stacjonarne ${this.scheduleStationary.hours}`,
@@ -56,7 +56,7 @@ export default {
         },
         {
           key: 'online',
-          dot: 'blue',
+          bar: 'pink',
           dates: this.scheduleOnline.dates,
           popover: {
             label: `Zajęcia online ${this.scheduleOnline.hours}`,
