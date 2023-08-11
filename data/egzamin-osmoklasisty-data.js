@@ -12,7 +12,9 @@ export const schedule = {
   allLessonsDurationInHours: 46.5,
   allLessonsPrice: 2325,
   stationary: {
+    daysOfWeek: 'Wtorki',
     hours: '16:00-17:30',
+    startDate: new Date(2023, 8, 19),
     dates: [
       new Date(2023, 8, 19),
       new Date(2023, 8, 26),
@@ -48,7 +50,9 @@ export const schedule = {
     ],
   },
   online: {
+    daysOfWeek: 'Soboty',
     hours: '10:00-11:30',
+    startDate: new Date(2023, 8, 16),
     dates: [
       new Date(2023, 8, 16),
       new Date(2023, 8, 23),

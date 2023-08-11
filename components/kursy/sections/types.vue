@@ -4,58 +4,19 @@
       url="#egzamin-osmoklasisty"
       title="egzamin"
       subtitle="ósmoklasisty"
-      :hours-count="egzaminOsmoklasistySchedule.allLessonsDurationInHours"
-      :single-lesson-duration-in-min="
-        egzaminOsmoklasistySchedule.singleLessonDurationInMinutes
-      "
-      :stationary="{
-        daysOfWeek: 'Wtorki',
-        hours: egzaminOsmoklasistySchedule.stationary.hours,
-        startDate: new Date(2023, 8, 19),
-      }"
-      :online="{
-        daysOfWeek: 'Soboty',
-        hours: egzaminOsmoklasistySchedule.online.hours,
-        startDate: new Date(2023, 8, 16),
-      }"
+      :schedule="egzaminOsmoklasistySchedule"
     />
     <kursy-course
       url="#matura-poziom-podstawowy"
       title="matura"
       subtitle="podstawowa"
-      :hours-count="maturaPodstawowaSchedule.allLessonsDurationInHours"
-      :single-lesson-duration-in-min="
-        maturaPodstawowaSchedule.singleLessonDurationInMinutes
-      "
-      :stationary="{
-        daysOfWeek: 'Czwartki',
-        hours: maturaPodstawowaSchedule.stationary.hours,
-        startDate: new Date(2023, 8, 21),
-      }"
-      :online="{
-        daysOfWeek: 'Soboty',
-        hours: maturaPodstawowaSchedule.online.hours,
-        startDate: new Date(2023, 8, 16),
-      }"
+      :schedule="maturaPodstawowaSchedule"
     />
     <kursy-course
       url="#matura-poziom-rozszerzony"
       title="matura"
       subtitle="rozszerzona"
-      :hours-count="maturaRozszerzonaSchedule.allLessonsDurationInHours"
-      :single-lesson-duration-in-min="
-        maturaRozszerzonaSchedule.singleLessonDurationInMinutes
-      "
-      :stationary="{
-        daysOfWeek: 'Poniedziałki i&nbsp;środy',
-        hours: maturaRozszerzonaSchedule.stationary.hours,
-        startDate: new Date(2023, 8, 18),
-      }"
-      :online="{
-        daysOfWeek: 'Poniedziałki i&nbsp;środy',
-        hours: maturaRozszerzonaSchedule.online.hours,
-        startDate: new Date(2023, 8, 18),
-      }"
+      :schedule="maturaRozszerzonaSchedule"
     />
   </div>
 </template>

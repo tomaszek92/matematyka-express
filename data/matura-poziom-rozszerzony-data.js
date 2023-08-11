@@ -72,6 +72,16 @@ export const schedule = {
   singleLessonPrice: 75,
   allLessonsDurationInHours: 87,
   allLessonsPrice: 4350,
-  stationary: { hours: '16:00-17:30', dates },
-  online: { hours: '19:00-20:30', dates },
+  stationary: {
+    daysOfWeek: 'Poniedziałki i&nbsp;środy',
+    hours: '16:00-17:30',
+    startDate: new Date(2023, 8, 18),
+    dates,
+  },
+  online: {
+    daysOfWeek: 'Poniedziałki i&nbsp;środy',
+    hours: '19:00-20:30',
+    startDate: new Date(2023, 8, 18),
+    dates,
+  },
 }

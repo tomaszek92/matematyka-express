@@ -10,11 +10,13 @@
       <div>{{ subtitle }}</div>
     </div>
     <div class="font-extrabold text-5xl">
-      <span :class="textColorClass">{{ hoursCount }}h</span>
+      <span :class="textColorClass"
+        >{{ schedule.allLessonsDurationInHours }}h</span
+      >
     </div>
     <div class="flex items-center justify-center" :class="textColorClass">
       <img src="/img/shared/duration.png" alt="czas trwania" class="mr-2 h-4" />
-      <span>{{ singleLessonDurationInMin }} min</span>
+      <span>{{ schedule.singleLessonDurationInMinutes }} min</span>
     </div>
     <div class="flex items-center justify-center mb-2" :class="textColorClass">
       <img
@@ -31,27 +33,27 @@
       </div>
       <div>
         <div class="color-me font-extrabold">
-          <span v-html="stationary.daysOfWeek" />
+          <span v-html="schedule.stationary.daysOfWeek" />
         </div>
-        <div class="color-me">{{ stationary.hours }}</div>
+        <div class="color-me">{{ schedule.stationary.hours }}</div>
       </div>
       <div>
         <div class="color-me font-extrabold">Rozpoczęcie</div>
         <div class="color-me">
-          {{ stationary.startDate | dateFormat }}
+          {{ schedule.stationary.startDate | dateFormat }}
         </div>
       </div>
       <div class="font-extrabold" :class="textColorClass">Online</div>
       <div>
         <div class="color-me font-extrabold">
-          <span v-html="online.daysOfWeek" />
+          <span v-html="schedule.online.daysOfWeek" />
         </div>
-        <div class="color-me">{{ online.hours }}</div>
+        <div class="color-me">{{ schedule.online.hours }}</div>
       </div>
       <div>
         <div class="color-me font-extrabold">Rozpoczęcie</div>
         <div class="color-me">
-          {{ online.startDate | dateFormat }}
+          {{ schedule.online.startDate | dateFormat }}
         </div>
       </div>
     </div>
@@ -91,19 +93,7 @@ export default {
       type: String,
       required: true,
     },
-    hoursCount: {
-      type: Number,
-      required: true,
-    },
-    singleLessonDurationInMin: {
-      type: String,
-      required: true,
-    },
-    stationary: {
-      type: Object,
-      required: true,
-    },
-    online: {
+    schedule: {
       type: Object,
       required: true,
     },
