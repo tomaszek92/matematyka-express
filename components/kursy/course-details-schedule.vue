@@ -48,7 +48,7 @@ export default {
       return [
         {
           key: 'stationary',
-          highlight: 'red',
+          dot: 'red',
           dates: this.scheduleStationary,
           popover: {
             label: 'Zajęcia stacjonarne 16:00-17:30',
@@ -56,7 +56,7 @@ export default {
         },
         {
           key: 'online',
-          highlight: 'blue',
+          dot: 'blue',
           dates: this.scheduleOnline,
           popover: {
             label: 'Zajęcia online 10:00-11:30',
