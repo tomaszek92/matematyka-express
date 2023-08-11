@@ -15,23 +15,27 @@
         <div class="title text-center text-4xl font-extrabold mb-4">
           Lokalizacja
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 justify-items-center">
-          <div class="grid content-center">
-            <img src="/img/kursy/lokalizacja_mapa.png" alt="mapa" />
+        <div class="grid grid-cols-1 justify-items-center">
+          <div class="mt-2 mb-8">
+            <div class="flex justify-center mb-2">
+              <img
+                src="/img/kursy/vector.png"
+                alt="mapa"
+                style="height: 3rem"
+              />
+            </div>
+            <div class="text-center">
+              Kursy w formie stacjonarnej odbywają się na ul. Wilczej 56/6 w
+              Warszawie.
+            </div>
           </div>
-          <div class="text-center">
-            <div class="my-4">
-              Kursy odbywają się WYŁĄCZNIE w&nbsp;formie stacjonarnej,
-              w&nbsp;budynku (nad Cafe Peron) przy ulicy Patriotów 303, Warszawa
-              Wawer na II piętrze.
+          <div class="mb-4 md:mb-0">
+            <div class="flex justify-center mb-2">
+              <img src="/img/kursy/skype.png" alt="mapa" style="height: 3rem" />
             </div>
-            <div class="mb-4">
-              <strong>Doskonały dojazd komunikacją miejską.</strong>
+            <div class="text-center">
+              Kursy w formie online odbywają się za pośrednictwem Skype.
             </div>
-            <div class="mb-4">
-              <strong>Autobusy:</strong> 115, 119, 147, 213, 305, 319, 521
-            </div>
-            <div><strong>PKP:</strong> R1, R3, R7, R8, S1</div>
           </div>
         </div>
       </div>
@@ -49,7 +53,7 @@
             <strong>Opłata w 2 ratach</strong><br />
             1 rata- za miesiące (wrzesień- grudzień)-płatne przed rozpoczęciem
             kursu 2 rata- za miesiące (styczeń-maj/kwiecień)-płatne do
-            31.12.2022r.
+            31.12.2023r.
           </div>
           <div class="mb-4">
             <strong>Opłata miesięczna (w 8/9 ratach)</strong><br />

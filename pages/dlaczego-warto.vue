@@ -21,7 +21,7 @@
       <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-6">
         <dlaczego-warto-reason img-src="/img/dlaczego-warto/doswiadczenie.png">
           <span>
-            Ponad <strong>6 lat<br />doświadczenia</strong>
+            Ponad <strong>7 lat<br />doświadczenia</strong>
             <br />
             w&nbsp;nauczaniu matematyki
           </span>
@@ -72,30 +72,31 @@
       <dlaczego-warto-lesson-form>
         <template #header>
           <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9776.273335187107!2d21.0107336!3d52.2239763!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ed397781dd219%3A0x4c4d6399d282872!2sMatematyka%20Express!5e0!3m2!1spl!2spl!4v1691607007430!5m2!1spl!2spl"
             width="100%"
             height="321"
-            frameborder="0"
-            scrolling="no"
-            marginheight="0"
-            marginwidth="0"
-            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=pl&amp;q=patriot%C3%B3w%20303+(Nazwa%20mojej%20firmy)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-          >
-          </iframe>
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </template>
         <template #title> Stacjonarnie </template>
         <template #content>
           <div>
-            W tej formie odbywają się zarówno zajęcia indywidualne
-            i&nbsp;grupowe. Jest to budynek (nad Cafe Peron) przy ulicy
-            Patriotów 303, Warszawa Wawer, II piętro.
+            Zajęcia odbywają się w samym <strong>centrum Warszawy</strong> na
+            Wilczej 56/6 (I piętro).
+            <br />
+            <br />
+            <strong>Doskonały dojazd komunikacją miejską.</strong>
+            <br />
+            <br />
+            <strong>Plac Konstytucji</strong>- 5 min pieszo
+            <br />
+            <strong>Koszykowa</strong>- 6 min pieszo Metro
+            <br />
+            <strong>Centrum/Politechnika</strong>- 10 min pieszo
           </div>
-          <br />
-          <div class="font-medium">Doskonały dojazd komunikacją miejską.</div>
-          <div>
-            <span class="font-medium">Autobusy:</span> 115, 119, 147, 213, 305,
-            319, 521
-          </div>
-          <div><span class="font-medium">PKP:</span> R1, R3, R7, R8, S1</div>
         </template>
       </dlaczego-warto-lesson-form>
       <dlaczego-warto-lesson-form>

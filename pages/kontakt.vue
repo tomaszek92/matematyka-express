@@ -4,14 +4,13 @@
       Skontaktuj się
     </div>
     <div class="text-center text-lg font-medium mb-4">JESTEM TU DLA CIEBIE</div>
-    <div class="subtitle text-center text-xl font-extrabold mb-4">
+    <div class="color-me text-center text-xl font-extrabold mb-4">
       Matematyka Express
     </div>
     <div class="text-center">
-      ul. Patriotów 303<br />
-      04-767 Warszawa<br />
-      Lokal nad Cafe Peron<br />
-      Piętro II<br />
+      ul. Wilcza 56/6<br />
+      00-679 Warszawa<br />
+      Piętro I<br />
       <a class="" :href="`tel:${telephone}`">
         <span>{{ telephone | telephone }}</span>
       </a>
@@ -24,15 +23,14 @@
     </div>
     <div class="mt-8">
       <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9776.273335187107!2d21.0107336!3d52.2239763!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ed397781dd219%3A0x4c4d6399d282872!2sMatematyka%20Express!5e0!3m2!1spl!2spl!4v1691607007430!5m2!1spl!2spl"
         width="100%"
         height="400"
-        frameborder="0"
-        scrolling="no"
-        marginheight="0"
-        marginwidth="0"
-        src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=pl&amp;q=patriot%C3%B3w%20303+(Nazwa%20mojej%20firmy)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-      >
-      </iframe>
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
     </div>
   </div>
 </template>
@@ -55,9 +53,3 @@ export default {
   },
 }
 </script>
-
-<style scoped>
-.subtitle {
-  color: #360c71;
-}
-</style>

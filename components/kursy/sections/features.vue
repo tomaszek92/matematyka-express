@@ -11,7 +11,7 @@
     <div>
       <kursy-course-feature img-src="/img/kursy/lokalizacja.png">
         Zajęcia grupowe prowadzone są w&nbsp;formie stacjonarnej przy ulicy
-        Patriotów 303, Warszawa Wawer.
+        Wilczej 56/6, Warszawa Śródmieście.
       </kursy-course-feature>
     </div>
     <div>

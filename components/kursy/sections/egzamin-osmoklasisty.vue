@@ -4,9 +4,6 @@
     main-img-src="/img/kursy/egzamin_osmoklasisty_main.png"
     :effects="effects"
     :schedule="schedule"
-    :duration-in-min="90"
-    :price="74"
-    :promo-price="59"
   >
     <template #title>
       <span>

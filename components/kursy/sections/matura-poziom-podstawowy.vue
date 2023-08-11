@@ -4,9 +4,6 @@
     main-img-src="/img/kursy/matura_podstawowa_main.png"
     :effects="effects"
     :schedule="schedule"
-    :price="99"
-    :promo-price="79"
-    :duration-in-min="120"
   >
     <template #title>
       <span>

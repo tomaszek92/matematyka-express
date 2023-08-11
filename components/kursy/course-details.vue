@@ -1,9 +1,9 @@
 <template>
   <div>
-    <div class="color text-center text-2xl mb-6 font-extrabold">
+    <div class="color-me text-center text-2xl mb-6 font-extrabold">
       <slot name="title" />
     </div>
-    <div class="color text-center text-xl mb-6 font-semibold">
+    <div class="color-me text-center text-xl mb-6 font-semibold">
       <slot name="subtitle" />
     </div>
     <div
@@ -27,14 +27,22 @@
       class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-0 items-center justify-items-center"
     >
       <div class="mb-4 lg:mb-0">
-        <kursy-course-details-schedule :name="name" :schedule="schedule" />
+        <kursy-course-details-price
+          class="mb-8"
+          :duration-in-hours="schedule.allLessonsDurationInHours"
+          :price="schedule.allLessonsPrice"
+        />
+        <kursy-course-details-schedule
+          :name="name"
+          :schedule-stationary="schedule.stationary"
+          :schedule-online="schedule.online"
+        />
       </div>
       <div class="lg:ml-16 lg:mt-12">
         <card
           people-count="4-5 osób"
-          :duration-in-min="durationInMin"
-          :promo-price="promoPrice"
-          :price="price"
+          :duration-in-min="schedule.singleLessonDurationInMinutes"
+          :price="schedule.singleLessonPrice"
           :btn-opt="{ to: '#zapisz-sie', text: 'zapisz się' }"
         >
           <template #badge> Cena za jedne zajęcia </template>
@@ -50,6 +58,21 @@
             .
           </template>
         </card>
+        <div>
+          <div
+            class="mt-4 font-extrabold text-2xl text-center"
+            style="color: #e92323"
+          >
+            PROMOCJA!!!
+            <br />
+            Zapisz się ze znajomym
+            <br />
+            i&nbsp;otrzymajcie -10% na cały kurs!*
+          </div>
+          <div class="mt-2 text-sm text-center" style="color: #e92323">
+            *Cena promocyjna obowiązuje przy zapisie na zajęcia do 03.09.2023 r.
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -72,27 +95,9 @@ export default {
       required: true,
     },
     schedule: {
-      type: Array,
-      required: true,
-    },
-    price: {
-      type: Number,
-      required: true,
-    },
-    promoPrice: {
-      type: Number,
-      required: true,
-    },
-    durationInMin: {
-      type: Number,
+      type: Object,
       required: true,
     },
   },
 }
 </script>
-
-<style scoped>
-.color {
-  color: #360c71;
-}
-</style>

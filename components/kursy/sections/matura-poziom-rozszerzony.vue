@@ -4,9 +4,6 @@
     main-img-src="/img/kursy/matura_rozszerzona_main.png"
     :effects="effects"
     :schedule="schedule"
-    :price="149"
-    :promo-price="119"
-    :duration-in-min="180"
   >
     <template #title>
       <span>
@@ -16,7 +13,9 @@
         i&nbsp;nadrobienia ewentualnych braków.
       </span>
     </template>
-    <template #subtitle> Jedne zajęcia trwają 3 godziny. </template>
+    <template #subtitle>
+      Zajęcia odbywają sie dwa razy w tygodniu. Jedno spotkanie trwa 1,5h.
+    </template>
   </kursy-course-details>
 </template>
 

@@ -1,29 +1,24 @@
 <template>
-  <div class="rounded-xl shadow-xl bg-white text-center p-8 pt-12">
+  <div
+    class="rounded-xl shadow-xl bg-white text-center pb-8 pt-12 px-4 grid"
+    style="grid-template-rows: 0 3rem 2rem 2rem min-content 1fr"
+  >
     <div
       :class="`badge text-white font-extrabold h-16 rounded-xl flex flex-col items-center justify-center ${title}-${subtitle}`"
     >
       <div class="uppercase text-xl">{{ title }}</div>
       <div>{{ subtitle }}</div>
     </div>
-    <div class="font-extrabold text-5xl mb-2">
-      <span :class="`${title}-${subtitle}-text`">{{ hoursCount }}h</span>
+    <div class="font-extrabold text-5xl">
+      <span :class="textColorClass"
+        >{{ schedule.allLessonsDurationInHours }}h</span
+      >
     </div>
-    <div class="font-extrabold text-lg mb-1">
-      {{ weekday }}
-    </div>
-    <div class="mb-1">
-      {{ hours }}
-    </div>
-    <div class="font-extrabold text-lg mb-1">Rozpoczęcie</div>
-    <div class="mb-1">
-      {{ start }}
-    </div>
-    <div class="mb-1 flex items-center justify-center mb-1">
+    <div class="flex items-center justify-center" :class="textColorClass">
       <img src="/img/shared/duration.png" alt="czas trwania" class="mr-2 h-4" />
-      <span>{{ durationInMin }} min</span>
+      <span>{{ schedule.singleLessonDurationInMinutes }} min</span>
     </div>
-    <div class="mb-2 flex items-center justify-center mb-1">
+    <div class="flex items-center justify-center mb-2" :class="textColorClass">
       <img
         src="/img/shared/people_count.png"
         alt="czas trwania"
@@ -32,10 +27,42 @@
       <span>4-5 osób</span>
     </div>
 
-    <div class="flex justify-center">
+    <div class="grid grid-flow-col grid-locations items-center">
+      <div class="font-extrabold text-lg" :class="textColorClass">
+        Stacjonarnie
+      </div>
+      <div>
+        <div class="color-me font-extrabold">
+          <span v-html="schedule.stationary.daysOfWeek" />
+        </div>
+        <div class="color-me">{{ schedule.stationary.hours }}</div>
+      </div>
+      <div>
+        <div class="color-me font-extrabold">Rozpoczęcie</div>
+        <div class="color-me">
+          {{ schedule.stationary.startDate | dateFormat }}
+        </div>
+      </div>
+      <div class="font-extrabold" :class="textColorClass">Online</div>
+      <div>
+        <div class="color-me font-extrabold">
+          <span v-html="schedule.online.daysOfWeek" />
+        </div>
+        <div class="color-me">{{ schedule.online.hours }}</div>
+      </div>
+      <div>
+        <div class="color-me font-extrabold">Rozpoczęcie</div>
+        <div class="color-me">
+          {{ schedule.online.startDate | dateFormat }}
+        </div>
+      </div>
+    </div>
+
+    <div class="flex justify-center items-end xl:mt-4">
       <nuxt-link
         :to="{ hash: url }"
-        :class="`button block text-white uppercase font-extrabold px-8 py-3 rounded-xl mt-4 ${title}-${subtitle}`"
+        :class="`button text-white uppercase font-extrabold px-8 flex items-center rounded-xl ${title}-${subtitle}`"
+        style="height: 3rem"
       >
         więcej
       </nuxt-link>
@@ -44,8 +71,15 @@
 </template>
 
 <script>
+import { format } from 'date-fns'
+
 export default {
   name: 'MatematykaExpressCourse',
+  filters: {
+    dateFormat(date) {
+      return format(date, 'dd.MM.yyy')
+    },
+  },
   props: {
     url: {
       type: String,
@@ -59,25 +93,14 @@ export default {
       type: String,
       required: true,
     },
-    hoursCount: {
-      type: Number,
+    schedule: {
+      type: Object,
       required: true,
     },
-    weekday: {
-      type: String,
-      required: true,
-    },
-    hours: {
-      type: String,
-      required: true,
-    },
-    start: {
-      type: String,
-      required: true,
-    },
-    durationInMin: {
-      type: Number,
-      required: true,
+  },
+  computed: {
+    textColorClass() {
+      return `${this.title}-${this.subtitle}-text`
     },
   },
 }
@@ -119,5 +142,11 @@ export default {
   background: linear-gradient(270deg, #ed428b -4.56%, #8a1848 115.09%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.grid-locations {
+  grid-template-rows: 1fr 2fr 2fr;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 2px;
 }
 </style>
