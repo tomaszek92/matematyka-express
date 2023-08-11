@@ -58,7 +58,7 @@
       </div>
     </div>
 
-    <div class="flex justify-center items-end">
+    <div class="flex justify-center items-end xl:mt-4">
       <nuxt-link
         :to="{ hash: url }"
         :class="`button text-white uppercase font-extrabold px-8 flex items-center rounded-xl ${title}-${subtitle}`"
