@@ -1,9 +1,9 @@
 <template>
   <div>
-    <div class="color text-center text-2xl mb-6 font-extrabold">
+    <div class="color-me text-center text-2xl mb-6 font-extrabold">
       <slot name="title" />
     </div>
-    <div class="color text-center text-xl mb-6 font-semibold">
+    <div class="color-me text-center text-xl mb-6 font-semibold">
       <slot name="subtitle" />
     </div>
     <div
@@ -121,9 +121,3 @@ export default {
   },
 }
 </script>
-
-<style scoped>
-.color {
-  color: #360c71;
-}
-</style>

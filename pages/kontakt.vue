@@ -4,7 +4,7 @@
       Skontaktuj się
     </div>
     <div class="text-center text-lg font-medium mb-4">JESTEM TU DLA CIEBIE</div>
-    <div class="subtitle text-center text-xl font-extrabold mb-4">
+    <div class="color-me text-center text-xl font-extrabold mb-4">
       Matematyka Express
     </div>
     <div class="text-center">
@@ -53,9 +53,3 @@ export default {
   },
 }
 </script>
-
-<style scoped>
-.subtitle {
-  color: #360c71;
-}
-</style>
