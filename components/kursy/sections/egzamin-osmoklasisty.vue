@@ -1,5 +1,5 @@
 <template>
-  <kursy-course-details
+  <KursyCourseDetails
     name="egzamin-osmoklasisty"
     main-img-src="/img/kursy/egzamin_osmoklasisty_main.png"
     :effects="effects"
@@ -13,14 +13,13 @@
       </span>
     </template>
     <template #subtitle> Jedne zajęcia trwają 1,5 godziny. </template>
-  </kursy-course-details>
+  </KursyCourseDetails>
 </template>
 
 <script>
 import { effects, schedule } from '@/data/egzamin-osmoklasisty-data'
 
 export default {
-  name: 'MatematykaExpressEgzaminOsmoklasisty',
   data() {
     return {
       effects,

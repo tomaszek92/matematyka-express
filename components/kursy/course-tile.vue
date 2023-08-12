@@ -59,13 +59,13 @@
     </div>
 
     <div class="flex justify-center items-end xl:mt-4">
-      <nuxt-link
+      <NuxtLink
         :to="{ hash: url }"
         :class="`button text-white uppercase font-extrabold px-8 flex items-center rounded-xl ${title}-${subtitle}`"
         style="height: 3rem"
       >
         więcej
-      </nuxt-link>
+      </NuxtLink>
     </div>
   </div>
 </template>

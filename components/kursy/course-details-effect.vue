@@ -15,7 +15,6 @@
 
 <script>
 export default {
-  name: 'MatematykaExpressCourseDetailsEffect',
   props: {
     text: {
       type: String,

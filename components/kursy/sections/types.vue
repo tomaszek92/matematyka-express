@@ -1,18 +1,18 @@
 <template>
   <div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-4 lg:gap-8 mt-10">
-    <kursy-course
+    <KursyCourseTile
       url="#egzamin-osmoklasisty"
       title="egzamin"
       subtitle="ósmoklasisty"
       :schedule="egzaminOsmoklasistySchedule"
     />
-    <kursy-course
+    <KursyCourseTile
       url="#matura-poziom-podstawowy"
       title="matura"
       subtitle="podstawowa"
       :schedule="maturaPodstawowaSchedule"
     />
-    <kursy-course
+    <KursyCourseTile
       url="#matura-poziom-rozszerzony"
       title="matura"
       subtitle="rozszerzona"
@@ -27,7 +27,6 @@ import { schedule as maturaPodstawowaSchedule } from '@/data/matura-poziom-podst
 import { schedule as maturaRozszerzonaSchedule } from '@/data/matura-poziom-rozszerzony-data'
 
 export default {
-  name: 'MatematykaExpressKursyTypes',
   data() {
     return {
       egzaminOsmoklasistySchedule,

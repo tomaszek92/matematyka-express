@@ -18,7 +18,7 @@
             Jakich efektów możesz oczekiwać po ukończeniu kursu?
           </div>
           <template v-for="effect in effects" :key="effect">
-            <kursy-course-details-effect :text="effect" />
+            <KursyCourseDetailsEffect :text="effect" />
           </template>
         </div>
       </div>
@@ -27,19 +27,19 @@
       class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-0 items-center justify-items-center"
     >
       <div class="mb-4 lg:mb-0">
-        <kursy-course-details-price
+        <KursyCourseDetailsPrice
           class="mb-8"
           :duration-in-hours="schedule.allLessonsDurationInHours"
           :price="schedule.allLessonsPrice"
         />
-        <kursy-course-details-schedule
+        <KursyCourseDetailsSchedule
           :name="name"
           :schedule-stationary="schedule.stationary"
           :schedule-online="schedule.online"
         />
       </div>
       <div class="lg:ml-16 lg:mt-12">
-        <card
+        <Card
           people-count="4-5 osób"
           :duration-in-min="schedule.singleLessonDurationInMinutes"
           :price="schedule.singleLessonPrice"
@@ -57,7 +57,7 @@
             </a>
             .
           </template>
-        </card>
+        </Card>
         <div>
           <div
             class="mt-4 font-extrabold text-2xl text-center"
@@ -80,7 +80,6 @@
 
 <script>
 export default {
-  name: 'MatematykaExpressCourseDetails',
   props: {
     name: {
       type: String,

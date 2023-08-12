@@ -28,7 +28,6 @@
 
 <script>
 export default {
-  name: 'MatematykaExpressCourseDetailsSchedule',
   props: {
     name: {
       type: String,

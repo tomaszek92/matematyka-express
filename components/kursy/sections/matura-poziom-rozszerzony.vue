@@ -1,5 +1,5 @@
 <template>
-  <kursy-course-details
+  <KursyCourseDetails
     name="matura-poziom-rozszerzony"
     main-img-src="/img/kursy/matura_rozszerzona_main.png"
     :effects="effects"
@@ -16,14 +16,13 @@
     <template #subtitle>
       Zajęcia odbywają sie dwa razy w tygodniu. Jedno spotkanie trwa 1,5h.
     </template>
-  </kursy-course-details>
+  </KursyCourseDetails>
 </template>
 
 <script>
 import { effects, schedule } from '@/data/matura-poziom-rozszerzony-data'
 
 export default {
-  name: 'MatematykaExpressMaturaPoziomRozszerzony',
   data() {
     return {
       effects,

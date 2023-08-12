@@ -15,7 +15,6 @@
 
 <script>
 export default {
-  name: 'MatematykaExpressCourseDetailsPrice',
   props: {
     price: {
       type: Number,

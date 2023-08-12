@@ -1,14 +1,14 @@
 <template>
   <div>
-    <kursy-sections-features />
+    <KursySectionsFeatures />
     <hr />
-    <kursy-sections-types />
+    <KursySectionsTypes />
     <hr />
-    <kursy-sections-egzamin-osmoklasisty id="egzamin-osmoklasisty" />
+    <KursySectionsEgzaminOsmoklasisty id="egzamin-osmoklasisty" />
     <hr />
-    <kursy-sections-matura-poziom-podstawowy id="matura-poziom-podstawowy" />
+    <KursySectionsMaturaMoziomPodstawowy id="matura-poziom-podstawowy" />
     <hr />
-    <kursy-sections-matura-poziom-rozszerzony id="matura-poziom-rozszerzony" />
+    <KursySectionsMaturaPoziomRozszerzony id="matura-poziom-rozszerzony" />
     <hr />
     <div id="zapisz-sie" class="grid grid-cols-1 md:grid-cols-2 gap-4">
       <div>
