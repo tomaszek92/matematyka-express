@@ -69,7 +69,9 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, useSlots } from 'vue'
+
+const slots = useSlots()
 
 const props = defineProps({
   price: {
@@ -119,13 +121,13 @@ const isCaptionVisible = computed(() => {
 })
 
 const savingPercentage = computed(() => {
-  const value = (props.price - props.promoPrice) / this.price
+  const value = (props.price - props.promoPrice) / props.price
   return `${Math.round(value * 100)}%`
 })
 
 // todo
 function isSlotVisible(slotName) {
-  return !!this.$slots[slotName]
+  return !!slots[slotName]
 }
 </script>
 

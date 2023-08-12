@@ -98,11 +98,11 @@ const textColorClass = computed(() => {
 })
 
 const stationaryStartDate = computed(() => {
-  return dateFormat(this.schedule.stationary.startDate)
+  return dateFormat(props.schedule.stationary.startDate)
 })
 
 const onlineStartDate = computed(() => {
-  return dateFormat(this.schedule.online.startDate)
+  return dateFormat(props.schedule.online.startDate)
 })
 
 function dateFormat(date) {
