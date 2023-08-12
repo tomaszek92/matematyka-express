@@ -40,7 +40,7 @@
       <div>
         <div class="color-me font-extrabold">Rozpoczęcie</div>
         <div class="color-me">
-          {{ schedule.stationary.startDate | dateFormat }}
+          {{ stationaryStartDate }}
         </div>
       </div>
       <div class="font-extrabold" :class="textColorClass">Online</div>
@@ -53,7 +53,7 @@
       <div>
         <div class="color-me font-extrabold">Rozpoczęcie</div>
         <div class="color-me">
-          {{ schedule.online.startDate | dateFormat }}
+          {{ onlineStartDate }}
         </div>
       </div>
     </div>
@@ -74,12 +74,6 @@
 import { format } from 'date-fns'
 
 export default {
-  name: 'MatematykaExpressCourse',
-  filters: {
-    dateFormat(date) {
-      return format(date, 'dd.MM.yyy')
-    },
-  },
   props: {
     url: {
       type: String,
@@ -102,7 +96,18 @@ export default {
     textColorClass() {
       return `${this.title}-${this.subtitle}-text`
     },
+    stationaryStartDate() {
+      return this.dateFormat(this.schedule.stationary.startDate);
+    },
+    onlineStartDate() {
+      return this.dateFormat(this.schedule.online.startDate);
+    }
   },
+  methods: {
+    dateFormat(date) {
+      return format(date, 'dd.MM.yyy')
+    }
+  }
 }
 </script>
 
