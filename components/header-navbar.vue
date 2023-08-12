@@ -38,20 +38,25 @@
       </div>
       <div class="flex mt-4 lg:mt-0 lg:ml-6">
         <div class="mr-4">
-          <a
-            href="https://www.instagram.com/matematyka_express/"
-            target="_blank"
-          >
-            <img class="h-8" src="/instagram_logo.png" alt="instagram logo" />
-          </a>
+          <HeaderNavbarSocialLink
+            name="TikTok"
+            img-src="/tik_tok_logo.png"
+            link="https://www.tiktok.com/@matematykaexpress"
+          />
+        </div>
+        <div class="mr-4">
+          <HeaderNavbarSocialLink
+            name="Instagram"
+            img-src="/instagram_logo.png"
+            link="https://www.instagram.com/matematyka_express/"
+          />
         </div>
         <div>
-          <a
-            href="https://www.facebook.com/Matematyka-Express-108904580797830/"
-            target="_blank"
-          >
-            <img class="h-8" src="/facebook_logo.png" alt="facebook logo" />
-          </a>
+          <HeaderNavbarSocialLink
+            name="Facebook"
+            img-src="/facebook_logo.png"
+            link="https://www.facebook.com/Matematyka-Express-108904580797830/"
+          />
         </div>
       </div>
     </div>

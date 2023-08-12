@@ -1,12 +1,12 @@
 <template>
   <nav class="flex flex-wrap gradient-background text-white p-6">
     <div class="flex col-1 pt-1">
-      <nuxt-link to="/" class="flex lg:block items-center">
+      <NuxtLink to="/" class="flex lg:block items-center">
         <img class="h-14 cursor-pointer" src="/logo.png" alt="logo" />
         <div class="ml-4 lg:ml-0 lg:mt-4 pr-8">
           Skuteczne korepetycje i&nbsp;kursy z&nbsp;matematyki
         </div>
-      </nuxt-link>
+      </NuxtLink>
     </div>
     <div class="col-2">
       <div class="text-xl font-extrabold mb-4">Dane kontaktowe</div>
@@ -32,24 +32,25 @@
           </a>
         </div>
         <div>
-          <a
-            class="flex items-center"
-            href="https://www.facebook.com/Matematyka-Express-108904580797830/"
-            target="_blank"
-          >
-            <img class="h-4 mr-2" src="/facebook_logo.png" alt="facebook" />
-            <span>Facebook</span>
-          </a>
+          <FooterNavbarSocialLink
+            name="TikTok"
+            img-src="/tik_tok_logo.png"
+            link="https://www.tiktok.com/@matematykaexpress"
+          />
         </div>
         <div>
-          <a
-            class="flex items-center"
-            href="https://www.instagram.com/matematyka_express/"
-            target="_blank"
-          >
-            <img class="h-4 mr-2" src="/instagram_logo.png" alt="instagram" />
-            <span>Instagram</span>
-          </a>
+          <FooterNavbarSocialLink
+            name="Instagram"
+            img-src="/instagram_logo.png"
+            link="https://www.instagram.com/matematyka_express/"
+          />
+        </div>
+        <div>
+          <FooterNavbarSocialLink
+            name="Facebook"
+            img-src="/facebook_logo.png"
+            link="https://www.facebook.com/Matematyka-Express-108904580797830/"
+          />
         </div>
         <div>
           <a class="flex items-center" :href="`mailto:${EMAIL}`">
