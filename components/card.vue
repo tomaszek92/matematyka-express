@@ -43,7 +43,7 @@
         <span>{{ peopleCount }}</span>
       </div>
       <div v-show="isPromoPriceVisible" class="saving font-extrabold text-2xl">
-        Oszczędzasz {{ saving | percent }}
+        Oszczędzasz {{ savingPercentage }}
       </div>
       <div v-if="btnOpt" class="flex justify-center">
         <nuxt-link
@@ -121,8 +121,9 @@ export default {
     isCaptionVisible() {
       return this.isSlotVisible('caption')
     },
-    saving() {
-      return (this.price - this.promoPrice) / this.price
+    savingPercentage() {
+      const value = (this.price - this.promoPrice) / this.price;
+      return `${Math.round(value * 100)}%`
     },
   },
   methods: {

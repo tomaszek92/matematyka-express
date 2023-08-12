@@ -9,7 +9,6 @@ import { TITLE } from "~/data/general";
 
 useHead({
   titleTemplate: (titleChunk) => {
-    console.log(titleChunk);
     return titleChunk ? `${titleChunk} | ${TITLE}` : TITLE;
   }
 })
