@@ -6,7 +6,7 @@
     <hr />
     <KursySectionsEgzaminOsmoklasisty id="egzamin-osmoklasisty" />
     <hr />
-    <KursySectionsMaturaMoziomPodstawowy id="matura-poziom-podstawowy" />
+    <KursySectionsMaturaPoziomPodstawowy id="matura-poziom-podstawowy" />
     <hr />
     <KursySectionsMaturaPoziomRozszerzony id="matura-poziom-rozszerzony" />
     <hr />
