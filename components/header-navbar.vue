@@ -7,7 +7,7 @@
         <img class="h-14 cursor-pointer" src="/logo.png" alt="logo" />
       </NuxtLink>
     </div>
-    <div class="block lg:hidden" ref="menu">
+    <div ref="menu" class="block lg:hidden">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         class="h-8 w-8 cursor-pointer lg:hidden block text-white"
