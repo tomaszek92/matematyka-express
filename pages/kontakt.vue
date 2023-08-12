@@ -12,7 +12,7 @@
       00-679 Warszawa<br />
       Piętro I<br />
       <a class="" :href="`tel:${telephone}`">
-        <span>{{ telephone | telephone }}</span>
+        <span>{{ telephone }}</span>
       </a>
       <br />
       <a class="" :href="`mailto:${email}`">
@@ -42,14 +42,19 @@ useHead({
 </script>
 
 <script>
+import { formatTelephone } from '../helpers/formatters'
 import { EMAIL, TELEPHONE } from '@/data/general'
 
 export default {
   data() {
     return {
       email: EMAIL,
-      telephone: TELEPHONE,
     }
   },
+  computed: {
+    telephone() {
+      return formatTelephone(TELEPHONE);
+    }
+  }
 }
 </script>

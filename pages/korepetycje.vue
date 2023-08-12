@@ -1,6 +1,6 @@
 <template>
   <div>
-    <two-column img-src="/img/korepetycje/korepetycje_index_1.png">
+    <TwoColumn img-src="/img/korepetycje/korepetycje_index_1.png">
       <template #title>
         <span class="title text-5xl xl:text-7xl">Korepetycje</span>
       </template>
@@ -29,11 +29,11 @@
         Zajęcia prowadzę zarówno w formie <strong>stacjonarnej</strong>, jak
         i&nbsp;<strong>online</strong>.
       </template>
-    </two-column>
+    </TwoColumn>
 
     <div class="mb-4 md:mb-6 xl:mb-8"></div>
 
-    <two-column img-src="/img/korepetycje/korepetycje_index_2.png">
+    <TwoColumn img-src="/img/korepetycje/korepetycje_index_2.png">
       <template #title>
         <span class="title text-3xl xl:text-5xl">
           Jak wygląda współpraca ze&nbsp;mną?
@@ -67,7 +67,7 @@
         </ul>
         <br />
       </template>
-    </two-column>
+    </TwoColumn>
 
     <div class="mb-4 md:mb-6 xl:mb-8"></div>
 
@@ -83,7 +83,7 @@
     <div class="mb-4 md:mb-6 xl:mb-8"></div>
 
     <div>
-      <two-column
+      <TwoColumn
         img-src="/img/korepetycje/korepetycje_index_3.png"
         :md-cols="1"
       >
@@ -102,7 +102,7 @@
         </template>
         <template #description>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-4">
-            <card
+            <Card
               :promo-price="130"
               :price="140"
               :duration-in-min="60"
@@ -116,8 +116,8 @@
               <template #price-description>
                 <div class="mb-2 color-me">ZA LEKCJĘ</div>
               </template>
-            </card>
-            <card
+            </Card>
+            <Card
               :promo-price="120"
               :price="130"
               :duration-in-min="60"
@@ -132,7 +132,7 @@
               <template #price-description>
                 <div class="mb-2 color-me">ZA LEKCJĘ</div>
               </template>
-            </card>
+            </Card>
           </div>
           <div class="text-sm mt-2 color-asterisk">
             *Cena promocyjna obowiązuje przy zapisie na zajęcia do 3.09.2023 r.
@@ -149,7 +149,7 @@
             .
           </div>
         </template>
-      </two-column>
+      </TwoColumn>
     </div>
   </div>
 </template>
