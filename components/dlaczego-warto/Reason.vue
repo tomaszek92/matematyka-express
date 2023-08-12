@@ -11,7 +11,6 @@
 
 <script>
 export default {
-  name: 'MatematykaExpressReason',
   props: {
     imgSrc: {
       type: String,
