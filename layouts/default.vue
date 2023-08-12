@@ -5,18 +5,13 @@
     </header>
     <main>
       <div class="container mx-auto p-4 md:p-8">
-        <nuxt></nuxt>
+        <slot/>
         <cookies-consent />
       </div>
     </main>
     <footer-navbar />
   </div>
 </template>
-<script>
-export default {
-  name: 'MatematykaExpressDefaultLayout',
-}
-</script>
 
 <style scoped>
 header {

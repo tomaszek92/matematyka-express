@@ -1,18 +1,16 @@
 <template>
-  <nuxt-link
+  <NuxtLink
     :to="url"
     class="navbar-link block mt-4 lg:inline-block lg:mt-0 font-extrabold text-white text-xl"
     @click.native="onClick"
   >
     {{ text }}
-  </nuxt-link>
+  </NuxtLink>
 </template>
 
 <script>
 import { ON_LINK_CLICK } from '@/events'
-
 export default {
-  name: 'MatematykaExpressHeaderNavbarLink',
   props: {
     url: {
       type: String,

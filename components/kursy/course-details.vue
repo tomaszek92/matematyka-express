@@ -17,8 +17,8 @@
           <div class="text-xl text-center lg:text-left mb-4 mt-4 lg:mt-0">
             Jakich efektów możesz oczekiwać po ukończeniu kursu?
           </div>
-          <template v-for="effect in effects">
-            <kursy-course-details-effect :key="effect" :text="effect" />
+          <template v-for="effect in effects" :key="effect">
+            <kursy-course-details-effect :text="effect" />
           </template>
         </div>
       </div>
