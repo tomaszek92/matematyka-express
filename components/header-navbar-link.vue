@@ -2,7 +2,7 @@
   <NuxtLink
     :to="url"
     class="navbar-link block mt-4 lg:inline-block lg:mt-0 font-extrabold text-white text-xl"
-    @click.native="onClick"
+    @click="onClick"
   >
     {{ text }}
   </NuxtLink>

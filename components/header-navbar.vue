@@ -71,7 +71,7 @@ const menu = ref()
 
 onClickOutside(menu, (e) => {
   if (!e.target.classList.contains('navbar-link')) {
-    onMenuToggle()
+    links.value.classList.add('hidden')
   }
 })
 
