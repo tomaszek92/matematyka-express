@@ -67,7 +67,7 @@
 import { useNuxtApp } from '#app'
 import { onBeforeMount, onMounted, onUnmounted, ref } from 'vue'
 import { onClickOutside } from '@vueuse/core'
-import { ON_LINK_CLICK } from '@/events'
+import { ON_LINK_CLICK } from '~/events'
 
 const { $bus } = useNuxtApp()
 

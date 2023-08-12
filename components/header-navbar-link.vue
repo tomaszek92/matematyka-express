@@ -10,7 +10,7 @@
 
 <script setup lang="ts">
 import { useNuxtApp } from '#app'
-import { ON_LINK_CLICK } from '@/events'
+import { ON_LINK_CLICK } from '~/events'
 
 const { $bus } = useNuxtApp()
 

@@ -20,5 +20,5 @@
 </template>
 
 <script setup lang="ts">
-import { effects, schedule } from '@/data/matura-poziom-rozszerzony-data'
+import { effects, schedule } from '~/data/matura-poziom-rozszerzony-data'
 </script>

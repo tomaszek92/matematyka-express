@@ -1,3 +1,5 @@
+import { Schedule } from '~/data/types'
+
 export const effects = [
   'zapoznasz się ze wszystkimi typami zadań egzaminacyjnych',
   'nauczysz się, jak gospodarować czasem na egzaminie',
@@ -6,7 +8,7 @@ export const effects = [
   'sprawię, że stres na egzaminie z matematyki nie będzie aż taki duży',
 ]
 
-export const schedule = {
+export const schedule: Schedule = {
   singleLessonDurationInMinutes: '90',
   singleLessonPrice: 75,
   allLessonsDurationInHours: 46.5,

@@ -94,7 +94,7 @@
 
 <script setup lang="ts">
 import { computed } from 'vue'
-import { EMAIL, TELEPHONE } from '@/data/general'
+import { EMAIL, TELEPHONE } from '~/data/general'
 import { formatTelephone } from '~/helpers/formatters'
 
 const formattedTelephone = computed(() => {

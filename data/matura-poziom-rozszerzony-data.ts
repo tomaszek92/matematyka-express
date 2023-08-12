@@ -1,3 +1,5 @@
+import { Schedule } from '~/data/types'
+
 export const effects = [
   'solidnie powtórzysz materiał potrzebny do napisania matury rozszerzonej',
   'nauczę Cię, jak skutecznie analizować zadania i je rozwiązywać',
@@ -67,7 +69,7 @@ const dates = [
   new Date(2024, 4, 8),
 ]
 
-export const schedule = {
+export const schedule: Schedule = {
   singleLessonDurationInMinutes: '2 x 90',
   singleLessonPrice: 75,
   allLessonsDurationInHours: 87,

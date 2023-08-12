@@ -17,5 +17,5 @@
 </template>
 
 <script setup lang="ts">
-import { effects, schedule } from '@/data/egzamin-osmoklasisty-data'
+import { effects, schedule } from '~/data/egzamin-osmoklasisty-data'
 </script>

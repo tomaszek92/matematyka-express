@@ -1,3 +1,5 @@
+import { Schedule } from '~/data/types'
+
 export const effects = [
   'przerobisz wszystkie zagadnienia występujące na egzaminie maturalnym',
   'nauczysz się korzystać z kart wzorów oraz dowiesz się, jakich wzorów brakuje w kartach',
@@ -6,7 +8,7 @@ export const effects = [
   'sprawię, że 30% z matury nie będzie stanowiło dla Ciebie wyzwania',
 ]
 
-export const schedule = {
+export const schedule: Schedule = {
   singleLessonDurationInMinutes: '120',
   singleLessonPrice: 100,
   allLessonsDurationInHours: 56,

@@ -101,7 +101,7 @@
 
 <script setup lang="ts">
 import { computed } from 'vue'
-import { TELEPHONE } from '@/data/general'
+import { TELEPHONE } from '~/data/general'
 import { formatTelephone } from '~/helpers/formatters'
 
 useHead({
