@@ -7,7 +7,7 @@
       <div class="text-sm">
         Korzystając ze strony internetowej Matematyka Express, zgadzasz się na
         <a
-          href="/statues/Polityka prywatności- Matematyka Express.pdf"
+          href="/statues/Polityka%20prywatności-%20Matematyka%20Express.pdf"
           target="_blank"
           class="underline"
         >
@@ -26,26 +26,20 @@
   </transition>
 </template>
 
-<script>
+<script setup lang="ts">
+import { onMounted } from 'vue'
+
 const KEY_ARE_COOKIES_ACCEPTED = 'ARE_COOKIES_ACCEPTED'
 
-export default {
-  name: 'MatematykaExpressCookiesConsent',
-  data() {
-    return {
-      areCookiesAccepted: true,
-    }
-  },
-  mounted() {
-    const areCookiesAccepted = localStorage.getItem(KEY_ARE_COOKIES_ACCEPTED)
-    this.areCookiesAccepted = !!areCookiesAccepted
-  },
-  methods: {
-    onAccept() {
-      this.areCookiesAccepted = true
-      localStorage.setItem(KEY_ARE_COOKIES_ACCEPTED, true.toString())
-    },
-  },
+let areCookiesAccepted = true
+
+onMounted(() => {
+  areCookiesAccepted = !!localStorage.getItem(KEY_ARE_COOKIES_ACCEPTED)
+})
+
+function onAccept() {
+  areCookiesAccepted = true
+  localStorage.setItem(KEY_ARE_COOKIES_ACCEPTED, true.toString())
 }
 </script>
 

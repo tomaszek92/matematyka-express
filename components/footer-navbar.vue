@@ -22,13 +22,13 @@
           </a>
         </div>
         <div>
-          <a class="flex items-center" :href="`tel:${telephone}`">
+          <a class="flex items-center" :href="`tel:${TELEPHONE}`">
             <img
               class="h-4 mr-2"
               src="/img/o-mnie/telephone.png"
               alt="telefon"
             />
-            <span>{{ telephone | telephone }}</span>
+            <span>{{ formattedTelephone }}</span>
           </a>
         </div>
         <div>
@@ -52,9 +52,9 @@
           </a>
         </div>
         <div>
-          <a class="flex items-center" :href="`mailto:${email}`">
+          <a class="flex items-center" :href="`mailto:${EMAIL}`">
             <img class="h-4 mr-2" src="/img/o-mnie/mail.png" alt="e-mail" />
-            <span>{{ email }}</span>
+            <span>{{ EMAIL }}</span>
           </a>
         </div>
       </div>
@@ -64,7 +64,7 @@
       <div class="grid grid-rows-3 gap-2">
         <div>
           <a
-            href="/statues/Polityka prywatności- Matematyka Express.pdf"
+            href="/statues/Polityka%20prywatności-%20Matematyka%20Express.pdf"
             target="_blank"
           >
             Polityka prywatności
@@ -72,7 +72,7 @@
         </div>
         <div>
           <a
-            href="/statues/Regulamin kursów- Matematyka Express.pdf"
+            href="/statues/Regulamin%20kursów-%20Matematyka%20Express.pdf"
             target="_blank"
           >
             Regulamin kursów
@@ -80,7 +80,7 @@
         </div>
         <div>
           <a
-            href="/statues/Regulamin korepetycji- Matematyka Express.pdf"
+            href="/statues/Regulamin%20korepetycji-%20Matematyka%20Express.pdf"
             target="_blank"
           >
             Regulamin korepetycji
@@ -91,18 +91,14 @@
   </nav>
 </template>
 
-<script>
+<script setup lang="ts">
+import { computed } from 'vue'
 import { EMAIL, TELEPHONE } from '@/data/general'
+import { formatTelephone } from '~/helpers/formatters'
 
-export default {
-  name: 'MatematykaExpressFooterNav',
-  data() {
-    return {
-      email: EMAIL,
-      telephone: TELEPHONE,
-    }
-  },
-}
+const formattedTelephone = computed(() => {
+  return formatTelephone(TELEPHONE)
+})
 </script>
 
 <style scoped>

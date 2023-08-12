@@ -11,12 +11,12 @@
       ul. Wilcza 56/6<br />
       00-679 Warszawa<br />
       Piętro I<br />
-      <a class="" :href="`tel:${telephone}`">
-        <span>{{ telephone | telephone }}</span>
+      <a class="" :href="`tel:${TELEPHONE}`">
+        <span>{{ formattedTelephone }}</span>
       </a>
       <br />
-      <a class="" :href="`mailto:${email}`">
-        <span>{{ email }}</span>
+      <a class="" :href="`mailto:${EMAIL}`">
+        <span>{{ EMAIL }}</span>
       </a>
       <br />
       33 1160 2202 0000 0002 6713 6076
@@ -35,21 +35,16 @@
   </div>
 </template>
 
-<script>
-import { EMAIL, getTitle, TELEPHONE } from '@/data/general'
+<script setup lang="ts">
+import { computed } from 'vue'
+import { formatTelephone } from '~/helpers/formatters'
+import { EMAIL, TELEPHONE } from '~/data/general'
 
-export default {
-  name: 'MatematykaExpressKontaktPage',
-  data() {
-    return {
-      email: EMAIL,
-      telephone: TELEPHONE,
-    }
-  },
-  head() {
-    return {
-      title: getTitle('Kontakt'),
-    }
-  },
-}
+useHead({
+  title: 'Kontakt',
+})
+
+const formattedTelephone = computed(() => {
+  return formatTelephone(TELEPHONE)
+})
 </script>

@@ -9,14 +9,11 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'MatematykaExpressCourseFeature',
-  props: {
-    imgSrc: {
-      type: String,
-      required: true,
-    },
+<script setup lang="ts">
+defineProps({
+  imgSrc: {
+    type: String,
+    required: true,
   },
-}
+})
 </script>

@@ -1,14 +1,14 @@
 <template>
   <div>
-    <kursy-sections-features />
+    <KursySectionsFeatures />
     <hr />
-    <kursy-sections-types />
+    <KursySectionsTypes />
     <hr />
-    <kursy-sections-egzamin-osmoklasisty id="egzamin-osmoklasisty" />
+    <KursySectionsEgzaminOsmoklasisty id="egzamin-osmoklasisty" />
     <hr />
-    <kursy-sections-matura-poziom-podstawowy id="matura-poziom-podstawowy" />
+    <KursySectionsMaturaPoziomPodstawowy id="matura-poziom-podstawowy" />
     <hr />
-    <kursy-sections-matura-poziom-rozszerzony id="matura-poziom-rozszerzony" />
+    <KursySectionsMaturaPoziomRozszerzony id="matura-poziom-rozszerzony" />
     <hr />
     <div id="zapisz-sie" class="grid grid-cols-1 md:grid-cols-2 gap-4">
       <div>
@@ -81,14 +81,14 @@
         <div>
           <a
             class="button flex items-center justify-center text-white text-xl font-extrabold px-8 py-4 rounded-xl max-w-md mx-auto"
-            :href="`tel:${telephone}`"
+            :href="`tel:${TELEPHONE}`"
           >
             <img
               class="h-4 mr-2"
               src="/img/o-mnie/telephone.png"
               alt="telefon"
             />
-            <span>{{ telephone | telephone }}</span>
+            <span>{{ formattedTelephone }}</span>
           </a>
         </div>
       </div>
@@ -99,22 +99,18 @@
   </div>
 </template>
 
-<script>
-import { getTitle, TELEPHONE } from '@/data/general'
+<script setup lang="ts">
+import { computed } from 'vue'
+import { TELEPHONE } from '@/data/general'
+import { formatTelephone } from '~/helpers/formatters'
 
-export default {
-  name: 'MatematykaExpressKursyPage',
-  data() {
-    return {
-      telephone: TELEPHONE,
-    }
-  },
-  head() {
-    return {
-      title: getTitle('Kursy'),
-    }
-  },
-}
+useHead({
+  title: 'Kursy',
+})
+
+const formattedTelephone = computed(() => {
+  return formatTelephone(TELEPHONE)
+})
 </script>
 
 <style scoped>

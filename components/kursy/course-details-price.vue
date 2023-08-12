@@ -13,20 +13,17 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'MatematykaExpressCourseDetailsPrice',
-  props: {
-    price: {
-      type: Number,
-      required: true,
-    },
-    durationInHours: {
-      type: Number,
-      required: true,
-    },
+<script setup lang="ts">
+defineProps({
+  price: {
+    type: Number,
+    required: true,
   },
-}
+  durationInHours: {
+    type: Number,
+    required: true,
+  },
+})
 </script>
 
 <style scoped>

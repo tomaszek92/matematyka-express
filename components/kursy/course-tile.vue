@@ -40,7 +40,7 @@
       <div>
         <div class="color-me font-extrabold">Rozpoczęcie</div>
         <div class="color-me">
-          {{ schedule.stationary.startDate | dateFormat }}
+          {{ stationaryStartDate }}
         </div>
       </div>
       <div class="font-extrabold" :class="textColorClass">Online</div>
@@ -53,56 +53,60 @@
       <div>
         <div class="color-me font-extrabold">Rozpoczęcie</div>
         <div class="color-me">
-          {{ schedule.online.startDate | dateFormat }}
+          {{ onlineStartDate }}
         </div>
       </div>
     </div>
 
     <div class="flex justify-center items-end xl:mt-4">
-      <nuxt-link
+      <NuxtLink
         :to="{ hash: url }"
         :class="`button text-white uppercase font-extrabold px-8 flex items-center rounded-xl ${title}-${subtitle}`"
         style="height: 3rem"
       >
         więcej
-      </nuxt-link>
+      </NuxtLink>
     </div>
   </div>
 </template>
 
-<script>
+<script setup lang="ts">
 import { format } from 'date-fns'
+import { computed } from 'vue'
 
-export default {
-  name: 'MatematykaExpressCourse',
-  filters: {
-    dateFormat(date) {
-      return format(date, 'dd.MM.yyy')
-    },
+const props = defineProps({
+  url: {
+    type: String,
+    required: true,
   },
-  props: {
-    url: {
-      type: String,
-      required: true,
-    },
-    title: {
-      type: String,
-      required: true,
-    },
-    subtitle: {
-      type: String,
-      required: true,
-    },
-    schedule: {
-      type: Object,
-      required: true,
-    },
+  title: {
+    type: String,
+    required: true,
   },
-  computed: {
-    textColorClass() {
-      return `${this.title}-${this.subtitle}-text`
-    },
+  subtitle: {
+    type: String,
+    required: true,
   },
+  schedule: {
+    type: Object,
+    required: true,
+  },
+})
+
+const textColorClass = computed(() => {
+  return `${props.title}-${props.subtitle}-text`
+})
+
+const stationaryStartDate = computed(() => {
+  return dateFormat(props.schedule.stationary.startDate)
+})
+
+const onlineStartDate = computed(() => {
+  return dateFormat(props.schedule.online.startDate)
+})
+
+function dateFormat(date) {
+  return format(date, 'dd.MM.yyy')
 }
 </script>
 

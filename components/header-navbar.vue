@@ -3,11 +3,11 @@
     class="flex items-center justify-between flex-wrap p-6 gradient-background"
   >
     <div class="flex items-center flex-shrink-0 mr-6">
-      <nuxt-link to="/">
+      <NuxtLink to="/">
         <img class="h-14 cursor-pointer" src="/logo.png" alt="logo" />
-      </nuxt-link>
+      </NuxtLink>
     </div>
-    <div v-click-outside="vcoConfig" class="block lg:hidden">
+    <div class="block lg:hidden" ref="menu">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         class="h-8 w-8 cursor-pointer lg:hidden block text-white"
@@ -29,12 +29,12 @@
       class="links w-full block flex-grow lg:flex lg:items-center lg:w-auto hidden"
     >
       <div class="lg:flex lg:justify-around lg:flex-grow">
-        <header-navbar-link text="Dlaczego warto" url="/dlaczego-warto" />
-        <header-navbar-link text="Kursy" url="/kursy" />
-        <header-navbar-link text="Korepetycje" url="/korepetycje" />
-        <header-navbar-link text="Opinie" url="/opinie" />
-        <header-navbar-link text="O mnie" url="/o-mnie" />
-        <header-navbar-link text="Kontakt" url="/kontakt" />
+        <HeaderNavbarLink text="Dlaczego warto" url="/dlaczego-warto" />
+        <HeaderNavbarLink text="Kursy" url="/kursy" />
+        <HeaderNavbarLink text="Korepetycje" url="/korepetycje" />
+        <HeaderNavbarLink text="Opinie" url="/opinie" />
+        <HeaderNavbarLink text="O mnie" url="/o-mnie" />
+        <HeaderNavbarLink text="Kontakt" url="/kontakt" />
       </div>
       <div class="flex mt-4 lg:mt-0 lg:ml-6">
         <div class="mr-4">
@@ -58,42 +58,41 @@
   </nav>
 </template>
 
-<script>
+<script setup lang="ts">
+import { useNuxtApp } from '#app'
+import { onBeforeMount, onMounted, onUnmounted, ref } from 'vue'
+import { onClickOutside } from '@vueuse/core'
 import { ON_LINK_CLICK } from '@/events'
 
-export default {
-  name: 'MatematykaExpressHeaderNavbar',
-  data() {
-    return {
-      vcoConfig: {
-        handler: this.onClickOutside,
-        middleware: this.canPropagateEvent,
-      },
-    }
-  },
-  created() {
-    this.$nuxt.$on(ON_LINK_CLICK, this.onMenuToggle)
-  },
-  mounted() {
-    window.addEventListener('resize', this.onResize)
-  },
-  destroyed() {
-    window.removeEventListener('resize', this.onResize)
-  },
-  methods: {
-    onMenuToggle() {
-      this.$refs.links.classList.toggle('hidden')
-    },
-    onResize() {
-      this.$refs.links.classList.add('hidden')
-    },
-    onClickOutside(e) {
-      this.$refs.links.classList.add('hidden')
-    },
-    canPropagateEvent(e) {
-      return !e.target.classList.contains('navbar-link')
-    },
-  },
+const { $bus } = useNuxtApp()
+
+const links = ref()
+const menu = ref()
+
+onClickOutside(menu, (e) => {
+  if (!e.target.classList.contains('navbar-link')) {
+    links.value.classList.add('hidden')
+  }
+})
+
+onBeforeMount(() => {
+  $bus.on(ON_LINK_CLICK, onMenuToggle)
+})
+
+onMounted(() => {
+  window.addEventListener('resize', onResize)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('resize', onResize)
+})
+
+function onMenuToggle() {
+  links.value.classList.toggle('hidden')
+}
+
+function onResize() {
+  links.value.classList.add('hidden')
 }
 </script>
 

@@ -1,33 +1,32 @@
 <template>
-  <nuxt-link
+  <NuxtLink
     :to="url"
     class="navbar-link block mt-4 lg:inline-block lg:mt-0 font-extrabold text-white text-xl"
-    @click.native="onClick"
+    @click="onClick"
   >
     {{ text }}
-  </nuxt-link>
+  </NuxtLink>
 </template>
 
-<script>
+<script setup lang="ts">
+import { useNuxtApp } from '#app'
 import { ON_LINK_CLICK } from '@/events'
 
-export default {
-  name: 'MatematykaExpressHeaderNavbarLink',
-  props: {
-    url: {
-      type: String,
-      required: true,
-    },
-    text: {
-      type: String,
-      required: true,
-    },
+const { $bus } = useNuxtApp()
+
+defineProps({
+  url: {
+    type: String,
+    required: true,
   },
-  methods: {
-    onClick() {
-      this.$nuxt.$emit(ON_LINK_CLICK)
-    },
+  text: {
+    type: String,
+    required: true,
   },
+})
+
+function onClick() {
+  $bus.emit(ON_LINK_CLICK)
 }
 </script>
 

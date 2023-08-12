@@ -20,12 +20,6 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'MatematykaExpressIndexPage',
-}
-</script>
-
 <style scoped>
 .wrapper {
   min-height: calc(100vh - 8.25rem);

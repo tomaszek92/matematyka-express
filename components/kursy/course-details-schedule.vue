@@ -1,12 +1,13 @@
 <template>
   <div class="grid justify-center">
-    <v-calendar
-      :attributes="attributes"
-      locale="pl"
-      :min-page="{ month: 9, year: 2023 }"
-      :max-page="{ month: 5, year: 2024 }"
-    >
-    </v-calendar>
+    <ClientOnly>
+      <v-calendar
+        :attributes="attributes"
+        locale="pl"
+        :min-page="{ month: 9, year: 2023 }"
+        :max-page="{ month: 5, year: 2024 }"
+      />
+    </ClientOnly>
     <div class="grid justify-center text-sm mt-1">
       <div class="flex">
         <div
@@ -26,46 +27,44 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'MatematykaExpressCourseDetailsSchedule',
-  props: {
-    name: {
-      type: String,
-      required: true,
-    },
-    scheduleStationary: {
-      type: Object,
-      required: true,
-    },
-    scheduleOnline: {
-      type: Object,
-      required: true,
-    },
+<script setup lang="ts">
+import { computed } from 'vue'
+
+const props = defineProps({
+  name: {
+    type: String,
+    required: true,
   },
-  computed: {
-    attributes() {
-      return [
-        {
-          key: 'stationary',
-          bar: 'purple',
-          dates: this.scheduleStationary.dates,
-          popover: {
-            label: `Zajęcia stacjonarne ${this.scheduleStationary.hours}`,
-          },
-        },
-        {
-          key: 'online',
-          bar: 'pink',
-          dates: this.scheduleOnline.dates,
-          popover: {
-            label: `Zajęcia online ${this.scheduleOnline.hours}`,
-          },
-        },
-      ]
-    },
+  scheduleStationary: {
+    type: Object,
+    required: true,
   },
-}
+  scheduleOnline: {
+    type: Object,
+    required: true,
+  },
+})
+
+const attributes = computed(() => {
+  return [
+    {
+      key: 'stationary',
+      bar: 'purple',
+      dates: props.scheduleStationary.dates,
+      popover: {
+        label: `Zajęcia stacjonarne ${props.scheduleStationary.hours}`,
+      },
+    },
+    {
+      key: 'online',
+      bar: 'pink',
+      dates: props.scheduleOnline.dates,
+      popover: {
+        label: `Zajęcia online ${props.scheduleOnline.hours}`,
+      },
+    },
+  ]
+})
 </script>
 
 <style scoped>

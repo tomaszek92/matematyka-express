@@ -1,5 +1,5 @@
 <template>
-  <kursy-course-details
+  <KursyCourseDetails
     name="matura-poziom-podstawowy"
     main-img-src="/img/kursy/matura_podstawowa_main.png"
     :effects="effects"
@@ -14,19 +14,9 @@
       </span>
     </template>
     <template #subtitle> Jedne zajęcia trwają 2 godziny. </template>
-  </kursy-course-details>
+  </KursyCourseDetails>
 </template>
 
-<script>
+<script setup lang="ts">
 import { effects, schedule } from '@/data/matura-poziom-podstawowy-data'
-
-export default {
-  name: 'MatematykaExpressMaturaPoziomPodstawowy',
-  data() {
-    return {
-      effects,
-      schedule,
-    }
-  },
-}
 </script>

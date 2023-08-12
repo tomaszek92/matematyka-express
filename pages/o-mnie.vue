@@ -67,22 +67,15 @@
   </div>
 </template>
 
-<script>
-import { getTitle } from '@/data/general'
-
-export default {
-  name: 'MatematykaExpressOMniePage',
-  head() {
-    return {
-      title: getTitle('O mnie'),
-    }
-  },
-}
+<script setup lang="ts">
+useHead({
+  title: 'O mnie',
+})
 </script>
 
 <style scoped>
 .quote {
-  quotes: '\201E''\201D''\00BB''\00AB';
+  quotes: '\201E' '\201D' '\00BB' '\00AB';
 }
 
 .quote:before {

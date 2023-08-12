@@ -19,57 +19,57 @@
         </div>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-6">
-        <dlaczego-warto-reason img-src="/img/dlaczego-warto/doswiadczenie.png">
+        <DlaczegoWartoReason img-src="/img/dlaczego-warto/doswiadczenie.png">
           <span>
             Ponad <strong>7 lat<br />doświadczenia</strong>
             <br />
             w&nbsp;nauczaniu matematyki
           </span>
-        </dlaczego-warto-reason>
-        <dlaczego-warto-reason img-src="/img/dlaczego-warto/male_grupy.png">
+        </DlaczegoWartoReason>
+        <DlaczegoWartoReason img-src="/img/dlaczego-warto/male_grupy.png">
           <span>
             Kursy prowadzone<br />
             w <strong>małych</strong><br />
             grupach<br />
             4-5 osobowych
           </span>
-        </dlaczego-warto-reason>
-        <dlaczego-warto-reason img-src="/img/dlaczego-warto/lokalizacja.png">
+        </DlaczegoWartoReason>
+        <DlaczegoWartoReason img-src="/img/dlaczego-warto/lokalizacja.png">
           <span>
             <strong>Doskonała</strong><br />
             <strong>lokalizacja</strong><br />
             zajęć<br />
             stacjonarnych
           </span>
-        </dlaczego-warto-reason>
-        <dlaczego-warto-reason img-src="/img/dlaczego-warto/online.png">
+        </DlaczegoWartoReason>
+        <DlaczegoWartoReason img-src="/img/dlaczego-warto/online.png">
           <span>
             Możliwość<br />
             wyboru zajęć<br />
             w formie<br />
             <strong>online</strong>
           </span>
-        </dlaczego-warto-reason>
-        <dlaczego-warto-reason img-src="/img/dlaczego-warto/atmosfera.png">
+        </DlaczegoWartoReason>
+        <DlaczegoWartoReason img-src="/img/dlaczego-warto/atmosfera.png">
           <span>
             <strong>Przyjazna</strong><br />
             i <strong>bezstresowa</strong><br />
             atmosfera<br />
             podczas zajęć
           </span>
-        </dlaczego-warto-reason>
-        <dlaczego-warto-reason img-src="/img/dlaczego-warto/konsultacje.png">
+        </DlaczegoWartoReason>
+        <DlaczegoWartoReason img-src="/img/dlaczego-warto/konsultacje.png">
           <span>
             Możliwość<br />
             <strong>bezpłatnych</strong><br />
             <strong>konsultacji</strong><br />
             po zajęciach
           </span>
-        </dlaczego-warto-reason>
+        </DlaczegoWartoReason>
       </div>
     </div>
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-16">
-      <dlaczego-warto-lesson-form>
+      <DlaczegoWartoLessonForm>
         <template #header>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9776.273335187107!2d21.0107336!3d52.2239763!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ed397781dd219%3A0x4c4d6399d282872!2sMatematyka%20Express!5e0!3m2!1spl!2spl!4v1691607007430!5m2!1spl!2spl"
@@ -98,8 +98,8 @@
             <strong>Centrum/Politechnika</strong>- 10 min pieszo
           </div>
         </template>
-      </dlaczego-warto-lesson-form>
-      <dlaczego-warto-lesson-form>
+      </DlaczegoWartoLessonForm>
+      <DlaczegoWartoLessonForm>
         <template #header>
           <div class="flex justify-center">
             <img
@@ -118,20 +118,13 @@
           aby&nbsp;do niej wrócić i&nbsp;zobaczyć, jak&nbsp;wykonywaliśmy dane
           zadanie &#128578;
         </template>
-      </dlaczego-warto-lesson-form>
+      </DlaczegoWartoLessonForm>
     </div>
   </div>
 </template>
 
-<script>
-import { getTitle } from '@/data/general'
-
-export default {
-  name: 'MatematykaExpressDlaczegoWartoPage',
-  head() {
-    return {
-      title: getTitle('Dlaczego warto'),
-    }
-  },
-}
+<script setup lang="ts">
+useHead({
+  title: 'Dlaczego warto',
+})
 </script>

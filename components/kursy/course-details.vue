@@ -17,8 +17,8 @@
           <div class="text-xl text-center lg:text-left mb-4 mt-4 lg:mt-0">
             Jakich efektów możesz oczekiwać po ukończeniu kursu?
           </div>
-          <template v-for="effect in effects">
-            <kursy-course-details-effect :key="effect" :text="effect" />
+          <template v-for="effect in effects" :key="effect">
+            <KursyCourseDetailsEffect :text="effect" />
           </template>
         </div>
       </div>
@@ -27,19 +27,19 @@
       class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-0 items-center justify-items-center"
     >
       <div class="mb-4 lg:mb-0">
-        <kursy-course-details-price
+        <KursyCourseDetailsPrice
           class="mb-8"
           :duration-in-hours="schedule.allLessonsDurationInHours"
           :price="schedule.allLessonsPrice"
         />
-        <kursy-course-details-schedule
+        <KursyCourseDetailsSchedule
           :name="name"
           :schedule-stationary="schedule.stationary"
           :schedule-online="schedule.online"
         />
       </div>
       <div class="lg:ml-16 lg:mt-12">
-        <card
+        <Card
           people-count="4-5 osób"
           :duration-in-min="schedule.singleLessonDurationInMinutes"
           :price="schedule.singleLessonPrice"
@@ -49,7 +49,7 @@
           <template #caption>
             Przed zapisaniem się na zajęcia zapoznaj się z
             <a
-              href="/statues/Regulamin kursów- Matematyka Express.pdf"
+              href="/statues/Regulamin%20kursów-%20Matematyka%20Express.pdf"
               target="_blank"
               class="underline"
             >
@@ -57,7 +57,7 @@
             </a>
             .
           </template>
-        </card>
+        </Card>
         <div>
           <div
             class="mt-4 font-extrabold text-2xl text-center"
@@ -78,26 +78,23 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'MatematykaExpressCourseDetails',
-  props: {
-    name: {
-      type: String,
-      required: true,
-    },
-    mainImgSrc: {
-      type: String,
-      required: true,
-    },
-    effects: {
-      type: Array,
-      required: true,
-    },
-    schedule: {
-      type: Object,
-      required: true,
-    },
+<script setup lang="ts">
+defineProps({
+  name: {
+    type: String,
+    required: true,
   },
-}
+  mainImgSrc: {
+    type: String,
+    required: true,
+  },
+  effects: {
+    type: Array,
+    required: true,
+  },
+  schedule: {
+    type: Object,
+    required: true,
+  },
+})
 </script>

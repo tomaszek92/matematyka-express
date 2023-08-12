@@ -43,7 +43,7 @@
         <span>{{ peopleCount }}</span>
       </div>
       <div v-show="isPromoPriceVisible" class="saving font-extrabold text-2xl">
-        Oszczędzasz {{ saving | percent }}
+        Oszczędzasz {{ savingPercentage }}
       </div>
       <div v-if="btnOpt" class="flex justify-center">
         <nuxt-link
@@ -68,68 +68,66 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'MatematykaExpressCard',
-  filters: {
-    percent(dec) {
-      if (dec <= 1) {
-        return `${Math.round(dec * 100)}%`
-      }
-      return 'Please enter number less than or equal to 1'
-    },
+<script setup lang="ts">
+import { computed, useSlots } from 'vue'
+
+const slots = useSlots()
+
+const props = defineProps({
+  price: {
+    type: Number,
+    required: true,
   },
-  props: {
-    price: {
-      type: Number,
-      required: true,
-    },
-    promoPrice: {
-      type: Number,
-      default: 0,
-    },
-    durationInMin: {
-      type: String,
-      required: true,
-    },
-    peopleCount: {
-      type: String,
-      required: true,
-    },
-    btnOpt: {
-      type: Object,
-      default: undefined,
-    },
-    isPromoPriceVisible: {
-      type: Boolean,
-      default: false,
-    },
+  promoPrice: {
+    type: Number,
+    default: 0,
   },
-  computed: {
-    isBadgeVisible() {
-      return this.isSlotVisible('badge')
-    },
-    isHeaderVisible() {
-      return this.isSlotVisible('header')
-    },
-    isPriceDescriptionVisible() {
-      return this.isSlotVisible('price-description')
-    },
-    isAsteriskVisible() {
-      return this.isSlotVisible('asterisk')
-    },
-    isCaptionVisible() {
-      return this.isSlotVisible('caption')
-    },
-    saving() {
-      return (this.price - this.promoPrice) / this.price
-    },
+  durationInMin: {
+    type: String,
+    required: true,
   },
-  methods: {
-    isSlotVisible(slotName) {
-      return !!this.$slots[slotName]
-    },
+  peopleCount: {
+    type: String,
+    required: true,
   },
+  btnOpt: {
+    type: Object,
+    default: undefined,
+  },
+  isPromoPriceVisible: {
+    type: Boolean,
+    default: false,
+  },
+})
+
+const isBadgeVisible = computed(() => {
+  return isSlotVisible('badge')
+})
+
+const isHeaderVisible = computed(() => {
+  return isSlotVisible('header')
+})
+
+const isPriceDescriptionVisible = computed(() => {
+  return isSlotVisible('price-description')
+})
+
+const isAsteriskVisible = computed(() => {
+  return isSlotVisible('asterisk')
+})
+
+const isCaptionVisible = computed(() => {
+  return isSlotVisible('caption')
+})
+
+const savingPercentage = computed(() => {
+  const value = (props.price - props.promoPrice) / props.price
+  return `${Math.round(value * 100)}%`
+})
+
+// todo
+function isSlotVisible(slotName) {
+  return !!slots[slotName]
 }
 </script>
 
