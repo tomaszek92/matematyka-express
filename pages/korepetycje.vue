@@ -105,8 +105,8 @@
             <Card
               :promo-price="130"
               :price="140"
-              :duration-in-min="60"
               :is-promo-price-visible="true"
+              duration-in-min="60"
               people-count="1 osoba"
             >
               <template #header>
@@ -120,8 +120,8 @@
             <Card
               :promo-price="120"
               :price="130"
-              :duration-in-min="60"
               :is-promo-price-visible="true"
+              duration-in-min="60"
               people-count="1 osoba"
             >
               <template #badge>Najczęściej wybierane</template>
