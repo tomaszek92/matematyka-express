@@ -154,17 +154,10 @@
   </div>
 </template>
 
-<script>
-import { getTitle } from '@/data/general'
-
-export default {
-  name: 'MatematykaExpressKorepetycjePage',
-  head() {
-    return {
-      title: getTitle('Korepetycje'),
-    }
-  },
-}
+<script setup>
+useHead({
+  title: 'Korepetycje'
+})
 </script>
 
 <style scoped>

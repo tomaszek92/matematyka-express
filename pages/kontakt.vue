@@ -35,20 +35,20 @@
   </div>
 </template>
 
+<script setup>
+useHead({
+  title: 'Kontakt'
+})
+</script>
+
 <script>
-import { EMAIL, getTitle, TELEPHONE } from '@/data/general'
+import { EMAIL, TELEPHONE } from '@/data/general'
 
 export default {
-  name: 'MatematykaExpressKontaktPage',
   data() {
     return {
       email: EMAIL,
       telephone: TELEPHONE,
-    }
-  },
-  head() {
-    return {
-      title: getTitle('Kontakt'),
     }
   },
 }

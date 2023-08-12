@@ -45,20 +45,18 @@
   </div>
 </template>
 
-<script>
-import { getTitle } from '@/data/general'
+<script setup>
+useHead({
+  title: 'Opinie'
+})
+</script>
 
+<script>
 export default {
-  name: 'MatematykaExpressOpiniePage',
   data() {
     return {
       slideIndex: 1,
       count: 22,
-    }
-  },
-  head() {
-    return {
-      title: getTitle('Opinie'),
     }
   },
   mounted() {

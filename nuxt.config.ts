@@ -4,7 +4,6 @@ import { TITLE } from "./data/general";
 export default defineNuxtConfig({
   app: {
     head: {
-      title: TITLE,
       htmlAttrs: {
         lang: 'pl-PL',
       },

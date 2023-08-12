@@ -67,17 +67,10 @@
   </div>
 </template>
 
-<script>
-import { getTitle } from '@/data/general'
-
-export default {
-  name: 'MatematykaExpressOMniePage',
-  head() {
-    return {
-      title: getTitle('O mnie'),
-    }
-  },
-}
+<script setup>
+useHead({
+  title: 'O mnie'
+})
 </script>
 
 <style scoped>
