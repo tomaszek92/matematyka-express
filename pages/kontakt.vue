@@ -37,7 +37,7 @@
 
 <script setup>
 useHead({
-  title: 'Kontakt'
+  title: 'Kontakt',
 })
 </script>
 
@@ -53,8 +53,8 @@ export default {
   },
   computed: {
     telephone() {
-      return formatTelephone(TELEPHONE);
-    }
-  }
+      return formatTelephone(TELEPHONE)
+    },
+  },
 }
 </script>

@@ -97,17 +97,17 @@ export default {
       return `${this.title}-${this.subtitle}-text`
     },
     stationaryStartDate() {
-      return this.dateFormat(this.schedule.stationary.startDate);
+      return this.dateFormat(this.schedule.stationary.startDate)
     },
     onlineStartDate() {
-      return this.dateFormat(this.schedule.online.startDate);
-    }
+      return this.dateFormat(this.schedule.online.startDate)
+    },
   },
   methods: {
     dateFormat(date) {
       return format(date, 'dd.MM.yyy')
-    }
-  }
+    },
+  },
 }
 </script>
 

@@ -156,7 +156,7 @@
 
 <script setup>
 useHead({
-  title: 'Korepetycje'
+  title: 'Korepetycje',
 })
 </script>
 

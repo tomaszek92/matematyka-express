@@ -1,15 +1,15 @@
 <template>
-    <NuxtLayout>
-      <NuxtPage/>
-    </NuxtLayout>
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>
 
 <script setup>
-import { TITLE } from "~/data/general";
+import { TITLE } from '~/data/general'
 
 useHead({
   titleTemplate: (titleChunk) => {
-    return titleChunk ? `${titleChunk} | ${TITLE}` : TITLE;
-  }
+    return titleChunk ? `${titleChunk} | ${TITLE}` : TITLE
+  },
 })
 </script>

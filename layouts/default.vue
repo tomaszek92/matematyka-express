@@ -5,7 +5,7 @@
     </header>
     <main>
       <div class="container mx-auto p-4 md:p-8">
-        <slot/>
+        <slot />
         <cookies-consent />
       </div>
     </main>

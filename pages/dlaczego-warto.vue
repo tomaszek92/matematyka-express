@@ -125,6 +125,6 @@
 
 <script setup>
 useHead({
-  title: 'Dlaczego warto'
+  title: 'Dlaczego warto',
 })
 </script>

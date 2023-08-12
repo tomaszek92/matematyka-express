@@ -1,6 +1,6 @@
 import type { RouterConfig } from '@nuxt/schema'
 
-export default <RouterConfig> {
+export default <RouterConfig>{
   scrollBehavior(to, from, savedPosition) {
     if (to.hash) {
       return window.scrollTo({
@@ -9,5 +9,5 @@ export default <RouterConfig> {
       })
     }
     return window.scrollTo({ top: 0, behavior: 'smooth' })
-  }
+  },
 }

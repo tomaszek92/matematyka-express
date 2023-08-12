@@ -47,7 +47,7 @@
 
 <script setup>
 useHead({
-  title: 'Opinie'
+  title: 'Opinie',
 })
 </script>
 

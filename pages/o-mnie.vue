@@ -69,13 +69,13 @@
 
 <script setup>
 useHead({
-  title: 'O mnie'
+  title: 'O mnie',
 })
 </script>
 
 <style scoped>
 .quote {
-  quotes: '\201E''\201D''\00BB''\00AB';
+  quotes: '\201E' '\201D' '\00BB' '\00AB';
 }
 
 .quote:before {

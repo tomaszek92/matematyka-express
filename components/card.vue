@@ -122,7 +122,7 @@ export default {
       return this.isSlotVisible('caption')
     },
     savingPercentage() {
-      const value = (this.price - this.promoPrice) / this.price;
+      const value = (this.price - this.promoPrice) / this.price
       return `${Math.round(value * 100)}%`
     },
   },

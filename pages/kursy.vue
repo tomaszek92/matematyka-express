@@ -101,13 +101,13 @@
 
 <script setup>
 useHead({
-  title: 'Kursy'
+  title: 'Kursy',
 })
 </script>
 
 <script>
 import { TELEPHONE } from '@/data/general'
-import { formatTelephone } from "~/helpers/formatters";
+import { formatTelephone } from '~/helpers/formatters'
 
 export default {
   data() {
@@ -117,9 +117,9 @@ export default {
   },
   computed: {
     formattedTelephone() {
-      return formatTelephone(TELEPHONE);
-    }
-  }
+      return formatTelephone(TELEPHONE)
+    },
+  },
 }
 </script>
 
