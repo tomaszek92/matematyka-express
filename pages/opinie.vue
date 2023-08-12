@@ -56,7 +56,7 @@ export default {
   data() {
     return {
       slideIndex: 1,
-      count: 22,
+      count: 21,
     }
   },
   mounted() {
