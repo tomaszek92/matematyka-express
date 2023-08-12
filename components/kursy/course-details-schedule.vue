@@ -1,12 +1,13 @@
 <template>
   <div class="grid justify-center">
-    <v-calendar
-      :attributes="attributes"
-      locale="pl"
-      :min-page="{ month: 9, year: 2023 }"
-      :max-page="{ month: 5, year: 2024 }"
-    >
-    </v-calendar>
+    <ClientOnly>
+      <v-calendar
+        :attributes="attributes"
+        locale="pl"
+        :min-page="{ month: 9, year: 2023 }"
+        :max-page="{ month: 5, year: 2024 }"
+      />
+    </ClientOnly>
     <div class="grid justify-center text-sm mt-1">
       <div class="flex">
         <div

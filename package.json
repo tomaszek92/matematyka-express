@@ -15,7 +15,9 @@
   "dependencies": {
     "@popperjs/core": "^2.11.8",
     "date-fns": "^2.30.0",
-    "v-calendar": "^3.0.3"
+    "mitt": "^3.0.1",
+    "v-calendar": "^3.0.3",
+    "v-click-outside": "^3.2.0"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",

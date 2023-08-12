@@ -7,8 +7,7 @@
         <img class="h-14 cursor-pointer" src="/logo.png" alt="logo" />
       </NuxtLink>
     </div>
-    <!--    <div v-click-outside="vcoConfig" class="block lg:hidden">-->
-    <div class="block lg:hidden">
+    <div v-click-outside="vcoConfig" class="block lg:hidden">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         class="h-8 w-8 cursor-pointer lg:hidden block text-white"
@@ -59,41 +58,44 @@
   </nav>
 </template>
 
-<script>
+<script setup lang="ts">
 import { ON_LINK_CLICK } from '@/events'
+import { useNuxtApp } from '#app'
+import { onBeforeMount, onMounted, onUnmounted, ref } from '@vue/runtime-core'
 
-export default {
-  data() {
-    return {
-      vcoConfig: {
-        handler: this.onClickOutside,
-        middleware: this.canPropagateEvent,
-      },
-    }
+const { $bus } = useNuxtApp()
+
+const links = ref(null)
+
+const vcoConfig = {
+  handler: () => {
+    console.log('handler')
+    links.value.classList.add('hidden')
   },
-  created() {
-    // this.$nuxt.$on(ON_LINK_CLICK, this.onMenuToggle)
+  middleware: (e) => {
+    console.log('middleware')
+    return !e.target.classList.contains('navbar-link')
   },
-  mounted() {
-    window.addEventListener('resize', this.onResize)
-  },
-  destroyed() {
-    window.removeEventListener('resize', this.onResize)
-  },
-  methods: {
-    onMenuToggle() {
-      this.$refs.links.classList.toggle('hidden')
-    },
-    onResize() {
-      this.$refs.links.classList.add('hidden')
-    },
-    onClickOutside(e) {
-      this.$refs.links.classList.add('hidden')
-    },
-    canPropagateEvent(e) {
-      return !e.target.classList.contains('navbar-link')
-    },
-  },
+}
+
+onBeforeMount(() => {
+  $bus.on(ON_LINK_CLICK, onMenuToggle)
+})
+
+onMounted(() => {
+  window.addEventListener('resize', onResize)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('resize', onResize)
+})
+
+function onMenuToggle() {
+  links.value.classList.toggle('hidden')
+}
+
+function onResize() {
+  links.value.classList.add('hidden')
 }
 </script>
 
