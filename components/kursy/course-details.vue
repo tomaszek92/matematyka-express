@@ -78,25 +78,23 @@
   </div>
 </template>
 
-<script>
-export default {
-  props: {
-    name: {
-      type: String,
-      required: true,
-    },
-    mainImgSrc: {
-      type: String,
-      required: true,
-    },
-    effects: {
-      type: Array,
-      required: true,
-    },
-    schedule: {
-      type: Object,
-      required: true,
-    },
+<script setup lang="ts">
+defineProps({
+  name: {
+    type: String,
+    required: true,
   },
-}
+  mainImgSrc: {
+    type: String,
+    required: true,
+  },
+  effects: {
+    type: Array,
+    required: true,
+  },
+  schedule: {
+    type: Object,
+    required: true,
+  },
+})
 </script>

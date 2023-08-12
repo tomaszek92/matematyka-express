@@ -22,7 +22,7 @@
           </a>
         </div>
         <div>
-          <a class="flex items-center" :href="`tel:${telephone}`">
+          <a class="flex items-center" :href="`tel:${TELEPHONE}`">
             <img
               class="h-4 mr-2"
               src="/img/o-mnie/telephone.png"
@@ -52,9 +52,9 @@
           </a>
         </div>
         <div>
-          <a class="flex items-center" :href="`mailto:${email}`">
+          <a class="flex items-center" :href="`mailto:${EMAIL}`">
             <img class="h-4 mr-2" src="/img/o-mnie/mail.png" alt="e-mail" />
-            <span>{{ email }}</span>
+            <span>{{ EMAIL }}</span>
           </a>
         </div>
       </div>
@@ -91,24 +91,14 @@
   </nav>
 </template>
 
-<script>
+<script setup lang="ts">
+import { computed } from 'vue'
 import { EMAIL, TELEPHONE } from '@/data/general'
 import { formatTelephone } from '~/helpers/formatters'
 
-export default {
-  name: 'MatematykaExpressFooterNav',
-  data() {
-    return {
-      email: EMAIL,
-      telephone: TELEPHONE,
-    }
-  },
-  computed: {
-    formattedTelephone() {
-      return formatTelephone(TELEPHONE)
-    },
-  },
-}
+const formattedTelephone = computed(() => {
+  return formatTelephone(TELEPHONE)
+})
 </script>
 
 <style scoped>

@@ -70,44 +70,43 @@
   </div>
 </template>
 
-<script>
+<script setup lang="ts">
 import { format } from 'date-fns'
+import { computed } from 'vue'
 
-export default {
-  props: {
-    url: {
-      type: String,
-      required: true,
-    },
-    title: {
-      type: String,
-      required: true,
-    },
-    subtitle: {
-      type: String,
-      required: true,
-    },
-    schedule: {
-      type: Object,
-      required: true,
-    },
+const props = defineProps({
+  url: {
+    type: String,
+    required: true,
   },
-  computed: {
-    textColorClass() {
-      return `${this.title}-${this.subtitle}-text`
-    },
-    stationaryStartDate() {
-      return this.dateFormat(this.schedule.stationary.startDate)
-    },
-    onlineStartDate() {
-      return this.dateFormat(this.schedule.online.startDate)
-    },
+  title: {
+    type: String,
+    required: true,
   },
-  methods: {
-    dateFormat(date) {
-      return format(date, 'dd.MM.yyy')
-    },
+  subtitle: {
+    type: String,
+    required: true,
   },
+  schedule: {
+    type: Object,
+    required: true,
+  },
+})
+
+const textColorClass = computed(() => {
+  return `${props.title}-${props.subtitle}-text`
+})
+
+const stationaryStartDate = computed(() => {
+  return dateFormat(this.schedule.stationary.startDate)
+})
+
+const onlineStartDate = computed(() => {
+  return dateFormat(this.schedule.online.startDate)
+})
+
+function dateFormat(date) {
+  return format(date, 'dd.MM.yyy')
 }
 </script>
 

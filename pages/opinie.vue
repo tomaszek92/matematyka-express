@@ -21,7 +21,7 @@
     </div>
     <div class="text-center">
       <div class="slideshow-container">
-        <div v-for="n in count" :key="n" :ref="`slide-${n}`" class="slide fade">
+        <div v-for="n in count" :key="n" ref="slides" class="slide fade">
           <img
             :src="`/img/opinie/${n}.png`"
             class="w-100"
@@ -36,7 +36,7 @@
         <span
           v-for="n in count"
           :key="n"
-          :ref="`dot-${n}`"
+          ref="dots"
           class="dot"
           @click="currentSlide(n)"
         ></span>
@@ -45,55 +45,47 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
+import { onMounted, ref } from 'vue'
+
 useHead({
   title: 'Opinie',
 })
-</script>
 
-<script>
-export default {
-  data() {
-    return {
-      slideIndex: 1,
-      count: 21,
-    }
-  },
-  mounted() {
-    this.showSlides(1)
-  },
-  methods: {
-    plusSlides(n) {
-      this.showSlides((this.slideIndex += n))
-    },
-    currentSlide(n) {
-      this.showSlides((this.slideIndex = n))
-    },
-    showSlides(n) {
-      let i
-      const slides = this.getRefs('slide')
-      const dots = this.getRefs('dot')
-      if (n > slides.length) {
-        this.slideIndex = 1
-      }
-      if (n < 1) {
-        this.slideIndex = slides.length
-      }
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = 'none'
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(' active', '')
-      }
-      slides[this.slideIndex - 1].style.display = 'block'
-      dots[this.slideIndex - 1].className += ' active'
-    },
-    getRefs(pattern) {
-      return Object.keys(this.$refs)
-        .filter((name) => name.startsWith(pattern))
-        .map((name) => this.$refs[name][0])
-    },
-  },
+const slides = ref()
+const dots = ref()
+
+let slideIndex = 1
+const count = 21
+
+onMounted(() => {
+  showSlides(1)
+})
+
+function plusSlides(n) {
+  showSlides((slideIndex += n))
+}
+
+function currentSlide(n) {
+  showSlides((slideIndex = n))
+}
+
+function showSlides(n) {
+  let i
+  if (n > slides.value.length) {
+    slideIndex = 1
+  }
+  if (n < 1) {
+    slideIndex = slides.value.length
+  }
+  for (i = 0; i < slides.value.length; i++) {
+    slides.value[i].style.display = 'none'
+  }
+  for (i = 0; i < dots.value.length; i++) {
+    dots.value[i].className = dots.value[i].className.replace(' active', '')
+  }
+  slides.value[slideIndex - 1].style.display = 'block'
+  dots.value[slideIndex - 1].className += ' active'
 }
 </script>
 

@@ -21,22 +21,19 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'MatematykaExpressTwoColumn',
-  props: {
-    imgSrc: {
-      type: String,
-      required: true,
-    },
-    mdCols: {
-      type: Number,
-      default: 2,
-    },
-    lgCols: {
-      type: Number,
-      default: 2,
-    },
+<script setup lang="ts">
+defineProps({
+  imgSrc: {
+    type: String,
+    required: true,
   },
-}
+  mdCols: {
+    type: Number,
+    default: 2,
+  },
+  lgCols: {
+    type: Number,
+    default: 2,
+  },
+})
 </script>

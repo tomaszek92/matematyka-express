@@ -81,7 +81,7 @@
         <div>
           <a
             class="button flex items-center justify-center text-white text-xl font-extrabold px-8 py-4 rounded-xl max-w-md mx-auto"
-            :href="`tel:${telephone}`"
+            :href="`tel:${TELEPHONE}`"
           >
             <img
               class="h-4 mr-2"
@@ -99,28 +99,18 @@
   </div>
 </template>
 
-<script setup>
-useHead({
-  title: 'Kursy',
-})
-</script>
-
-<script>
+<script setup lang="ts">
+import { computed } from 'vue'
 import { TELEPHONE } from '@/data/general'
 import { formatTelephone } from '~/helpers/formatters'
 
-export default {
-  data() {
-    return {
-      telephone: TELEPHONE,
-    }
-  },
-  computed: {
-    formattedTelephone() {
-      return formatTelephone(TELEPHONE)
-    },
-  },
-}
+useHead({
+  title: 'Kursy',
+})
+
+const formattedTelephone = computed(() => {
+  return formatTelephone(TELEPHONE)
+})
 </script>
 
 <style scoped>

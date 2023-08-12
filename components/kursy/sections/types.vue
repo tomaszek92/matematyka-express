@@ -21,18 +21,8 @@
   </div>
 </template>
 
-<script>
+<script setup lang="ts">
 import { schedule as egzaminOsmoklasistySchedule } from '@/data/egzamin-osmoklasisty-data'
 import { schedule as maturaPodstawowaSchedule } from '@/data/matura-poziom-podstawowy-data'
 import { schedule as maturaRozszerzonaSchedule } from '@/data/matura-poziom-rozszerzony-data'
-
-export default {
-  data() {
-    return {
-      egzaminOsmoklasistySchedule,
-      maturaPodstawowaSchedule,
-      maturaRozszerzonaSchedule,
-    }
-  },
-}
 </script>

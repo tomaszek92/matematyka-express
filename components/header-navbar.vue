@@ -66,7 +66,7 @@ import { ON_LINK_CLICK } from '@/events'
 
 const { $bus } = useNuxtApp()
 
-const links = ref(null)
+const links = ref()
 const menu = ref()
 
 onClickOutside(menu, (e) => {

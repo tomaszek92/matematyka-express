@@ -9,13 +9,11 @@
   </div>
 </template>
 
-<script>
-export default {
-  props: {
-    imgSrc: {
-      type: String,
-      required: true,
-    },
+<script setup lang="ts">
+defineProps({
+  imgSrc: {
+    type: String,
+    required: true,
   },
-}
+})
 </script>

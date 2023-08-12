@@ -19,15 +19,6 @@
   </KursyCourseDetails>
 </template>
 
-<script>
+<script setup lang="ts">
 import { effects, schedule } from '@/data/matura-poziom-rozszerzony-data'
-
-export default {
-  data() {
-    return {
-      effects,
-      schedule,
-    }
-  },
-}
 </script>

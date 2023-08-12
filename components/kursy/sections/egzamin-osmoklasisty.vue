@@ -16,15 +16,6 @@
   </KursyCourseDetails>
 </template>
 
-<script>
+<script setup lang="ts">
 import { effects, schedule } from '@/data/egzamin-osmoklasisty-data'
-
-export default {
-  data() {
-    return {
-      effects,
-      schedule,
-    }
-  },
-}
 </script>

@@ -4,7 +4,6 @@
 
 <script>
 export default {
-  name: 'MatematykaExpressError',
   props: {
     error: {
       type: Object,

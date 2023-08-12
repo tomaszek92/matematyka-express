@@ -17,15 +17,6 @@
   </KursyCourseDetails>
 </template>
 
-<script>
+<script setup lang="ts">
 import { effects, schedule } from '@/data/matura-poziom-podstawowy-data'
-
-export default {
-  data() {
-    return {
-      effects,
-      schedule,
-    }
-  },
-}
 </script>

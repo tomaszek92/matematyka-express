@@ -27,45 +27,44 @@
   </div>
 </template>
 
-<script>
-export default {
-  props: {
-    name: {
-      type: String,
-      required: true,
-    },
-    scheduleStationary: {
-      type: Object,
-      required: true,
-    },
-    scheduleOnline: {
-      type: Object,
-      required: true,
-    },
+<script setup lang="ts">
+import { computed } from 'vue'
+
+const props = defineProps({
+  name: {
+    type: String,
+    required: true,
   },
-  computed: {
-    attributes() {
-      return [
-        {
-          key: 'stationary',
-          bar: 'purple',
-          dates: this.scheduleStationary.dates,
-          popover: {
-            label: `Zajęcia stacjonarne ${this.scheduleStationary.hours}`,
-          },
-        },
-        {
-          key: 'online',
-          bar: 'pink',
-          dates: this.scheduleOnline.dates,
-          popover: {
-            label: `Zajęcia online ${this.scheduleOnline.hours}`,
-          },
-        },
-      ]
-    },
+  scheduleStationary: {
+    type: Object,
+    required: true,
   },
-}
+  scheduleOnline: {
+    type: Object,
+    required: true,
+  },
+})
+
+const attributes = computed(() => {
+  return [
+    {
+      key: 'stationary',
+      bar: 'purple',
+      dates: props.scheduleStationary.dates,
+      popover: {
+        label: `Zajęcia stacjonarne ${props.scheduleStationary.hours}`,
+      },
+    },
+    {
+      key: 'online',
+      bar: 'pink',
+      dates: props.scheduleOnline.dates,
+      popover: {
+        label: `Zajęcia online ${props.scheduleOnline.hours}`,
+      },
+    },
+  ]
+})
 </script>
 
 <style scoped>
