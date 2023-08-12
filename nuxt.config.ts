@@ -17,6 +17,11 @@ export default defineNuxtConfig({
       ],
     },
   },
+  runtimeConfig: {
+    public: {
+      gtagId: 'G-YCZS18JPKW',
+    },
+  },
   devtools: { enabled: true },
   modules: ['@nuxtjs/tailwindcss', '@vueuse/nuxt'],
   css: ['~/assets/css/fonts.css', '~/assets/css/main.css'],
