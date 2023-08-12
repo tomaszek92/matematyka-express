@@ -1,40 +1,17 @@
 {
-  "name": "matematyka-express",
-  "version": "1.0.0",
+  "name": "nuxt-app",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
     "build": "nuxt build",
-    "start": "nuxt start",
+    "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
-    "lint:prettier": "prettier --check .",
-    "lint": "npm run lint:js && npm run lint:prettier",
-    "lintfix": "prettier --write --list-different . && npm run lint:js -- --fix"
-  },
-  "dependencies": {
-    "core-js": "3.32.0",
-    "date-fns": "2.30.0",
-    "nuxt": "2.17.1",
-    "v-calendar": "2.4.1",
-    "v-click-outside": "3.2.0",
-    "vue": "2.7.14",
-    "vue-click-outside": "1.1.0",
-    "vue-server-renderer": "2.7.14",
-    "vue-template-compiler": "2.7.14",
-    "webpack": "4.46.0"
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "7.22.10",
-    "@nuxt/types": "2.17.1",
-    "@nuxtjs/eslint-config": "8.0.0",
-    "@nuxtjs/eslint-module": "3.1.0",
-    "@nuxtjs/tailwindcss": "4.2.1",
-    "eslint": "8.46.0",
-    "eslint-config-prettier": "8.10.0",
-    "eslint-plugin-nuxt": "3.2.0",
-    "eslint-plugin-vue": "8.7.1",
-    "postcss": "8.4.27",
-    "prettier": "2.8.8"
+    "@nuxt/devtools": "latest",
+    "@nuxtjs/tailwindcss": "^6.8.0",
+    "@types/node": "^18.17.3",
+    "nuxt": "^3.6.5"
   }
 }

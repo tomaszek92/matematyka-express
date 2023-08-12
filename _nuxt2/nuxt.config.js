@@ -1,4 +1,4 @@
-import { TITLE } from './data/general'
+import { TITLE } from '../data/general'
 
 export default {
   // Target: https://go.nuxtjs.dev/config-target

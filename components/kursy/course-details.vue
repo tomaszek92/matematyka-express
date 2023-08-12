@@ -49,7 +49,7 @@
           <template #caption>
             Przed zapisaniem się na zajęcia zapoznaj się z
             <a
-              href="/statues/Regulamin kursów- Matematyka Express.pdf"
+              href="/statues/Regulamin%20kursów-%20Matematyka%20Express.pdf"
               target="_blank"
               class="underline"
             >

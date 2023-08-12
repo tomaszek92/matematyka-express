@@ -140,7 +140,7 @@
           <div class="text-sm mt-2">
             Przed zapisaniem się na zajęcia zapoznaj się z
             <a
-              href="/statues/Regulamin korepetycji- Matematyka Express.pdf"
+              href="/statues/Regulamin%20korepetycji-%20Matematyka%20Express.pdf"
               target="_blank"
               class="underline"
             >

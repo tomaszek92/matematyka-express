@@ -64,7 +64,7 @@
       <div class="grid grid-rows-3 gap-2">
         <div>
           <a
-            href="/statues/Polityka prywatności- Matematyka Express.pdf"
+            href="/statues/Polityka%20prywatności-%20Matematyka%20Express.pdf"
             target="_blank"
           >
             Polityka prywatności
@@ -72,7 +72,7 @@
         </div>
         <div>
           <a
-            href="/statues/Regulamin kursów- Matematyka Express.pdf"
+            href="/statues/Regulamin%20kursów-%20Matematyka%20Express.pdf"
             target="_blank"
           >
             Regulamin kursów
@@ -80,7 +80,7 @@
         </div>
         <div>
           <a
-            href="/statues/Regulamin korepetycji- Matematyka Express.pdf"
+            href="/statues/Regulamin%20korepetycji-%20Matematyka%20Express.pdf"
             target="_blank"
           >
             Regulamin korepetycji

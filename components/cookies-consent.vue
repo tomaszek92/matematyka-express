@@ -7,7 +7,7 @@
       <div class="text-sm">
         Korzystając ze strony internetowej Matematyka Express, zgadzasz się na
         <a
-          href="/statues/Polityka prywatności- Matematyka Express.pdf"
+          href="/statues/Polityka%20prywatności-%20Matematyka%20Express.pdf"
           target="_blank"
           class="underline"
         >
