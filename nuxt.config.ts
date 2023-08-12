@@ -18,6 +18,6 @@ export default defineNuxtConfig({
     },
   },
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss'],
+  modules: ['@nuxtjs/tailwindcss', '@vueuse/nuxt'],
   css: ['~/assets/css/fonts.css', '~/assets/css/main.css'],
 })

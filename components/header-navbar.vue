@@ -7,7 +7,7 @@
         <img class="h-14 cursor-pointer" src="/logo.png" alt="logo" />
       </NuxtLink>
     </div>
-    <div v-click-outside="vcoConfig" class="block lg:hidden">
+    <div class="block lg:hidden" ref="menu">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         class="h-8 w-8 cursor-pointer lg:hidden block text-white"
@@ -59,24 +59,21 @@
 </template>
 
 <script setup lang="ts">
-import { ON_LINK_CLICK } from '@/events'
 import { useNuxtApp } from '#app'
-import { onBeforeMount, onMounted, onUnmounted, ref } from '@vue/runtime-core'
+import { onBeforeMount, onMounted, onUnmounted, ref } from 'vue'
+import { onClickOutside } from '@vueuse/core'
+import { ON_LINK_CLICK } from '@/events'
 
 const { $bus } = useNuxtApp()
 
 const links = ref(null)
+const menu = ref()
 
-const vcoConfig = {
-  handler: () => {
-    console.log('handler')
-    links.value.classList.add('hidden')
-  },
-  middleware: (e) => {
-    console.log('middleware')
-    return !e.target.classList.contains('navbar-link')
-  },
-}
+onClickOutside(menu, (e) => {
+  if (!e.target.classList.contains('navbar-link')) {
+    onMenuToggle()
+  }
+})
 
 onBeforeMount(() => {
   $bus.on(ON_LINK_CLICK, onMenuToggle)
