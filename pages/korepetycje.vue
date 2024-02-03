@@ -105,7 +105,7 @@
             <Card
               :promo-price="130"
               :price="140"
-              :is-promo-price-visible="true"
+              :is-promo-price-visible="isPromoVisible"
               duration-in-min="60"
               people-count="1 osoba"
             >
@@ -120,7 +120,7 @@
             <Card
               :promo-price="120"
               :price="130"
-              :is-promo-price-visible="true"
+              :is-promo-price-visible="isPromoVisible"
               duration-in-min="60"
               people-count="1 osoba"
             >
@@ -134,7 +134,7 @@
               </template>
             </Card>
           </div>
-          <div class="text-sm mt-2 color-asterisk">
+          <div v-if="isPromoVisible" class="text-sm mt-2 color-asterisk">
             *Cena promocyjna obowiązuje przy zapisie na zajęcia do 3.09.2023 r.
           </div>
           <div class="text-sm mt-2">
@@ -158,6 +158,8 @@
 useHead({
   title: 'Korepetycje',
 })
+
+const isPromoVisible = ref(false)
 </script>
 
 <style scoped>

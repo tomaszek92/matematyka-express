@@ -93,9 +93,9 @@
             <br />
             <strong>Plac Konstytucji</strong>- 5 min pieszo
             <br />
-            <strong>Koszykowa</strong>- 6 min pieszo Metro
+            <strong>Koszykowa</strong>- 6 min pieszo
             <br />
-            <strong>Centrum/Politechnika</strong>- 10 min pieszo
+            <strong>Metro Centrum/Politechnika</strong>- 10 min pieszo
           </div>
         </template>
       </DlaczegoWartoLessonForm>
