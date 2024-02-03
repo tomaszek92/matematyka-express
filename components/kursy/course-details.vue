@@ -58,7 +58,7 @@
             .
           </template>
         </Card>
-        <div>
+        <div v-if="false">
           <div
             class="mt-4 font-extrabold text-2xl text-center"
             style="color: #e92323"
